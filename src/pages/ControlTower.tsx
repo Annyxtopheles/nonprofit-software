@@ -275,42 +275,35 @@ const ControlTower = () => {
               style={{ backgroundColor: colors.accentLight, color: colors.accent }}
             >
               <Layers className="w-4 h-4" />
-              Nonprofit Control Tower
+              NONPROFIT AI CONTROL TOWER
             </div>
             <h1
               className="text-4xl md:text-5xl lg:text-[3.25rem] font-bold leading-tight mb-6"
               style={{ color: colors.headline }}
             >
-              Your Donors Deserve Better. Your Team Does Too.{" "}
-              <span style={{ color: colors.accent }}>Control Tower Connects the Dots.</span>
+              One place to run your nonprofit.
             </h1>
             <p
-              className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-8"
+              className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-4"
               style={{ color: colors.body }}
             >
-              The operational intelligence layer that sits on top of your CRM, finance, and event systems —
-              surfacing insights, automating busywork, and giving every role a purpose-built dashboard.
+              Bring your donors, grants, events, programs, volunteers, and board information into one clear view.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <p
+              className="text-base md:text-lg font-medium leading-relaxed max-w-2xl mx-auto mb-8"
+              style={{ color: colors.headline }}
+            >
+              See what needs attention while keeping the tools your team already uses.
+            </p>
+            <div className="flex justify-center">
               <Button
                 size="lg"
                 className="font-bold text-white hover:opacity-90"
                 style={{ backgroundColor: colors.accent }}
                 asChild
               >
-                <a href="https://demo.nonprofitai.software/" target="_blank" rel="noopener noreferrer">
-                  See It Live <ArrowRight className="w-4 h-4 ml-1" />
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="font-bold"
-                style={{ borderColor: colors.border, color: colors.headline }}
-                asChild
-              >
                 <a href="https://collabai.software/contact" target="_blank" rel="noopener noreferrer">
-                  <Phone className="w-4 h-4 mr-1" /> Schedule a Call
+                  Book Free Demo <ArrowRight className="w-4 h-4 ml-1" />
                 </a>
               </Button>
             </div>
