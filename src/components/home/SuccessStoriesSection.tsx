@@ -1,14 +1,17 @@
-import { Users, Calendar } from "lucide-react";
+import { Users, Calendar, Check } from "lucide-react";
 import iaaboImg from "@/assets/screenshots/success-story-iaabo.png";
 import optimistsImg from "@/assets/screenshots/success-story-optimists.png";
+import meetingsImg from "@/assets/screenshots/meetings-view.png";
+import reportsImg from "@/assets/screenshots/reports-analytics.png";
 
 interface Story {
   org: string;
   headline: string;
   tags: string[];
-  challenge: string;
+  challenge?: string;
   whatWeDelivered: string;
-  proof: string;
+  deliverablesList?: string[];
+  proof?: string;
   stat1: {
     value: string;
     label: string;
@@ -19,6 +22,7 @@ interface Story {
   };
   image: string;
   imageAlt: string;
+  isMockupWithTape?: boolean;
 }
 
 const stories: Story[] = [
@@ -42,11 +46,34 @@ const stories: Story[] = [
     },
     image: iaaboImg,
     imageAlt: "IAABO Learning Platform Training Dashboard",
+    isMockupWithTape: true,
+  },
+  {
+    org: "Queens Chamber of Commerce",
+    headline: "AI Infrastructure for a Business Community",
+    tags: ["AI INFRASTRUCTURE", "COMMUNITY & CHAMBER"],
+    challenge:
+      "Staff, board members, and committees needed a better way to work across meetings, documents, outreach, and member activity.",
+    whatWeDelivered:
+      "A Control Tower with board and committee tools, meeting management, document Q&A, lead follow-up, and CRM-connected member onboarding.",
+    proof:
+      "Prepared for live use with real Chamber data and member onboarding.",
+    stat1: {
+      value: "1,400+",
+      label: "CHAMBER MEMBERS",
+    },
+    stat2: {
+      value: "CONTROL TOWER",
+      label: "LIVE SYSTEM",
+    },
+    image: meetingsImg,
+    imageAlt: "Queens Chamber of Commerce Control Tower Management",
+    isMockupWithTape: false,
   },
   {
     org: "The Optimists",
     headline: "Modernizing an Aging Nonprofit Platform",
-    tags: ["LEARNING PLATFORM", "MEMBER ORGANIZATION"],
+    tags: ["MODERNIZATION", "DONATION PLATFORM"],
     challenge:
       "An outdated website and admin system were making everyday management harder.",
     whatWeDelivered:
@@ -54,15 +81,41 @@ const stories: Story[] = [
     proof:
       "The migration is complete and the donation experience has been built.",
     stat1: {
-      value: "16,000+",
-      label: "MEMBERS",
+      value: "100%",
+      label: "MIGRATED",
     },
     stat2: {
-      value: "SEPTEMBER 2026",
-      label: "LAUNCH",
+      value: "ACTIVE",
+      label: "DONATION ENGINE",
     },
     image: optimistsImg,
     imageAlt: "The Optimists Modernized Platform",
+    isMockupWithTape: true,
+  },
+  {
+    org: "YMCA Jamaica / NYC",
+    headline: "Bringing Nonprofit Operations Into One Control Tower",
+    tags: ["OPERATIONS CONTROL TOWER", "COMMUNITY LEADERSHIP"],
+    whatWeDelivered: "Centralized key nonprofit operations, including:",
+    deliverablesList: [
+      "Board voting",
+      "Board management",
+      "Events",
+      "Grants",
+      "Meetings to actions to tasks",
+      "Volunteer management",
+    ],
+    stat1: {
+      value: "6 OPERATIONS",
+      label: "CENTRALIZED",
+    },
+    stat2: {
+      value: "ONE PLATFORM",
+      label: "CONTROL TOWER",
+    },
+    image: reportsImg,
+    imageAlt: "YMCA Operations Control Tower Analytics",
+    isMockupWithTape: false,
   },
 ];
 
@@ -109,32 +162,51 @@ export function SuccessStoriesSection() {
 
                 {/* Challenge / Delivered / Proof Rows */}
                 <div className="divide-y divide-border border-y border-border">
-                  <div className="py-3.5 grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 items-baseline">
-                    <span className="sm:col-span-4 font-bold text-foreground text-sm">
-                      Challenge
-                    </span>
-                    <p className="sm:col-span-8 text-sm text-muted-foreground leading-relaxed">
-                      {story.challenge}
-                    </p>
-                  </div>
+                  {story.challenge && (
+                    <div className="py-3.5 grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 items-baseline">
+                      <span className="sm:col-span-4 font-bold text-foreground text-sm">
+                        Challenge
+                      </span>
+                      <p className="sm:col-span-8 text-sm text-muted-foreground leading-relaxed">
+                        {story.challenge}
+                      </p>
+                    </div>
+                  )}
 
                   <div className="py-3.5 grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 items-baseline">
                     <span className="sm:col-span-4 font-bold text-foreground text-sm">
                       What We Delivered
                     </span>
-                    <p className="sm:col-span-8 text-sm text-muted-foreground leading-relaxed">
-                      {story.whatWeDelivered}
-                    </p>
+                    <div className="sm:col-span-8">
+                      <p className="text-sm text-muted-foreground leading-relaxed mb-2.5">
+                        {story.whatWeDelivered}
+                      </p>
+                      {story.deliverablesList && (
+                        <div className="flex flex-wrap gap-2 pt-1">
+                          {story.deliverablesList.map((item) => (
+                            <span
+                              key={item}
+                              className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-secondary text-primary border border-primary/20"
+                            >
+                              <Check className="w-3.5 h-3.5 text-primary shrink-0" strokeWidth={2.5} />
+                              {item}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+                    </div>
                   </div>
 
-                  <div className="py-3.5 grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 items-baseline">
-                    <span className="sm:col-span-4 font-bold text-foreground text-sm">
-                      Proof
-                    </span>
-                    <p className="sm:col-span-8 text-sm text-muted-foreground leading-relaxed">
-                      {story.proof}
-                    </p>
-                  </div>
+                  {story.proof && (
+                    <div className="py-3.5 grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 items-baseline">
+                      <span className="sm:col-span-4 font-bold text-foreground text-sm">
+                        Proof
+                      </span>
+                      <p className="sm:col-span-8 text-sm text-muted-foreground leading-relaxed">
+                        {story.proof}
+                      </p>
+                    </div>
+                  )}
                 </div>
 
                 {/* Stat Badges */}
@@ -171,12 +243,23 @@ export function SuccessStoriesSection() {
             const imageContent = (
               <div className="flex items-center justify-center">
                 <div className="relative group w-full max-w-[480px]">
-                  <img
-                    src={story.image}
-                    alt={story.imageAlt}
-                    loading="lazy"
-                    className="w-full h-auto object-contain rounded-lg transition-transform duration-300 hover:scale-[1.02] motion-reduce:transition-none motion-reduce:hover:scale-100"
-                  />
+                  {story.isMockupWithTape ? (
+                    <img
+                      src={story.image}
+                      alt={story.imageAlt}
+                      loading="lazy"
+                      className="w-full h-auto object-contain rounded-lg transition-transform duration-300 hover:scale-[1.02] motion-reduce:transition-none motion-reduce:hover:scale-100"
+                    />
+                  ) : (
+                    <div className="rounded-xl overflow-hidden border border-border shadow-md bg-card p-1">
+                      <img
+                        src={story.image}
+                        alt={story.imageAlt}
+                        loading="lazy"
+                        className="w-full h-auto object-cover rounded-lg transition-transform duration-300 hover:scale-[1.02] motion-reduce:transition-none"
+                      />
+                    </div>
+                  )}
                 </div>
               </div>
             );

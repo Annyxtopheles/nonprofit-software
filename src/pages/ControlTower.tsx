@@ -4,6 +4,7 @@ import { CardStack } from "@/components/home/CardStack";
 import { SecurityCardStack } from "@/components/home/SecurityCardStack";
 import { TrustedPartnersSection } from "@/components/home/TrustedPartnersSection";
 import { SuccessStoriesSection } from "@/components/home/SuccessStoriesSection";
+import { ControlTowerPreviewCTA } from "@/components/home/ControlTowerPreviewCTA";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { HowItWorksSlides, type HowItWorksSlide } from "@/components/home/HowItWorksSlides";
 
@@ -314,6 +315,8 @@ const ControlTower = () => {
         <TrustedPartnersSection colors={colors} />
 
         <SuccessStoriesSection />
+
+        <ControlTowerPreviewCTA />
 
         <HowItWorksSlides
           title="How It Actually Works"
