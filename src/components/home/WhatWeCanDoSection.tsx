@@ -198,45 +198,41 @@ export const WhatWeCanDoSection: React.FC = () => {
 
                 {/* 3D Green Donation Box */}
                 <g className="transition-transform duration-500 ease-out group-hover:translate-y-[-2px] origin-center">
-                  {/* Top Lid */}
-                  <polygon points="40,86 64,66 142,66 118,86" fill="#5ea872" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
+                  {/* Top Lid with proper perspective */}
+                  <polygon points="38,84 62,64 142,64 118,84" fill="#5ea872" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
                   {/* Front Face */}
-                  <rect x="40" y="86" width="78" height="52" rx="4" fill="#4a8b5e" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
+                  <rect x="38" y="84" width="80" height="54" rx="4" fill="#4a8b5e" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
                   {/* Right Face */}
-                  <polygon points="118,86 142,66 142,118 118,138" fill="#326c46" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
-                  {/* Drop Slot on Top Lid */}
-                  <line x1="72" y1="76" x2="110" y2="76" stroke="#1c3422" strokeWidth="3.2" strokeLinecap="round" />
+                  <polygon points="118,84 142,64 142,118 118,138" fill="#326c46" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
+                  {/* Isometric Drop Slot on Top Lid */}
+                  <ellipse cx="90" cy="74" rx="20" ry="3.5" fill="#1c3422" />
                   {/* Heart / Gift Emblem on Front */}
-                  <circle cx="79" cy="112" r="12" fill="#326c46" />
-                  <path d="M 79 117 C 79 117, 72 112, 72 108 C 72 105, 75 103, 77 105 C 79 107, 79 107, 79 107 C 79 107, 79 107, 81 105 C 83 103, 86 105, 86 108 C 86 112, 79 117, 79 117 Z" fill="#ffffff" />
+                  <circle cx="78" cy="111" r="13" fill="#326c46" stroke="#1c3422" strokeWidth="1.2" />
+                  <path d="M 78 117 C 78 117, 70 111, 70 106.5 C 70 103, 73.5 101.5, 76 103.5 C 78 105, 78 105, 78 105 C 78 105, 78 105, 80 103.5 C 82.5 101.5, 86 103, 86 106.5 C 86 111, 78 117, 78 117 Z" fill="#ffffff" />
                 </g>
 
-                {/* Floating Gold Contribution Coins Falling into Slot */}
+                {/* Floating Gold Contribution Coins Falling Smoothly into Slot */}
                 <g className="transition-transform duration-500 ease-out group-hover:translate-y-1 origin-center">
-                  {/* Secondary Left Small Coin */}
-                  <circle cx="68" cy="42" r="9" fill="#ffd166" stroke="#1c3422" strokeWidth="1.8" />
-                  <circle cx="68" cy="42" r="6.5" fill="#ffd166" stroke="#e0a526" strokeWidth="1" />
-                  <text x="68" y="45.5" textAnchor="middle" fill="#1c3422" fontSize="9" fontWeight="800" fontFamily="sans-serif">$</text>
+                  {/* Left Small Floating Coin */}
+                  <g>
+                    <ellipse cx="64" cy="40" rx="9" ry="8.5" fill="#ffd166" stroke="#1c3422" strokeWidth="1.8" />
+                    <ellipse cx="64" cy="40" rx="6.5" ry="6" fill="#ffd166" stroke="#e5ad2a" strokeWidth="1" />
+                    <text x="64" y="43.5" textAnchor="middle" fill="#1c3422" fontSize="9" fontWeight="800" fontFamily="sans-serif">$</text>
+                  </g>
 
-                  {/* Secondary Right Small Coin */}
-                  <circle cx="114" cy="36" r="10" fill="#ffd166" stroke="#1c3422" strokeWidth="1.8" />
-                  <circle cx="114" cy="36" r="7.5" fill="#ffd166" stroke="#e0a526" strokeWidth="1" />
-                  <text x="114" y="40" textAnchor="middle" fill="#1c3422" fontSize="10" fontWeight="800" fontFamily="sans-serif">$</text>
+                  {/* Right Small Floating Coin */}
+                  <g>
+                    <ellipse cx="120" cy="38" rx="10" ry="9.5" fill="#ffd166" stroke="#1c3422" strokeWidth="1.8" />
+                    <ellipse cx="120" cy="38" rx="7.5" ry="7" fill="#ffd166" stroke="#e5ad2a" strokeWidth="1" />
+                    <text x="120" y="42" textAnchor="middle" fill="#1c3422" fontSize="10" fontWeight="800" fontFamily="sans-serif">$</text>
+                  </g>
 
-                  {/* Main Primary Gold Coin with $ symbol */}
-                  <circle cx="91" cy="54" r="15" fill="#ffd166" stroke="#1c3422" strokeWidth="2.2" />
-                  <circle cx="91" cy="54" r="11.5" fill="#ffd166" stroke="#e0a526" strokeWidth="1.2" />
-                  <text x="91" y="60" textAnchor="middle" fill="#1c3422" fontSize="14" fontWeight="900" fontFamily="sans-serif">$</text>
-
-                  {/* Downward Motion Trail Lines */}
-                  <line x1="91" y1="26" x2="91" y2="34" stroke="#108a00" strokeWidth="2" strokeLinecap="round" strokeDasharray="2 3" />
-                </g>
-
-                {/* Action Rays around Main Coin */}
-                <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
-                  <line x1="68" y1="52" x2="60" y2="52" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="114" y1="52" x2="122" y2="52" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="102" y1="36" x2="108" y2="30" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  {/* Main Primary Gold Coin poised entering the slot */}
+                  <g>
+                    <ellipse cx="90" cy="52" rx="15" ry="14" fill="#ffd166" stroke="#1c3422" strokeWidth="2.2" />
+                    <ellipse cx="90" cy="52" rx="11.5" ry="10.5" fill="#ffd166" stroke="#e5ad2a" strokeWidth="1.2" />
+                    <text x="90" y="57.5" textAnchor="middle" fill="#1c3422" fontSize="14" fontWeight="900" fontFamily="sans-serif">$</text>
+                  </g>
                 </g>
               </svg>
             </div>
@@ -413,34 +409,41 @@ export const WhatWeCanDoSection: React.FC = () => {
                 {/* Soft Base Shadow */}
                 <ellipse cx="85" cy="148" rx="60" ry="7" fill="#e7f5e3" />
 
-                {/* Team Group */}
+                {/* Team Group of Volunteers */}
                 <g className="transition-transform duration-500 ease-out group-hover:-translate-y-1 origin-bottom">
                   {/* Left Volunteer */}
                   <g>
-                    <circle cx="48" cy="84" r="11" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.8" />
-                    <path d="M 40 80 C 40 70, 56 70, 56 80 Z" fill="#1c3422" />
-                    <path d="M 32 138 C 32 110, 64 110, 64 138 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="2" />
+                    <rect x="45" y="82" width="6" height="10" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.5" />
+                    <circle cx="48" cy="74" r="10.5" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.8" />
+                    <path d="M 38 72 C 38 62, 58 62, 58 72 C 54 68, 42 68, 38 72 Z" fill="#1c3422" />
+                    <path d="M 28 138 L 28 102 C 28 92, 40 90, 48 90 C 56 90, 68 92, 68 102 L 68 138 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="2" />
+                    <path d="M 44 90 L 48 96 L 52 90" stroke="#1c3422" strokeWidth="1.5" fill="none" />
                   </g>
 
                   {/* Right Volunteer */}
                   <g>
-                    <circle cx="122" cy="84" r="11" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.8" />
-                    <path d="M 114 80 C 114 70, 130 70, 130 80 Z" fill="#1c3422" />
-                    <path d="M 106 138 C 106 110, 138 110, 138 138 Z" fill="#69b885" stroke="#1c3422" strokeWidth="2" />
+                    <rect x="119" y="82" width="6" height="10" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.5" />
+                    <circle cx="122" cy="74" r="10.5" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.8" />
+                    <path d="M 112 72 C 112 62, 132 62, 132 72 C 128 68, 116 68, 112 72 Z" fill="#1c3422" />
+                    <path d="M 102 138 L 102 102 C 102 92, 114 90, 122 90 C 130 90, 142 92, 142 102 L 142 138 Z" fill="#52b86a" stroke="#1c3422" strokeWidth="2" />
+                    <path d="M 118 90 L 122 96 L 126 90" stroke="#1c3422" strokeWidth="1.5" fill="none" />
                   </g>
 
                   {/* Center Key Volunteer with Heart Emblem */}
                   <g>
-                    <circle cx="85" cy="74" r="14" fill="#fde6d2" stroke="#1c3422" strokeWidth="2.2" />
-                    {/* Expressive Facial Details */}
-                    <path d="M 80 73 C 81 75, 83 75, 84 73" stroke="#1c3422" strokeWidth="1.4" fill="none" strokeLinecap="round" />
-                    <path d="M 86 73 C 87 75, 89 75, 90 73" stroke="#1c3422" strokeWidth="1.4" fill="none" strokeLinecap="round" />
-                    <path d="M 82 78 C 83.5 81, 86.5 81, 88 78" stroke="#1c3422" strokeWidth="1.4" fill="none" strokeLinecap="round" />
+                    <rect x="80.5" y="75" width="9" height="11" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.8" />
+                    <circle cx="85" cy="65" r="13" fill="#fde6d2" stroke="#1c3422" strokeWidth="2.2" />
+                    {/* Modern Hair & Face */}
+                    <path d="M 72 63 C 72 49, 98 49, 98 63 C 93 58, 77 58, 72 63 Z" fill="#1c3422" />
+                    <circle cx="80.5" cy="65" r="1.3" fill="#1c3422" />
+                    <circle cx="89.5" cy="65" r="1.3" fill="#1c3422" />
+                    <path d="M 81.5 71 C 83.5 73, 86.5 73, 88.5 71" stroke="#1c3422" strokeWidth="1.5" fill="none" strokeLinecap="round" />
 
-                    <path d="M 73 70 C 73 57, 97 57, 97 70 Z" fill="#1c3422" />
-                    <path d="M 64 142 C 64 106, 106 106, 106 142 Z" fill="#367a4e" stroke="#1c3422" strokeWidth="2.2" />
+                    {/* Torso & Uniform */}
+                    <path d="M 60 142 L 60 100 C 60 86, 76 84, 85 84 C 94 84, 110 86, 110 100 L 110 142 Z" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" />
+                    <path d="M 79 84 L 85 94 L 91 84" stroke="#1c3422" strokeWidth="1.8" fill="none" />
                     {/* White Heart on Shirt */}
-                    <path d="M 85 125 C 85 125, 76 119, 76 113 C 76 109, 80 107, 83 109 C 85 111, 85 111, 85 111 C 85 111, 85 111, 87 109 C 90 107, 94 109, 94 113 C 94 119, 85 125, 85 125 Z" fill="#ffffff" />
+                    <path d="M 85 116 C 85 116, 76 110, 76 104 C 76 100, 80 98, 83 100 C 85 101.5, 85 101.5, 85 101.5 C 85 101.5, 85 101.5, 87 100 C 90 98, 94 100, 94 104 C 94 110, 85 116, 85 116 Z" fill="#ffffff" />
                   </g>
                 </g>
 
@@ -499,39 +502,59 @@ export const WhatWeCanDoSection: React.FC = () => {
                   <line x1="36" y1="64" x2="84" y2="64" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                   <line x1="36" y1="74" x2="72" y2="74" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" opacity="0.5" />
 
-                  {/* Seated Board Member Silhouettes inside matched frame */}
+                  {/* Seated Board Members naturally seated behind Conference Table */}
                   <g>
-                    {/* Conference Table Boundary Line matching exactly inside window */}
-                    <line x1="24" y1="116" x2="126" y2="116" stroke="#1c3422" strokeWidth="1.8" />
+                    {/* Seated Members (Layered behind table) */}
                     {/* Left Member */}
-                    <circle cx="46" cy="98" r="6.5" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.4" />
-                    <path d="M 36 116 C 36 107, 56 107, 56 116 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.4" />
+                    <g>
+                      <rect x="44" y="93" width="4" height="8" fill="#fde6d2" />
+                      <circle cx="46" cy="87" r="6.5" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.4" />
+                      <path d="M 40 85 C 40 78, 52 78, 52 85 Z" fill="#1c3422" />
+                      <path d="M 34 120 C 34 100, 58 100, 58 120 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.5" />
+                    </g>
 
                     {/* Right Member */}
-                    <circle cx="104" cy="98" r="6.5" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.4" />
-                    <path d="M 94 116 C 94 107, 114 107, 114 116 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.4" />
+                    <g>
+                      <rect x="102" y="93" width="4" height="8" fill="#fde6d2" />
+                      <circle cx="104" cy="87" r="6.5" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.4" />
+                      <path d="M 98 85 C 98 78, 110 78, 110 85 Z" fill="#1c3422" />
+                      <path d="M 92 120 C 92 100, 116 100, 116 120 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.5" />
+                    </g>
 
-                    {/* Center Leader Member */}
-                    <circle cx="75" cy="92" r="8" fill="#108a00" stroke="#1c3422" strokeWidth="1.5" />
-                    <path d="M 62 116 C 62 103, 88 103, 88 116 Z" fill="#108a00" stroke="#1c3422" strokeWidth="1.5" />
+                    {/* Center Board Chair */}
+                    <g>
+                      <rect x="72.5" y="87" width="5" height="9" fill="#fde6d2" />
+                      <circle cx="75" cy="80" r="8" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.6" />
+                      <path d="M 67 78 C 67 69, 83 69, 83 78 Z" fill="#1c3422" />
+                      <path d="M 60 120 C 60 96, 90 96, 90 120 Z" fill="#108a00" stroke="#1c3422" strokeWidth="1.8" />
+                      <path d="M 72 98 L 75 104 L 78 98" stroke="#ffffff" strokeWidth="1.2" fill="none" />
+                    </g>
+
+                    {/* Conference Table in front of members */}
+                    <rect x="26" y="106" width="98" height="20" rx="8" fill="#f0f7ee" stroke="#1c3422" strokeWidth="1.8" />
+                    <line x1="32" y1="110" x2="118" y2="110" stroke="#108a00" strokeWidth="1" strokeLinecap="round" opacity="0.4" />
+                    {/* Tablet/agenda notes on table */}
+                    <rect x="69" y="111" width="12" height="7" rx="1.5" fill="#108a00" stroke="#1c3422" strokeWidth="1" />
+                    <rect x="40" y="112" width="9" height="5" rx="1" fill="#ffffff" stroke="#1c3422" strokeWidth="0.9" />
+                    <rect x="101" y="112" width="9" height="5" rx="1" fill="#ffffff" stroke="#1c3422" strokeWidth="0.9" />
                   </g>
                 </g>
 
                 {/* Floating Gavel Authority Stamp (Top Right) */}
                 <g className="transition-transform duration-500 ease-out group-hover:scale-105 group-hover:rotate-6 origin-[124px_44px]">
                   <circle cx="124" cy="44" r="22" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" />
-                  {/* Detailed Gavel Icon: Head, Rings & Handle */}
-                  <g transform="translate(124, 44) rotate(-32) translate(-124, -44)">
-                    {/* Gavel Mallet Head */}
-                    <rect x="115" y="32" width="18" height="10" rx="2.5" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
-                    {/* Golden decorative accent band on mallet */}
-                    <rect x="122" y="32" width="4" height="10" fill="#ffd166" />
+                  {/* Executive Gavel & Sound Block */}
+                  <g transform="translate(124, 42) rotate(-28) translate(-124, -42)">
+                    {/* Gavel Head */}
+                    <rect x="112" y="28" width="24" height="11" rx="3" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
+                    {/* Golden brass ring in center */}
+                    <rect x="122" y="28" width="4" height="11" fill="#ffd166" />
                     {/* Gavel Handle */}
-                    <line x1="124" y1="42" x2="124" y2="58" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" />
-                    <circle cx="124" cy="58" r="2" fill="#ffd166" />
+                    <line x1="124" y1="39" x2="124" y2="57" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" />
+                    <circle cx="124" cy="57" r="2" fill="#ffd166" stroke="#1c3422" strokeWidth="0.8" />
                   </g>
-                  {/* Sound Block / Base plate underneath */}
-                  <rect x="114" y="56" width="20" height="4" rx="2" fill="#ffffff" stroke="#1c3422" strokeWidth="1.2" />
+                  {/* Round Sound Block underneath */}
+                  <ellipse cx="124" cy="56" rx="11" ry="3.5" fill="#ffffff" stroke="#1c3422" strokeWidth="1.4" />
                 </g>
 
                 {/* Action Rays */}
@@ -599,27 +622,31 @@ export const WhatWeCanDoSection: React.FC = () => {
                   </g>
 
                   {/* AI Generated Follow-Up Action Item Box */}
-                  <rect x="62" y="92" width="114" height="34" rx="6" fill="#f8faf7" stroke="#1c3422" strokeWidth="1.3" />
-                  <circle cx="73" cy="104" r="4.5" fill="#108a00" />
-                  <path d="M 71 104 L 72.5 105.5 L 75.5 102.5" stroke="#ffffff" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                  <line x1="82" y1="104" x2="166" y2="104" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-                  <line x1="82" y1="113" x2="148" y2="113" stroke="#1c3422" strokeWidth="1.6" strokeLinecap="round" opacity="0.5" />
+                  <rect x="62" y="92" width="116" height="34" rx="6" fill="#f8faf7" stroke="#1c3422" strokeWidth="1.3" />
+                  <circle cx="73" cy="104" r="5" fill="#108a00" />
+                  <path d="M 71 104 L 72.5 105.5 L 75.5 102.5" stroke="#ffffff" strokeWidth="1.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                  <line x1="83" y1="104" x2="168" y2="104" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="83" y1="113" x2="146" y2="113" stroke="#1c3422" strokeWidth="1.6" strokeLinecap="round" opacity="0.5" />
                 </g>
 
-                {/* Left Floating Call Phone Headset Badge */}
+                {/* Left Floating Call Phone Handset Badge */}
                 <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-[46px_80px]">
-                  <circle cx="46" cy="80" r="24" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
-                  <circle cx="46" cy="80" r="19" fill="#108a00" />
-                  {/* Phone Handset Vector */}
-                  <path
-                    d="M 40 73 C 39 74.5, 41 78, 44 81 C 47 84, 50.5 86, 52 85 L 54.5 82.5 C 55 82, 56 82, 56.5 82.5 L 59 85 C 59.5 85.5, 59.5 86.5, 59 87 L 57.5 88.5 C 56.5 89.5, 54.5 89.5, 51 86 C 47.5 82.5, 47.5 80.5, 48.5 79.5 L 50 78 C 50.5 77.5, 51.5 77.5, 52 78 L 44 70 Z"
-                    fill="#ffffff"
-                    stroke="#ffffff"
-                    strokeWidth="1.2"
-                    strokeLinejoin="round"
-                  />
-                  {/* Speech Ripple Rays */}
-                  <path d="M 59 72 C 61 74, 61 78, 59 80" stroke="#ffffff" strokeWidth="1.6" fill="none" strokeLinecap="round" />
+                  <circle cx="46" cy="80" r="23" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
+                  <circle cx="46" cy="80" r="18.5" fill="#108a00" />
+                  {/* Flawless Telephone Handset Vector */}
+                  <g transform="translate(35.2, 69.2) scale(0.9)">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                      fill="#ffffff"
+                      stroke="#ffffff"
+                      strokeWidth="1.2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </g>
+                  {/* Voice Broadcast Waves */}
+                  <path d="M 72 74 C 75 77, 75 83, 72 86" stroke="#108a00" strokeWidth="1.8" fill="none" strokeLinecap="round" />
+                  <path d="M 77 70 C 81 75, 81 85, 77 90" stroke="#108a00" strokeWidth="1.8" fill="none" strokeLinecap="round" opacity="0.6" />
                 </g>
 
                 {/* Action Rays on Top Right */}
