@@ -1,7 +1,7 @@
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { NewsletterSignup } from "@/components/newsletter/NewsletterSignup";
 import { SoundFamiliarCards } from "@/components/home/SoundFamiliarCards";
-import { SecurityCardStack } from "@/components/home/SecurityCardStack";
+import { SecuritySection } from "@/components/home/SecuritySection";
 import { TrustedPartnersSection } from "@/components/home/TrustedPartnersSection";
 import { SuccessStoriesSection } from "@/components/home/SuccessStoriesSection";
 import { ControlTowerPreviewCTA } from "@/components/home/ControlTowerPreviewCTA";
@@ -149,14 +149,7 @@ const roles = [
   },
 ];
 
-const securityFeatures = [
-  { icon: Lock, title: "Row-Level Security", desc: "Every database query enforces user permissions automatically." },
-  { icon: Shield, title: "SOC 2 Infrastructure", desc: "Hosted on enterprise-grade cloud with SOC 2 certified infrastructure." },
-  { icon: Database, title: "Encrypted Data", desc: "All data encrypted at rest (PostgreSQL) and in transit (TLS 1.3)." },
-  { icon: Users, title: "OAuth 2.0 SSO", desc: "Industry-standard single sign-on via Google Workspace and Microsoft Azure AD." },
-  { icon: Eye, title: "Role-Based Access", desc: "Granular RBAC with module-level permissions and full audit trails." },
-  { icon: Globe, title: "GDPR Ready", desc: "Data export, deletion workflows, and configurable data residency." },
-];
+
 
 const valueProps = [
   { icon: Zap, label: "Connect in Minutes", desc: "API-based, no CRM migration" },
@@ -612,23 +605,9 @@ const ControlTower = () => {
           </div>
         </section>
 
-        {/* Security */}
-        <section className="section-surface py-12 md:py-16 px-6 lg:px-12">
-          <div className="max-w-5xl mx-auto">
-            <div className="mb-10 text-center">
-              <h2
-                className="text-3xl md:text-4xl font-bold mb-3"
-                style={{ color: colors.headline }}
-              >
-                Enterprise-Grade Security &amp; Compliance
-              </h2>
-              <p className="text-lg max-w-2xl mx-auto" style={{ color: colors.body }}>
-                Built for organizations that take data privacy seriously.
-              </p>
-            </div>
-            <SecurityCardStack items={securityFeatures} colors={colors} />
-          </div>
-        </section>
+        {/* Security & Data Control */}
+        <SecuritySection />
+
 
         {/* Deployment Options */}
         <section className="py-12 md:py-16 px-6 lg:px-12">
