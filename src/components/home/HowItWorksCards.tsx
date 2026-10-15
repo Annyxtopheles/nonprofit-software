@@ -235,19 +235,19 @@ export const HowItWorksCards: React.FC = () => {
                   {/* Iris */}
                   <circle cx="95" cy="80" r="18" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" />
 
-                  {/* Pupil with AI Spark Core */}
+                  {/* Pupil with Natural Optical Glints (No harsh green cut line) */}
                   <circle cx="95" cy="80" r="9" fill="#108a00" />
-                  <circle cx="92" cy="77" r="2.5" fill="#ffffff" />
+                  <circle cx="91" cy="76" r="3" fill="#ffffff" />
+                  <circle cx="97.5" cy="82.5" r="1.5" fill="#ffffff" opacity="0.85" />
 
-                  {/* Horizontal Scan Beam */}
-                  <line
-                    x1="62"
-                    y1="80"
-                    x2="128"
-                    y2="80"
+                  {/* Subtle Smart Scanning Arc */}
+                  <path
+                    d="M 83 68 A 16 16 0 0 1 107 68"
                     stroke="#108a00"
                     strokeWidth="2"
-                    className="transition-all duration-700 group-hover:translate-y-[-8px]"
+                    strokeLinecap="round"
+                    fill="none"
+                    className="transition-all duration-700 group-hover:stroke-white"
                   />
                 </g>
 
@@ -258,21 +258,23 @@ export const HowItWorksCards: React.FC = () => {
                   <rect x="142" y="42" width="14" height="6" rx="2" fill="#ffffff" />
                 </g>
 
-                {/* Floating Calendar Icon (Bottom Left) */}
+                {/* Floating Calendar Icon (Bottom Left, Crisp Top Corners) */}
                 <g className="transition-transform duration-500 ease-out group-hover:-translate-x-1.5 group-hover:translate-y-1.5 origin-center">
-                  <rect x="36" y="96" width="32" height="30" rx="6" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
-                  <rect x="36" y="96" width="32" height="9" rx="2" fill="#c8f0be" />
-                  <line x1="36" y1="105" x2="68" y2="105" stroke="#1c3422" strokeWidth="1.8" />
-                  <circle cx="45" cy="114" r="2" fill="#1c3422" />
-                  <circle cx="53" cy="114" r="2" fill="#1c3422" />
-                  <circle cx="60" cy="114" r="2" fill="#108a00" />
+                  <rect x="36" y="96" width="32" height="30" rx="6" fill="#ffffff" />
+                  <rect x="36" y="96" width="32" height="10" rx="6" fill="#c8f0be" />
+                  <rect x="36" y="101" width="32" height="5" fill="#c8f0be" />
+                  <line x1="36" y1="106" x2="68" y2="106" stroke="#1c3422" strokeWidth="1.8" />
+                  <circle cx="45" cy="115" r="2" fill="#1c3422" />
+                  <circle cx="53" cy="115" r="2" fill="#1c3422" />
+                  <circle cx="60" cy="115" r="2" fill="#108a00" />
+                  {/* Outer crisp stroke drawn on top */}
+                  <rect x="36" y="96" width="32" height="30" rx="6" fill="none" stroke="#1c3422" strokeWidth="2.2" />
                 </g>
 
-                {/* Action Rays */}
+                {/* Action Rays on Left Only (Right line removed) */}
                 <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
                   <line x1="48" y1="46" x2="40" y2="40" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                   <line x1="56" y1="36" x2="52" y2="28" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="168" y1="96" x2="176" y2="94" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                 </g>
               </svg>
             </div>
@@ -326,11 +328,12 @@ export const HowItWorksCards: React.FC = () => {
                   <rect x="82" y="100" width="12" height="22" rx="2" fill="#ffffff" />
                 </g>
 
-                {/* Center Foreground Window - ED Command Center */}
+                {/* Center Foreground Window - ED Command Center (Perfect top corners) */}
                 <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-center">
-                  <rect x="68" y="48" width="74" height="62" rx="10" fill="#ffffff" stroke="#1c3422" strokeWidth="2.4" />
+                  <rect x="68" y="48" width="74" height="62" rx="10" fill="#ffffff" />
                   {/* Top Window Bar with 3 Dots */}
-                  <rect x="68" y="48" width="74" height="15" rx="9" fill="#e7f5e3" />
+                  <rect x="68" y="48" width="74" height="15" rx="10" fill="#e7f5e3" />
+                  <rect x="68" y="55" width="74" height="8" fill="#e7f5e3" />
                   <line x1="68" y1="63" x2="142" y2="63" stroke="#1c3422" strokeWidth="2" />
                   <circle cx="78" cy="56" r="2" fill="#1c3422" />
                   <circle cx="85" cy="56" r="2" fill="#1c3422" />
@@ -343,6 +346,9 @@ export const HowItWorksCards: React.FC = () => {
 
                   <line x1="76" y1="96" x2="134" y2="96" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                   <line x1="76" y1="103" x2="114" y2="103" stroke="#108a00" strokeWidth="2.2" strokeLinecap="round" />
+
+                  {/* Crisp outer window stroke drawn on top */}
+                  <rect x="68" y="48" width="74" height="62" rx="10" fill="none" stroke="#1c3422" strokeWidth="2.4" />
                 </g>
 
                 {/* Action Rays */}
