@@ -370,8 +370,8 @@ export const WhatWeCanDoSection: React.FC = () => {
                   </defs>
                   <circle cx="164" cy="74" r="18" fill="#c8f0be" stroke="#1c3422" strokeWidth="2" />
                   <g clipPath="url(#event-avatar-clip-1)">
-                    <circle cx="164" cy="67" r="5.5" fill="#108a00" />
-                    <path d="M 144 92 C 144 76, 153 74, 164 74 C 175 74, 184 76, 184 92 Z" fill="#108a00" />
+                    <circle cx="164" cy="67" r="6.5" fill="#108a00" />
+                    <path d="M 149 92 C 149 81, 155 76.5, 164 76.5 C 173 76.5, 179 81, 179 92 Z" fill="#108a00" />
                   </g>
                   <circle cx="164" cy="74" r="18" fill="none" stroke="#1c3422" strokeWidth="2" />
                 </g>
@@ -385,8 +385,8 @@ export const WhatWeCanDoSection: React.FC = () => {
                   </defs>
                   <circle cx="72" cy="122" r="18" fill="#c8f0be" stroke="#1c3422" strokeWidth="2" />
                   <g clipPath="url(#event-avatar-clip-2)">
-                    <circle cx="72" cy="115" r="5.5" fill="#108a00" />
-                    <path d="M 52 140 C 52 124, 61 122, 72 122 C 83 122, 92 124, 92 140 Z" fill="#108a00" />
+                    <circle cx="72" cy="115" r="6.5" fill="#108a00" />
+                    <path d="M 57 140 C 57 129, 63 124.5, 72 124.5 C 81 124.5, 87 129, 87 140 Z" fill="#108a00" />
                   </g>
                   <circle cx="72" cy="122" r="18" fill="none" stroke="#1c3422" strokeWidth="2" />
                 </g>
