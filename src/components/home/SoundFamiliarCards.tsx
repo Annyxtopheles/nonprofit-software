@@ -18,7 +18,7 @@ export const SoundFamiliarCards: React.FC = () => {
           </p>
         </div>
 
-        {/* Infographic: Scattered Spreadsheet, Document, Envelope & Bar Chart */}
+        {/* Infographic: Tool Sprawl - Disconnected App Silos, Cut Link & Switching Friction */}
         <div
           aria-hidden="true"
           className="relative w-[165px] sm:w-[185px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
@@ -35,99 +35,75 @@ export const SoundFamiliarCards: React.FC = () => {
               fill="#e7f5e3"
             />
 
-            {/* Tilted Green Spreadsheet (Top Right) */}
-            <g className="transition-transform duration-500 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-1.5 group-hover:rotate-6 origin-center">
-              <rect
-                x="116"
-                y="22"
-                width="46"
-                height="56"
-                rx="8"
+            {/* Severed / Broken Connection Links */}
+            <g opacity="0.65">
+              <line x1="50" y1="46" x2="140" y2="46" stroke="#1c3422" strokeWidth="1.8" strokeDasharray="3 4" />
+              <line x1="50" y1="116" x2="140" y2="116" stroke="#1c3422" strokeWidth="1.8" strokeDasharray="3 4" />
+              <line x1="50" y1="46" x2="50" y2="116" stroke="#1c3422" strokeWidth="1.8" strokeDasharray="3 4" />
+              <line x1="140" y1="46" x2="140" y2="116" stroke="#1c3422" strokeWidth="1.8" strokeDasharray="3 4" />
+            </g>
+
+            {/* Central Broken Link / Severed Friction Badge */}
+            <g className="transition-transform duration-500 ease-out group-hover:scale-110 origin-center">
+              <circle cx="95" cy="80" r="15" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
+              <path d="M 88 73 L 102 87 M 102 73 L 88 87" stroke="#dc2626" strokeWidth="2.4" strokeLinecap="round" />
+            </g>
+
+            {/* Top-Left Island: CRM Cloud */}
+            <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:-translate-y-2 origin-center">
+              <rect x="22" y="24" width="50" height="42" rx="8" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
+              <text x="47" y="36" fill="#0c180a" fontSize="7.5" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">CRM</text>
+              {/* Cloud Symbol */}
+              <path
+                d="M 36 52 A 5 5 0 0 1 43 47 A 7 7 0 0 1 54 48 A 5 5 0 0 1 56 53 A 4 4 0 0 1 53 58 L 35 58 A 4 4 0 0 1 36 52 Z"
                 fill="#c8f0be"
                 stroke="#1c3422"
-                strokeWidth="2.4"
-                transform="rotate(10 139 50)"
+                strokeWidth="1.6"
               />
-              <g transform="rotate(10 139 50)">
-                <line x1="116" y1="36" x2="162" y2="36" stroke="#1c3422" strokeWidth="2" />
-                <line x1="116" y1="50" x2="162" y2="50" stroke="#1c3422" strokeWidth="2" />
-                <line x1="116" y1="64" x2="162" y2="64" stroke="#1c3422" strokeWidth="2" />
-                <line x1="131" y1="22" x2="131" y2="78" stroke="#1c3422" strokeWidth="2" />
-                <line x1="147" y1="22" x2="147" y2="78" stroke="#1c3422" strokeWidth="2" />
-              </g>
             </g>
 
-            {/* Tilted Green Mini Bar Chart Card (Bottom Right) */}
-            <g className="transition-transform duration-500 ease-out group-hover:translate-x-1 group-hover:translate-y-1 group-hover:rotate-3 origin-center">
-              <rect
-                x="114"
-                y="92"
-                width="48"
-                height="52"
-                rx="9"
-                fill="#14a800"
-                stroke="#1c3422"
-                strokeWidth="2.4"
-                transform="rotate(-5 138 118)"
-              />
-              <g transform="rotate(-5 138 118)">
-                <rect x="123" y="122" width="7" height="15" rx="2" fill="#1c3422" />
-                <rect x="134" y="113" width="7" height="24" rx="2" fill="#1c3422" />
-                <rect x="145" y="104" width="7" height="33" rx="2" fill="#1c3422" />
-              </g>
+            {/* Top-Right Island: Spreadsheet */}
+            <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:-translate-y-2 origin-center">
+              <rect x="118" y="22" width="50" height="44" rx="8" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" />
+              <rect x="123" y="27" width="40" height="10" rx="3" fill="#14a800" />
+              <text x="143" y="34.5" fill="#ffffff" fontSize="6.5" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">SHEET</text>
+              <line x1="123" y1="45" x2="163" y2="45" stroke="#1c3422" strokeWidth="1.6" />
+              <line x1="123" y1="54" x2="163" y2="54" stroke="#1c3422" strokeWidth="1.6" />
+              <line x1="136" y1="37" x2="136" y2="62" stroke="#1c3422" strokeWidth="1.6" />
+              <line x1="150" y1="37" x2="150" y2="62" stroke="#1c3422" strokeWidth="1.6" />
             </g>
 
-            {/* White Document Card (Center Left) */}
-            <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:-translate-y-1 group-hover:rotate-[-6deg] origin-center">
-              <rect
-                x="50"
-                y="42"
-                width="62"
-                height="74"
-                rx="9"
-                fill="#ffffff"
-                stroke="#1c3422"
-                strokeWidth="2.4"
-                transform="rotate(-10 81 79)"
-              />
-              <g transform="rotate(-10 81 79)">
-                <circle cx="66" cy="58" r="6" fill="#14a800" stroke="#1c3422" strokeWidth="2" />
-                <line x1="64" y1="74" x2="98" y2="74" stroke="#1c3422" strokeWidth="2.4" strokeLinecap="round" />
-                <line x1="64" y1="84" x2="96" y2="84" stroke="#1c3422" strokeWidth="2.4" strokeLinecap="round" />
-                <line x1="64" y1="94" x2="88" y2="94" stroke="#1c3422" strokeWidth="2.4" strokeLinecap="round" />
-              </g>
+            {/* Bottom-Left Island: Finance / QuickBooks Ledger */}
+            <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:translate-y-2 origin-center">
+              <rect x="22" y="94" width="52" height="44" rx="8" fill="#14a800" stroke="#1c3422" strokeWidth="2.2" />
+              <rect x="27" y="99" width="42" height="34" rx="5" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
+              <text x="37" y="120" fill="#14a800" fontSize="13" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$</text>
+              <line x1="46" y1="109" x2="63" y2="109" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
+              <line x1="46" y1="116" x2="60" y2="116" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
+              <line x1="46" y1="123" x2="62" y2="123" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
             </g>
 
-            {/* White Mail Envelope (Center Right) */}
-            <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:translate-y-0.5 group-hover:rotate-[-3deg] origin-center">
-              <rect
-                x="100"
-                y="65"
-                width="58"
-                height="42"
-                rx="7"
-                fill="#ffffff"
-                stroke="#1c3422"
-                strokeWidth="2.4"
-                transform="rotate(4 129 86)"
-              />
+            {/* Bottom-Right Island: Eventbrite Ticket Stub */}
+            <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:translate-y-2 origin-center">
               <path
-                d="M 102 68 L 129 88 L 156 68"
+                d="M 118 98 Q 118 94 122 94 L 162 94 Q 166 94 166 98 L 166 110 A 5 5 0 0 0 166 120 L 166 132 Q 166 136 162 136 L 122 136 Q 118 136 118 132 L 118 120 A 5 5 0 0 0 118 110 Z"
+                fill="#ffffff"
                 stroke="#1c3422"
-                strokeWidth="2.4"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-                transform="rotate(4 129 86)"
+                strokeWidth="2.2"
               />
+              <line x1="140" y1="96" x2="140" y2="134" stroke="#1c3422" strokeWidth="1.6" strokeDasharray="3 3" />
+              <circle cx="129" cy="115" r="5" fill="#14a800" />
+              <line x1="146" y1="108" x2="159" y2="108" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
+              <line x1="146" y1="115" x2="156" y2="115" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
+              <line x1="146" y1="122" x2="158" y2="122" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
             </g>
 
             {/* Action Rays */}
             <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
-              <line x1="42" y1="36" x2="35" y2="28" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-              <line x1="52" y1="30" x2="52" y2="20" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-              <line x1="166" y1="126" x2="176" y2="128" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-              <line x1="164" y1="135" x2="173" y2="144" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              <line x1="42" y1="16" x2="36" y2="10" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              <line x1="168" y1="16" x2="174" y2="10" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              <line x1="172" y1="142" x2="180" y2="148" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              <line x1="16" y1="142" x2="10" y2="148" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
             </g>
           </svg>
         </div>
@@ -147,7 +123,7 @@ export const SoundFamiliarCards: React.FC = () => {
           </p>
         </div>
 
-        {/* Infographic: Duplicate Profile Cards, Data Health Scan & Warning Alert */}
+        {/* Infographic: Data Decay - Crumbling Profile, Missing Fields, Duplicate Collisions & Audit Gauge */}
         <div
           aria-hidden="true"
           className="relative w-[165px] sm:w-[185px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
@@ -164,67 +140,82 @@ export const SoundFamiliarCards: React.FC = () => {
               fill="#e7f5e3"
             />
 
-            {/* Back Duplicate Card (Top Right) */}
-            <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:-translate-y-1.5 origin-center">
+            {/* Back Stale Duplicate Card Peeking Out */}
+            <g className="transition-transform duration-500 ease-out group-hover:translate-x-3 group-hover:-translate-y-2 group-hover:rotate-6 origin-center">
               <rect
-                x="102"
-                y="34"
-                width="56"
-                height="62"
-                rx="8"
+                x="88"
+                y="24"
+                width="68"
+                height="82"
+                rx="9"
                 fill="#c8f0be"
                 stroke="#1c3422"
-                strokeWidth="2.4"
-                transform="rotate(8 130 65)"
+                strokeWidth="2.2"
+                transform="rotate(8 122 65)"
               />
-              <g transform="rotate(8 130 65)">
-                <circle cx="118" cy="48" r="5" fill="#1c3422" />
-                <line x1="128" y1="48" x2="148" y2="48" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-                <line x1="112" y1="62" x2="148" y2="62" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-                <line x1="112" y1="72" x2="136" y2="72" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+              <g transform="rotate(8 122 65)">
+                <circle cx="106" cy="42" r="8" fill="#14a800" opacity="0.4" />
+                <line x1="120" y1="40" x2="144" y2="40" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
+                <line x1="98" y1="60" x2="146" y2="60" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
+                <line x1="98" y1="72" x2="134" y2="72" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
               </g>
             </g>
 
-            {/* Front Duplicate Card (Center Left) */}
-            <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:translate-y-1 origin-center">
+            {/* Foreground Main Donor Profile Card */}
+            <g className="transition-transform duration-500 ease-out group-hover:-translate-x-1.5 origin-center">
               <rect
-                x="52"
-                y="52"
-                width="64"
-                height="70"
-                rx="8"
+                x="28"
+                y="30"
+                width="88"
+                height="106"
+                rx="10"
                 fill="#ffffff"
                 stroke="#1c3422"
                 strokeWidth="2.4"
-                transform="rotate(-5 84 87)"
               />
-              <g transform="rotate(-5 84 87)">
-                <circle cx="70" cy="68" r="6" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" />
-                <line x1="82" y1="68" x2="106" y2="68" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                <line x1="64" y1="84" x2="106" y2="84" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                <line x1="64" y1="94" x2="98" y2="94" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                <line x1="64" y1="104" x2="88" y2="104" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-              </g>
+              {/* Header Bar */}
+              <rect x="28" y="30" width="88" height="20" rx="10" fill="#f4fbf1" />
+              <rect x="28" y="40" width="88" height="10" fill="#f4fbf1" />
+              <line x1="28" y1="50" x2="116" y2="50" stroke="#1c3422" strokeWidth="1.8" />
+              <circle cx="38" cy="40" r="2.5" fill="#ef4444" />
+              <circle cx="45" cy="40" r="2.5" fill="#f59e0b" />
+              <text x="76" y="43" fill="#1c3422" fontSize="6.5" fontWeight="700" fontFamily="sans-serif">DONOR PROFILE</text>
+
+              {/* Missing Photo Slot (Dashed red outline with ?) */}
+              <circle cx="48" cy="70" r="11" fill="#fef2f2" stroke="#ef4444" strokeWidth="1.8" strokeDasharray="3 3" />
+              <text x="48" y="74.5" fill="#ef4444" fontSize="11" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">?</text>
+
+              {/* Field 1: Name line with 2x Duplicate pill tag */}
+              <line x1="66" y1="65" x2="108" y2="65" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              <rect x="66" y="71" width="42" height="12" rx="4" fill="#fee2e2" stroke="#ef4444" strokeWidth="1.2" />
+              <text x="87" y="79.5" fill="#dc2626" fontSize="6" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">2× DUPLICATE</text>
+
+              {/* Field 2: Missing email slot */}
+              <rect x="36" y="89" width="72" height="14" rx="4" fill="#f8fafc" stroke="#dc2626" strokeWidth="1.4" strokeDasharray="3 3" />
+              <text x="42" y="99" fill="#dc2626" fontSize="6" fontWeight="800" fontFamily="sans-serif">[MISSING EMAIL]</text>
+
+              {/* Field 3: Stale Address Dotted Line */}
+              <line x1="36" y1="114" x2="88" y2="114" stroke="#94a3b8" strokeWidth="2" strokeLinecap="round" strokeDasharray="4 3" />
+              <circle cx="102" cy="114" r="3" fill="#f59e0b" />
             </g>
 
-            {/* Warning Triangle Badge: "Duplicate Detected" */}
-            <g className="transition-transform duration-500 ease-out group-hover:scale-110 origin-[132px_104px]">
-              <polygon
-                points="132,88 152,122 112,122"
-                fill="#14a800"
-                stroke="#1c3422"
-                strokeWidth="2.4"
-                strokeLinejoin="round"
-              />
-              {/* Exclamation mark inside */}
-              <line x1="132" y1="98" x2="132" y2="109" stroke="#ffffff" strokeWidth="2.4" strokeLinecap="round" />
-              <circle cx="132" cy="115" r="1.5" fill="#ffffff" />
+            {/* Floating Audit Alert Badge (Bottom Right) */}
+            <g className="transition-transform duration-500 ease-out group-hover:scale-110 group-hover:rotate-6 origin-[140px_108px]">
+              <circle cx="140" cy="106" r="22" fill="#14a800" stroke="#1c3422" strokeWidth="2.4" />
+              <circle cx="140" cy="106" r="17" fill="#ffffff" />
+              {/* Warning Triangle */}
+              <polygon points="140,94 150,111 130,111" fill="#ef4444" stroke="#1c3422" strokeWidth="1.5" strokeLinejoin="round" />
+              <line x1="140" y1="100" x2="140" y2="105" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" />
+              <circle cx="140" cy="108" r="0.9" fill="#ffffff" />
+              {/* Audit Alert Tag */}
+              <rect x="118" y="120" width="44" height="12" rx="4" fill="#1c3422" />
+              <text x="140" y="128.5" fill="#ffffff" fontSize="5.8" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">AUDIT ALERT</text>
             </g>
 
             {/* Action Rays */}
             <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
-              <line x1="44" y1="44" x2="36" y2="38" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-              <line x1="164" y1="70" x2="174" y2="68" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              <line x1="22" y1="28" x2="16" y2="22" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              <line x1="168" y1="56" x2="176" y2="52" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
             </g>
           </svg>
         </div>
@@ -244,7 +235,7 @@ export const SoundFamiliarCards: React.FC = () => {
           </p>
         </div>
 
-        {/* Infographic: Checklist Clipboard, Repetitive Arrow Loops & Tilted Stylus/Pen */}
+        {/* Infographic: Manual Busywork - Overflowing Task Stack, Ticking Clock & Endless Repetition Loop */}
         <div
           aria-hidden="true"
           className="relative w-[165px] sm:w-[185px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
@@ -261,122 +252,101 @@ export const SoundFamiliarCards: React.FC = () => {
               fill="#e7f5e3"
             />
 
-            {/* Backing Green Clipboard Frame */}
-            <g className="transition-transform duration-500 ease-out group-hover:translate-x-1 group-hover:-translate-y-1 origin-center">
-              <rect
-                x="56"
-                y="32"
-                width="72"
-                height="92"
-                rx="12"
-                fill="#14a800"
-                stroke="#1c3422"
-                strokeWidth="2.4"
-                transform="rotate(-5 92 78)"
-              />
-              <rect
-                x="76"
-                y="24"
-                width="32"
-                height="12"
-                rx="4"
-                fill="#1c3422"
-                transform="rotate(-5 92 30)"
-              />
-              <rect
-                x="86"
-                y="22"
-                width="12"
-                height="6"
-                rx="2"
-                fill="#ffffff"
-                transform="rotate(-5 92 25)"
-              />
-            </g>
+            {/* Back Stack Layer 1 (Tilted Soft Green) */}
+            <rect
+              x="28"
+              y="54"
+              width="60"
+              height="72"
+              rx="6"
+              fill="#c8f0be"
+              stroke="#1c3422"
+              strokeWidth="2.2"
+              transform="rotate(-9 58 90)"
+            />
 
-            {/* Foreground White Checklist Sheet */}
-            <g className="transition-transform duration-500 ease-out group-hover:-translate-x-1.5 group-hover:-translate-y-1.5 origin-center">
+            {/* Back Stack Layer 2 (Tilted Darker Green) */}
+            <rect
+              x="36"
+              y="48"
+              width="60"
+              height="72"
+              rx="6"
+              fill="#14a800"
+              stroke="#1c3422"
+              strokeWidth="2.2"
+              transform="rotate(6 66 84)"
+            />
+
+            {/* Front Paper: Manual Thank-You Letter / Task Sheet */}
+            <g className="transition-transform duration-500 ease-out group-hover:-translate-y-1.5 origin-center">
               <rect
-                x="64"
+                x="32"
                 y="42"
                 width="64"
-                height="84"
-                rx="8"
+                height="82"
+                rx="7"
                 fill="#ffffff"
                 stroke="#1c3422"
                 strokeWidth="2.4"
               />
+              {/* Thank You Header Stamp with Heart */}
+              <rect x="40" y="50" width="13" height="13" rx="3" fill="#e7f5e3" stroke="#14a800" strokeWidth="1.4" />
+              <path
+                d="M 43.5 56.5 C 43.5 54.8 45.5 53.5 46.5 55 C 47.5 53.5 49.5 54.8 49.5 56.5 C 49.5 58.5 46.5 60.5 46.5 60.5 C 46.5 60.5 43.5 58.5 43.5 56.5 Z"
+                fill="#14a800"
+              />
+              <line x1="58" y1="54" x2="88" y2="54" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+              <line x1="58" y1="60" x2="82" y2="60" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
 
-              {/* Checklist Row 1 */}
-              <rect x="74" y="56" width="11" height="11" rx="3" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" />
-              <path d="M 76 61.5 L 78.5 64 L 83 58.5" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-              <line x1="92" y1="62" x2="118" y2="62" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-
-              {/* Checklist Row 2 */}
-              <rect x="74" y="74" width="11" height="11" rx="3" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" />
-              <path d="M 76 79.5 L 78.5 82 L 83 76.5" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-              <line x1="92" y1="80" x2="116" y2="80" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-
-              {/* Checklist Row 3 */}
-              <rect x="74" y="92" width="11" height="11" rx="3" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" />
-              <path d="M 76 97.5 L 78.5 100 L 83 94.5" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-              <line x1="92" y1="98" x2="112" y2="98" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-
-              {/* Checklist Row 4 (In Progress / Pending) */}
-              <rect x="74" y="110" width="11" height="11" rx="3" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.8" />
-              <line x1="92" y1="116" x2="108" y2="116" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              {/* Repetitive manual lines */}
+              <line x1="40" y1="72" x2="88" y2="72" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+              <line x1="40" y1="80" x2="86" y2="80" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+              <line x1="40" y1="88" x2="82" y2="88" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+              <line x1="40" y1="96" x2="76" y2="96" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+              <line x1="40" y1="104" x2="68" y2="104" stroke="#14a800" strokeWidth="2" strokeLinecap="round" strokeDasharray="3 3" />
             </g>
 
-            {/* Tilted Stylus / Pen (Right) */}
-            <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:-translate-y-2 group-hover:rotate-12 origin-[140px_100px]">
-              <rect
-                x="136"
-                y="50"
-                width="12"
-                height="58"
-                rx="4"
-                fill="#c8f0be"
-                stroke="#1c3422"
-                strokeWidth="2.2"
-                transform="rotate(32 142 79)"
-              />
-              <path
-                d="M 124 100 L 118 108 L 129 104 Z"
-                fill="#1c3422"
-                stroke="#1c3422"
-                strokeWidth="1.5"
-              />
-              <rect
-                x="152"
-                y="45"
-                width="12"
-                height="8"
-                rx="2"
-                fill="#ffffff"
-                stroke="#1c3422"
-                strokeWidth="2"
-                transform="rotate(32 158 49)"
-              />
+            {/* Tilted Pen / Stylus */}
+            <g className="transition-transform duration-500 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-2 group-hover:rotate-12 origin-[82px_104px]">
+              <rect x="76" y="74" width="7" height="38" rx="2.5" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" transform="rotate(26 79 93)" />
+              <polygon points="72,112 75,117 80,113" fill="#1c3422" />
             </g>
 
-            {/* Repetitive Loop Arc Indicator */}
-            <g className="transition-transform duration-500 ease-out group-hover:rotate-[28deg] origin-[145px_36px]">
-              <path
-                d="M 136 32 C 144 26, 154 30, 156 38"
-                stroke="#14a800"
-                strokeWidth="2.4"
-                strokeLinecap="round"
-                fill="none"
-              />
-              <polygon points="159,34 156,41 151,37" fill="#14a800" />
+            {/* Right: Ticking Clock */}
+            <g className="transition-transform duration-500 ease-out group-hover:rotate-12 origin-[140px_72px]">
+              <circle cx="140" cy="72" r="27" fill="#ffffff" stroke="#1c3422" strokeWidth="2.6" />
+              <circle cx="140" cy="72" r="22" fill="#f4fbf1" />
+              {/* Top Stopwatch Knob */}
+              <rect x="137" y="40" width="6" height="5" rx="1.5" fill="#1c3422" />
+              <line x1="134" y1="40" x2="146" y2="40" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+              {/* Clock Dial Marks */}
+              <circle cx="140" cy="55" r="1.5" fill="#1c3422" />
+              <circle cx="157" cy="72" r="1.5" fill="#1c3422" />
+              <circle cx="140" cy="89" r="1.5" fill="#1c3422" />
+              <circle cx="123" cy="72" r="1.5" fill="#1c3422" />
+              {/* Hands showing time pressure */}
+              <line x1="140" y1="72" x2="140" y2="58" stroke="#1c3422" strokeWidth="2.4" strokeLinecap="round" />
+              <line x1="140" y1="72" x2="152" y2="68" stroke="#ef4444" strokeWidth="2" strokeLinecap="round" />
+              <circle cx="140" cy="72" r="3" fill="#1c3422" />
+              {/* Ticking Rays */}
+              <line x1="166" y1="56" x2="173" y2="50" stroke="#14a800" strokeWidth="2" strokeLinecap="round" />
+              <line x1="170" y1="66" x2="178" y2="64" stroke="#14a800" strokeWidth="2" strokeLinecap="round" />
+            </g>
+
+            {/* Endless Loop Arrow Badge (Bottom Right) */}
+            <g className="transition-transform duration-500 ease-out group-hover:rotate-45 origin-[140px_120px]">
+              <circle cx="140" cy="120" r="15" fill="#14a800" stroke="#1c3422" strokeWidth="2.2" />
+              <path d="M 133 120 A 7 7 0 1 1 147 120" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
+              <polygon points="146,114 151,120 144,122" fill="#ffffff" />
+              <path d="M 147 120 A 7 7 0 1 1 133 120" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
+              <polygon points="134,126 129,120 136,118" fill="#ffffff" />
             </g>
 
             {/* Action Rays */}
             <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
-              <line x1="48" y1="46" x2="40" y2="40" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-              <line x1="56" y1="36" x2="52" y2="28" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-              <line x1="168" y1="96" x2="176" y2="94" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-              <line x1="166" y1="106" x2="174" y2="114" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              <line x1="20" y1="46" x2="14" y2="40" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              <line x1="26" y1="36" x2="22" y2="28" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
             </g>
           </svg>
         </div>
@@ -396,7 +366,7 @@ export const SoundFamiliarCards: React.FC = () => {
           </p>
         </div>
 
-        {/* Infographic: Disconnected Windows, Scattered Spreadsheets & Focus Magnifying Glass */}
+        {/* Infographic: No Single Truth - Conflicting Directional Signposts with Contradictory Metric Numbers */}
         <div
           aria-hidden="true"
           className="relative w-[165px] sm:w-[185px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
@@ -413,123 +383,54 @@ export const SoundFamiliarCards: React.FC = () => {
               fill="#e7f5e3"
             />
 
-            {/* Tilted Green App Window 1 (Top Right) */}
-            <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:-translate-y-1.5 group-hover:rotate-6 origin-center">
-              <rect
-                x="110"
-                y="24"
-                width="54"
-                height="44"
-                rx="7"
-                fill="#c8f0be"
-                stroke="#1c3422"
-                strokeWidth="2.4"
-                transform="rotate(8 137 46)"
-              />
-              <g transform="rotate(8 137 46)">
-                <circle cx="118" cy="32" r="2" fill="#1c3422" />
-                <circle cx="124" cy="32" r="2" fill="#1c3422" />
-                <circle cx="130" cy="32" r="2" fill="#1c3422" />
-                <line x1="110" y1="38" x2="164" y2="38" stroke="#1c3422" strokeWidth="1.8" />
-                <rect x="116" y="44" width="12" height="18" rx="2" fill="#1c3422" />
-                <rect x="132" y="50" width="12" height="12" rx="2" fill="#1c3422" />
-                <rect x="148" y="46" width="10" height="16" rx="2" fill="#1c3422" />
-              </g>
+            {/* Central Vertical Signpost */}
+            <rect x="91" y="36" width="8" height="110" rx="3" fill="#1c3422" />
+            <ellipse cx="95" cy="144" rx="22" ry="6" fill="#c8f0be" stroke="#1c3422" strokeWidth="2" />
+
+            {/* Top Thought Bubble: Puzzled Questions "? ? ?" */}
+            <g className="transition-transform duration-500 ease-out group-hover:-translate-y-1.5 origin-center">
+              <rect x="68" y="14" width="54" height="24" rx="12" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
+              <text x="95" y="30.5" fill="#14a800" fontSize="13" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">? ? ?</text>
             </g>
 
-            {/* Tilted Green Spreadsheet Window 2 (Bottom Left) */}
-            <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:translate-y-1 group-hover:rotate-[-4deg] origin-center">
-              <rect
-                x="48"
-                y="88"
-                width="58"
-                height="46"
-                rx="7"
-                fill="#14a800"
-                stroke="#1c3422"
-                strokeWidth="2.4"
-                transform="rotate(-6 77 111)"
-              />
-              <g transform="rotate(-6 77 111)">
-                <circle cx="56" cy="96" r="2" fill="#1c3422" />
-                <circle cx="62" cy="96" r="2" fill="#1c3422" />
-                <line x1="48" y1="102" x2="106" y2="102" stroke="#1c3422" strokeWidth="1.8" />
-                <line x1="48" y1="118" x2="106" y2="118" stroke="#1c3422" strokeWidth="1.6" />
-                <line x1="72" y1="102" x2="72" y2="134" stroke="#1c3422" strokeWidth="1.6" />
-                <line x1="88" y1="102" x2="88" y2="134" stroke="#1c3422" strokeWidth="1.6" />
-              </g>
+            {/* Sign 1: CRM says "$62,000" (Pointing Left, Green) */}
+            <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:-rotate-3 origin-[95px_54px]">
+              <path d="M 28 54 L 42 42 L 95 42 L 95 66 L 42 66 Z" fill="#14a800" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
+              <text x="64" y="58" fill="#ffffff" fontSize="10" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$62,000</text>
+              <path d="M 38 56 L 41 52 L 44 56" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
             </g>
 
-            {/* Central White Dashboard Window */}
-            <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-center">
-              <rect
-                x="76"
-                y="46"
-                width="66"
-                height="54"
-                rx="8"
-                fill="#ffffff"
-                stroke="#1c3422"
-                strokeWidth="2.4"
-              />
-              <circle cx="84" cy="54" r="2.2" fill="#1c3422" />
-              <circle cx="91" cy="54" r="2.2" fill="#1c3422" />
-              <circle cx="98" cy="54" r="2.2" fill="#1c3422" />
-              <line x1="76" y1="60" x2="142" y2="60" stroke="#1c3422" strokeWidth="2" />
-              <rect x="82" y="66" width="24" height="26" rx="4" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.8" />
-              <rect x="112" y="66" width="24" height="26" rx="4" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.8" />
-              <line x1="86" y1="74" x2="102" y2="74" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-              <line x1="86" y1="82" x2="98" y2="82" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-              <circle cx="124" cy="79" r="6" fill="#14a800" />
+            {/* Sign 2: QuickBooks says "$45,000" (Pointing Right, White) */}
+            <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:rotate-3 origin-[95px_78px]">
+              <path d="M 162 78 L 148 66 L 95 66 L 95 90 L 148 90 Z" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
+              <text x="126" y="82" fill="#1c3422" fontSize="10" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$45,000</text>
+              <line x1="150" y1="78" x2="156" y2="78" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
             </g>
 
-            {/* Focus Magnifying Glass with Question Mark */}
-            <g className="transition-transform duration-500 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-1.5 group-hover:rotate-[-8deg] origin-[128px_98px]">
-              <circle
-                cx="122"
-                cy="94"
-                r="20"
-                fill="#ffffff"
-                stroke="#1c3422"
-                strokeWidth="2.6"
-              />
-              <circle
-                cx="122"
-                cy="94"
-                r="14"
-                fill="#e7f5e3"
-                stroke="#14a800"
-                strokeWidth="1.8"
-                strokeDasharray="3 3"
-              />
-              <text
-                x="122"
-                y="100"
-                textAnchor="middle"
-                fill="#118f00"
-                fontSize="16"
-                fontWeight="900"
-                fontFamily="sans-serif"
-              >
-                ?
-              </text>
-              <line
-                x1="136"
-                y1="108"
-                x2="152"
-                y2="124"
-                stroke="#1c3422"
-                strokeWidth="4"
-                strokeLinecap="round"
-              />
+            {/* Sign 3: Spreadsheet says "$38,500" (Pointing Left, Mint) */}
+            <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:rotate-2 origin-[95px_102px]">
+              <path d="M 32 102 L 46 90 L 95 90 L 95 114 L 46 114 Z" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
+              <text x="66" y="106" fill="#0c180a" fontSize="10" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$38,500</text>
+              <path d="M 40 100 L 40 104 M 37 102 L 40 105 L 43 102" stroke="#dc2626" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+            </g>
+
+            {/* Sign 4: Portal says "$51,200" (Pointing Right, White) */}
+            <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:-rotate-2 origin-[95px_122px]">
+              <path d="M 156 122 L 144 112 L 95 112 L 95 132 L 144 132 Z" fill="#ffffff" stroke="#1c3422" strokeWidth="2" strokeLinejoin="round" />
+              <text x="123" y="125.5" fill="#1c3422" fontSize="9" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">$51,200</text>
+            </g>
+
+            {/* Discrepancy Indicator Badge "≠" (Not Equal) */}
+            <g className="transition-transform duration-500 ease-out group-hover:scale-110 origin-[162px_42px]">
+              <circle cx="162" cy="40" r="14" fill="#fee2e2" stroke="#ef4444" strokeWidth="2.2" />
+              <text x="162" y="46" fill="#dc2626" fontSize="15" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">≠</text>
             </g>
 
             {/* Action Rays */}
             <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
-              <line x1="46" y1="56" x2="38" y2="50" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-              <line x1="56" y1="46" x2="52" y2="38" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-              <line x1="166" y1="84" x2="176" y2="84" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-              <line x1="164" y1="94" x2="172" y2="102" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              <line x1="44" y1="36" x2="38" y2="30" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              <line x1="52" y1="28" x2="50" y2="20" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+              <line x1="168" y1="140" x2="176" y2="144" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
             </g>
           </svg>
         </div>
@@ -539,3 +440,4 @@ export const SoundFamiliarCards: React.FC = () => {
 };
 
 export default SoundFamiliarCards;
+
