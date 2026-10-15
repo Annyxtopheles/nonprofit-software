@@ -22,6 +22,8 @@ import {
   Globe, ShieldCheck, Link2, ScanEye, Sparkles
 } from "lucide-react";
 import donorIntelligenceImg from "@/assets/screenshots/agent-donor-intelligence.png";
+import heroBgNetwork from "@/assets/hero-bg-network.png";
+import heroControlTowerHub from "@/assets/hero-control-tower-hub.png";
 
 import meetingsImg from "@/assets/screenshots/meetings-view.png";
 import reportsImg from "@/assets/screenshots/reports-analytics.png";
@@ -138,48 +140,80 @@ const ControlTower = () => {
       <div style={{ backgroundColor: colors.bg, color: colors.headline }}>
         {/* Hero */}
         <section
-          className="py-16 md:py-24 px-6 lg:px-12"
+          className="relative overflow-hidden py-16 md:py-24 px-6 lg:px-12"
           style={{
             background: "linear-gradient(180deg, #EBF6E7 0%, #F5FAF3 50%, #FFFFFF 100%)",
           }}
         >
-          <div className="max-w-5xl mx-auto text-center">
-            <div
-              className="inline-flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-full mb-6"
-              style={{ backgroundColor: colors.accentLight, color: colors.accent }}
-            >
-              <Layers className="w-4 h-4" />
-              NONPROFIT AI CONTROL TOWER
-            </div>
-            <h1
-              className="text-4xl md:text-5xl lg:text-[52px] font-extrabold leading-tight mb-6"
-              style={{ color: colors.headline }}
-            >
-              One place to run your nonprofit.
-            </h1>
-            <p
-              className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-4"
-              style={{ color: colors.body }}
-            >
-              Bring your donors, grants, events, programs, volunteers, and board information into one clear view.
-            </p>
-            <p
-              className="text-base md:text-lg font-medium leading-relaxed max-w-2xl mx-auto mb-8"
-              style={{ color: colors.headline }}
-            >
-              See what needs attention while keeping the tools your team already uses.
-            </p>
-            <div className="flex justify-center">
-              <Button
-                size="lg"
-                className="font-bold text-white hover:opacity-90"
-                style={{ backgroundColor: colors.accent }}
-                asChild
-              >
-                <a href="https://collabai.software/contact" target="_blank" rel="noopener noreferrer">
-                  Book Free Demo <ArrowRight className="w-4 h-4 ml-1" />
-                </a>
-              </Button>
+          {/* Subtle AI Network Background Overlay */}
+          <div
+            aria-hidden="true"
+            className="absolute inset-0 pointer-events-none select-none z-0"
+          >
+            <img
+              src={heroBgNetwork}
+              alt=""
+              className="w-full h-full object-cover object-top opacity-40 mix-blend-multiply"
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-white/80" />
+          </div>
+
+          <div className="relative z-10 max-w-6xl xl:max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+              {/* Left Column: Hero Content */}
+              <div className="lg:col-span-7 xl:col-span-6 text-center lg:text-left">
+                <div
+                  className="inline-flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-full mb-6"
+                  style={{ backgroundColor: colors.accentLight, color: colors.accent }}
+                >
+                  <Layers className="w-4 h-4" />
+                  NONPROFIT AI CONTROL TOWER
+                </div>
+                <h1
+                  className="text-4xl md:text-5xl lg:text-[52px] font-extrabold leading-tight mb-6"
+                  style={{ color: colors.headline }}
+                >
+                  One place to run your nonprofit.
+                </h1>
+                <p
+                  className="text-lg md:text-xl leading-relaxed max-w-xl mx-auto lg:mx-0 mb-4"
+                  style={{ color: colors.body }}
+                >
+                  Bring your donors, grants, events, programs, volunteers, and board information into one clear view.
+                </p>
+                <p
+                  className="text-base md:text-lg font-medium leading-relaxed max-w-lg mx-auto lg:mx-0 mb-8"
+                  style={{ color: colors.headline }}
+                >
+                  See what needs attention while keeping the tools your team already uses.
+                </p>
+                <div className="flex justify-center lg:justify-start">
+                  <Button
+                    size="lg"
+                    className="font-bold text-white hover:opacity-90 rounded-xl px-7 py-3.5 shadow-sm transition-all"
+                    style={{ backgroundColor: colors.accent }}
+                    asChild
+                  >
+                    <a href="https://collabai.software/contact" target="_blank" rel="noopener noreferrer">
+                      Book Free Demo <ArrowRight className="w-4 h-4 ml-1.5" />
+                    </a>
+                  </Button>
+                </div>
+              </div>
+
+              {/* Right Column: Control Tower Hub & Spoke Diagram */}
+              <div className="lg:col-span-5 xl:col-span-6 flex items-center justify-center relative">
+                {/* Soft ambient glow behind diagram */}
+                <div className="absolute w-[340px] h-[340px] sm:w-[440px] sm:h-[440px] rounded-full bg-[#108a00]/10 blur-3xl pointer-events-none -z-10" />
+
+                <div className="relative w-full max-w-[480px] sm:max-w-[540px] lg:max-w-[580px] animate-float-slow transition-transform duration-500 hover:scale-[1.02]">
+                  <img
+                    src={heroControlTowerHub}
+                    alt="Control Tower central hub connecting CRM, Volunteer Management, Grant Portals, Accounting, Events, Email, and Payments"
+                    className="w-full h-auto object-contain drop-shadow-[0_12px_32px_rgba(16,138,0,0.12)]"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </section>
