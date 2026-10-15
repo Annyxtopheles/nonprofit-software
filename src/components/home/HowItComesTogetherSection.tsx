@@ -32,60 +32,62 @@ export const HowItComesTogetherSection: React.FC = () => {
               </p>
             </div>
 
-            {/* Bottom-Right Infographic: Interconnected System Nodes & Beams */}
+            {/* Bottom-Right Infographic: Multi-System Data Streams Converging into Central Hub */}
             <div
               aria-hidden="true"
-              className="absolute right-0 bottom-0 w-[190px] h-[190px] pointer-events-none select-none opacity-40 group-hover:opacity-65 transition-opacity duration-300"
+              className="absolute right-0 bottom-0 w-[190px] h-[190px] pointer-events-none select-none opacity-50 group-hover:opacity-75 transition-opacity duration-300"
             >
               <svg viewBox="0 0 190 190" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full overflow-visible">
-                {/* Connecting Curved Beams */}
-                <path
-                  d="M 30 160 C 60 140, 90 120, 140 100"
-                  stroke="#52d039"
-                  strokeWidth="2.5"
-                  strokeDasharray="4 4"
-                  className="transition-all duration-700 group-hover:stroke-white"
-                />
-                <path
-                  d="M 50 180 C 80 160, 110 130, 140 100"
-                  stroke="#52d039"
-                  strokeWidth="2"
-                />
-                <path
-                  d="M 140 100 C 155 75, 160 50, 165 30"
-                  stroke="#52d039"
-                  strokeWidth="2.5"
-                  strokeDasharray="3 3"
-                />
-
-                {/* Left Source Node 1 */}
-                <g className="transition-transform duration-500 group-hover:translate-x-1 group-hover:-translate-y-1">
-                  <circle cx="30" cy="160" r="14" fill="#14a800" stroke="#52d039" strokeWidth="2" />
-                  <circle cx="30" cy="160" r="5" fill="#ffffff" />
+                {/* Converging Data Conduits */}
+                <g className="transition-all duration-700">
+                  {/* Stream 1 (Bottom Left curve) */}
+                  <path
+                    d="M 25 160 C 65 160, 95 125, 145 60"
+                    stroke="#52d039"
+                    strokeWidth="2.2"
+                    strokeDasharray="4 4"
+                    className="transition-all duration-500 group-hover:stroke-white"
+                  />
+                  {/* Stream 2 (Steep curve from bottom) */}
+                  <path
+                    d="M 65 185 C 90 160, 115 110, 145 60"
+                    stroke="#52d039"
+                    strokeWidth="2"
+                    strokeOpacity="0.7"
+                  />
+                  {/* Stream 3 (Upper lateral curve) */}
+                  <path
+                    d="M 40 115 C 80 115, 110 85, 145 60"
+                    stroke="#52d039"
+                    strokeWidth="2.2"
+                  />
                 </g>
 
-                {/* Left Source Node 2 */}
+                {/* Satellite System Nodes */}
                 <g className="transition-transform duration-500 group-hover:translate-x-1">
-                  <circle cx="65" cy="170" r="10" fill="#14a800" stroke="#52d039" strokeWidth="1.8" />
-                  <circle cx="65" cy="170" r="3.5" fill="#ffffff" />
+                  {/* Source Node 1 (CRM / Systems) */}
+                  <circle cx="25" cy="160" r="10" fill="#14a800" stroke="#52d039" strokeWidth="2" />
+                  <circle cx="25" cy="160" r="4" fill="#ffffff" />
+
+                  {/* Source Node 2 (Financial / Database) */}
+                  <circle cx="65" cy="185" r="8" fill="#14a800" stroke="#52d039" strokeWidth="1.8" />
+                  <circle cx="65" cy="185" r="3" fill="#ffffff" />
+
+                  {/* Source Node 3 (Documents / Workflows) */}
+                  <circle cx="40" cy="115" r="9" fill="#14a800" stroke="#52d039" strokeWidth="1.8" />
+                  <circle cx="40" cy="115" r="3.5" fill="#ffffff" />
                 </g>
 
-                {/* Central Target / Hub Node with Crosshairs */}
-                <g className="transition-transform duration-700 ease-out group-hover:scale-110 origin-[140px_100px]">
-                  {/* Concentric Halo */}
-                  <circle cx="140" cy="100" r="22" stroke="#52d039" strokeWidth="1.5" strokeDasharray="3 3" />
-                  <circle cx="140" cy="100" r="14" fill="#52d039" fillOpacity="0.3" stroke="#52d039" strokeWidth="2.2" />
-                  <circle cx="140" cy="100" r="6" fill="#ffffff" />
+                {/* Central Connected Target Reticle Hub */}
+                <g className="transition-transform duration-700 ease-out group-hover:scale-110 origin-[145px_60px]">
+                  {/* Concentric Pulse Halo */}
+                  <circle cx="145" cy="60" r="22" stroke="#52d039" strokeWidth="1.5" strokeDasharray="3 3" strokeOpacity="0.6" />
+                  <circle cx="145" cy="60" r="13" fill="#52d039" fillOpacity="0.25" stroke="#52d039" strokeWidth="2" />
+                  <circle cx="145" cy="60" r="4.5" fill="#ffffff" />
 
-                  {/* Crosshairs */}
-                  <line x1="140" y1="72" x2="140" y2="128" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
-                  <line x1="112" y1="100" x2="168" y2="100" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
-                </g>
-
-                {/* Floating Top Node */}
-                <g className="transition-transform duration-500 group-hover:-translate-y-1.5 origin-center">
-                  <circle cx="165" cy="30" r="11" fill="#14a800" stroke="#52d039" strokeWidth="1.8" />
-                  <circle cx="165" cy="30" r="4" fill="#ffffff" />
+                  {/* Precision Reticle Crosshairs */}
+                  <line x1="145" y1="36" x2="145" y2="84" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="121" y1="60" x2="169" y2="60" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
                 </g>
               </svg>
             </div>
@@ -108,7 +110,7 @@ export const HowItComesTogetherSection: React.FC = () => {
             {/* Bottom-Right Infographic: Sliders, Modules & Target Settings Node */}
             <div
               aria-hidden="true"
-              className="absolute right-0 bottom-0 w-[190px] h-[190px] pointer-events-none select-none opacity-40 group-hover:opacity-65 transition-opacity duration-300"
+              className="absolute right-0 bottom-0 w-[190px] h-[190px] pointer-events-none select-none opacity-55 group-hover:opacity-85 transition-opacity duration-300"
             >
               <svg viewBox="0 0 190 190" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full overflow-visible">
                 {/* Horizontal Slider Tracks */}
@@ -157,81 +159,85 @@ export const HowItComesTogetherSection: React.FC = () => {
               </p>
             </div>
 
-            {/* Bottom-Right Infographic: Ascending Bar Chart, Trendline & Target Crosshair Node */}
+            {/* Bottom-Right Infographic: Ascending Bar Chart, Trendline & Target Crosshair Node (Matching Figma) */}
             <div
               aria-hidden="true"
-              className="absolute right-0 bottom-0 w-[190px] h-[190px] pointer-events-none select-none opacity-40 group-hover:opacity-65 transition-opacity duration-300"
+              className="absolute right-0 bottom-0 w-[190px] h-[190px] pointer-events-none select-none opacity-55 group-hover:opacity-85 transition-opacity duration-300"
             >
               <svg viewBox="0 0 190 190" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full overflow-visible">
-                {/* 4 Ascending Vertical Bar Pillars */}
+                {/* 4 Ascending Vertical Rounded Bar Pillars */}
                 <g className="transition-all duration-500 ease-out">
-                  {/* Bar 1 (Shortest) */}
+                  {/* Bar 1 (Shortest, Leftmost) */}
                   <rect
-                    x="56"
-                    y="130"
+                    x="68"
+                    y="138"
                     width="17"
-                    height="60"
+                    height="62"
                     rx="8.5"
-                    fill="#14a800"
-                    fillOpacity="0.45"
+                    fill="#52d039"
+                    fillOpacity="0.22"
                     className="transition-all duration-500 group-hover:translate-y-[-2px]"
                   />
 
                   {/* Bar 2 */}
                   <rect
-                    x="81"
-                    y="105"
+                    x="93"
+                    y="110"
                     width="17"
-                    height="85"
+                    height="90"
                     rx="8.5"
-                    fill="#14a800"
-                    fillOpacity="0.55"
+                    fill="#52d039"
+                    fillOpacity="0.32"
                     className="transition-all duration-500 group-hover:translate-y-[-4px]"
                   />
 
                   {/* Bar 3 */}
                   <rect
-                    x="106"
-                    y="76"
+                    x="118"
+                    y="82"
                     width="17"
-                    height="114"
+                    height="118"
                     rx="8.5"
-                    fill="#14a800"
-                    fillOpacity="0.65"
+                    fill="#52d039"
+                    fillOpacity="0.45"
                     className="transition-all duration-500 group-hover:translate-y-[-6px]"
                   />
 
-                  {/* Bar 4 (Tallest) */}
+                  {/* Bar 4 (Tallest, Rightmost) */}
                   <rect
-                    x="131"
-                    y="46"
+                    x="143"
+                    y="56"
                     width="17"
                     height="144"
                     rx="8.5"
-                    fill="#25b810"
-                    fillOpacity="0.75"
+                    fill="#52d039"
+                    fillOpacity="0.58"
                     className="transition-all duration-500 group-hover:translate-y-[-8px]"
                   />
                 </g>
 
                 {/* Angled Trendline Shooting Up to the Target Node */}
-                <path
-                  d="M 40 170 L 140 68"
+                <line
+                  x1="38"
+                  y1="168"
+                  x2="151.5"
+                  y2="56"
                   stroke="#52d039"
                   strokeWidth="2.5"
                   strokeLinecap="round"
                   className="transition-all duration-500 group-hover:stroke-white"
                 />
 
-                {/* Target Crosshair Node (Circled in Figma Screenshot) */}
-                <g className="transition-transform duration-700 ease-out group-hover:scale-115 origin-[140px_68px]">
-                  {/* Glowing Node Body */}
-                  <circle cx="140" cy="68" r="14" fill="#52d039" fillOpacity="0.3" stroke="#52d039" strokeWidth="2.2" />
-                  <circle cx="140" cy="68" r="5" fill="#ffffff" />
+                {/* Target Crosshair Node at the Apex of Bar 4 (Circled in Figma Screenshot) */}
+                <g className="transition-transform duration-700 ease-out group-hover:scale-115 origin-[151.5px_56px]">
+                  {/* Outer Target Circle */}
+                  <circle cx="151.5" cy="56" r="13" stroke="#52d039" strokeWidth="2" fill="#52d039" fillOpacity="0.25" />
+                  {/* Center Dot */}
+                  <circle cx="151.5" cy="56" r="4" fill="#ffffff" />
 
-                  {/* Crosshair Lines Radiating Out */}
-                  <line x1="140" y1="46" x2="140" y2="90" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
-                  <line x1="118" y1="68" x2="162" y2="68" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
+                  {/* Radiating Precision Crosshairs */}
+                  <line x1="151.5" y1="32" x2="151.5" y2="80" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="127.5" y1="56" x2="175.5" y2="56" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
                 </g>
               </svg>
             </div>

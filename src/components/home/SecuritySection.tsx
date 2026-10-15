@@ -25,8 +25,9 @@ export const SecuritySection: React.FC = () => {
             Your Data Is Private, Protected and Under Your Control.
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-600 text-pretty">
-            Donor information, board documents, financial data, and organizational
-            knowledge require real protection.
+            Donor information, board documents, financial data, and organizational knowledge
+            <br />
+            require real protection.
           </p>
         </div>
 
