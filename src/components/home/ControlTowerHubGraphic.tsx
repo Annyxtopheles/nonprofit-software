@@ -401,8 +401,8 @@ export const ControlTowerHubGraphic: React.FC = () => {
             strokeWidth="1.2"
           />
 
-          {/* Official NonProfit AI Vector Icon from NonProfit AI Logo July 2026 Icon.svg */}
-          <g transform="translate(350, 280) scale(0.68) translate(-37, -32)">
+          {/* Official NonProfit AI Vector Icon from NonProfit AI Logo July 2026 Icon.svg (Centered, No text) */}
+          <g transform="translate(350, 310) scale(1.08) translate(-34, -28)">
             <path
               d="M70.4902 33.0898C76.7502 33.3798 71.6302 38.0398 70.4902 40.3498C63.9402 53.6498 52.7002 63.4098 37.3402 63.9698C27.6402 64.3198 19.7802 61.7298 11.2902 57.0798C7.95023 55.2498 3.78023 53.4198 -0.00976562 52.4398C2.37023 49.1398 7.09023 45.8098 10.5802 43.7598C21.9502 37.9498 27.7902 41.4898 39.4002 43.1698C40.7502 43.3598 42.7802 43.1698 44.3002 43.0198C45.2902 42.9298 47.9302 41.9698 48.8602 42.6398C51.3002 45.5998 48.2902 47.6798 46.2002 48.5198C40.4702 50.8198 34.8502 49.0798 29.1202 49.2398C45.4702 55.4898 54.4202 50.7298 65.6002 38.0098C66.8602 36.5698 68.8902 33.6898 70.4902 33.0898Z"
               fill="#108A00"
@@ -440,37 +440,6 @@ export const ControlTowerHubGraphic: React.FC = () => {
               fill="#108A00"
             />
           </g>
-
-          {/* Nonprofit Control Tower Branding Name */}
-          <text
-            x="350"
-            y="322"
-            textAnchor="middle"
-            fontSize="10.5"
-            fontWeight="700"
-            fill="#108a00"
-            fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
-            letterSpacing="0.8"
-          >
-            NONPROFIT
-          </text>
-          <text
-            x="350"
-            y="339"
-            textAnchor="middle"
-            fontSize="13"
-            fontWeight="800"
-            fill="#001E00"
-            fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
-            letterSpacing="-0.2"
-          >
-            Control Tower
-          </text>
-
-          {/* Pulsing Signal Dot */}
-          <circle cx="350" cy="351" r="2.2" fill="#108a00">
-            <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite" />
-          </circle>
         </g>
 
         {/* 5. The 7 Satellite Module Cards with Natural Floating Animation */}
