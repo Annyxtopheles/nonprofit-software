@@ -8,21 +8,21 @@ export const CompanyTrackRecordSection: React.FC = () => {
   return (
     <section id="track-record" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-100">
       <div className="max-w-6xl mx-auto">
-        {/* Section Header with SJ Innovation Logo on the Left */}
-        <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10 max-w-4xl mx-auto mb-10 md:mb-12">
-          <div className="shrink-0 flex items-center justify-center pt-1">
+        {/* Section Header with SJ Innovation Logo on the Left and Text on the Right */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-10 mb-10 md:mb-12">
+          <div className="shrink-0 flex items-center justify-start">
             <img
               src={sjLogo}
               alt="SJ Innovation"
               className="h-16 sm:h-20 w-auto object-contain"
             />
           </div>
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-right max-w-2xl">
             <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold tracking-tight text-[#0c180a] text-balance mb-2 leading-tight">
               22+ Years Behind the Technology.
             </h2>
             <p className="text-base sm:text-lg leading-relaxed text-slate-600 text-pretty">
-              The Nonprofit AI Control Tower is built and supported by SJ Innovation, a New York technology company founded in 2004
+              The Nonprofit AI Control Tower is built and supported by SJ Innovation, a New York technology company founded in 2004.
             </p>
           </div>
         </div>
