@@ -4,23 +4,24 @@ export const HowItWorksCards: React.FC = () => {
   return (
     <section className="py-14 md:py-20 bg-white">
       <div className="container mx-auto max-w-6xl px-4">
-        {/* 2 Columns × 2 Rows Cards - Static apparent layout (no sliding, no section title) */}
+        {/* Responsive grid for the 5 cards - static, apparent layout (no sliding) */}
         <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
           {/* ========================================================
-              Card 1: Scattered donor information
+              Card 1: Your data already lives where it lives.
           ======================================================== */}
           <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
               <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
-                Your Donor Information Is&nbsp;Scattered.
+                Your Data Already Lives Where It&nbsp;Lives.
               </h3>
               <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
-                CRM, spreadsheets, email, accounting software and event platforms
-                all hold different pieces of the&nbsp;story.
+                Salesforce. Blackbaud. Bloomerang. QuickBooks. Stripe. Control
+                Tower doesn&apos;t replace any of it — and doesn&apos;t ask you to move
+                anything.
               </p>
             </div>
 
-            {/* Illustration: Scattered Document, Spreadsheet, Envelope & Chart with Action Rays */}
+            {/* Illustration: Database Cylinders, Storage Layers & Cloud Node */}
             <div
               aria-hidden="true"
               className="relative w-[165px] sm:w-[185px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
@@ -37,105 +38,59 @@ export const HowItWorksCards: React.FC = () => {
                   fill="#e7f5e3"
                 />
 
-                {/* Tilted Green Spreadsheet (Top Right) */}
-                <g className="transition-transform duration-500 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-1.5 group-hover:rotate-6 origin-center">
-                  <rect
-                    x="116"
-                    y="22"
-                    width="46"
-                    height="56"
-                    rx="8"
-                    fill="#c8f0be"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                    transform="rotate(10 139 50)"
-                  />
-                  {/* Grid Lines inside Spreadsheet */}
-                  <g transform="rotate(10 139 50)">
-                    <line x1="116" y1="36" x2="162" y2="36" stroke="#1c3422" strokeWidth="2" />
-                    <line x1="116" y1="50" x2="162" y2="50" stroke="#1c3422" strokeWidth="2" />
-                    <line x1="116" y1="64" x2="162" y2="64" stroke="#1c3422" strokeWidth="2" />
-                    <line x1="131" y1="22" x2="131" y2="78" stroke="#1c3422" strokeWidth="2" />
-                    <line x1="147" y1="22" x2="147" y2="78" stroke="#1c3422" strokeWidth="2" />
+                {/* Database Tier Stack */}
+                <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-center">
+                  {/* Database Cylinder 1 (Bottom) */}
+                  <g className="transition-transform duration-500 ease-out group-hover:translate-y-1">
+                    <path
+                      d="M 64 102 C 64 96 82 92 104 92 C 126 92 144 96 144 102 V 116 C 144 122 126 126 104 126 C 82 126 64 122 64 116 Z"
+                      fill="#14a800"
+                      stroke="#1c3422"
+                      strokeWidth="2.4"
+                    />
+                    <ellipse cx="104" cy="102" rx="40" ry="10" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.4" />
+                    <circle cx="82" cy="113" r="2.5" fill="#ffffff" />
+                    <circle cx="92" cy="113" r="2.5" fill="#ffffff" />
+                  </g>
+
+                  {/* Database Cylinder 2 (Middle) */}
+                  <g className="transition-transform duration-500 ease-out group-hover:-translate-y-0.5">
+                    <path
+                      d="M 64 72 C 64 66 82 62 104 62 C 126 62 144 66 144 72 V 86 C 144 92 126 96 104 96 C 82 96 64 92 64 86 Z"
+                      fill="#ffffff"
+                      stroke="#1c3422"
+                      strokeWidth="2.4"
+                    />
+                    <ellipse cx="104" cy="72" rx="40" ry="10" fill="#e7f5e3" stroke="#1c3422" strokeWidth="2.4" />
+                    <circle cx="82" cy="83" r="2.5" fill="#14a800" />
+                    <circle cx="92" cy="83" r="2.5" fill="#14a800" />
+                  </g>
+
+                  {/* Database Cylinder 3 (Top) */}
+                  <g className="transition-transform duration-500 ease-out group-hover:-translate-y-2">
+                    <path
+                      d="M 64 42 C 64 36 82 32 104 32 C 126 32 144 36 144 42 V 56 C 144 62 126 66 104 66 C 82 66 64 62 64 56 Z"
+                      fill="#ffffff"
+                      stroke="#1c3422"
+                      strokeWidth="2.4"
+                    />
+                    <ellipse cx="104" cy="42" rx="40" ry="10" fill="#ffffff" stroke="#1c3422" strokeWidth="2.4" />
+                    <circle cx="82" cy="53" r="2.5" fill="#14a800" />
+                    <circle cx="92" cy="53" r="2.5" fill="#14a800" />
                   </g>
                 </g>
 
-                {/* Tilted Green Mini Bar Chart Card (Bottom Right) */}
-                <g className="transition-transform duration-500 ease-out group-hover:translate-x-1 group-hover:translate-y-1 group-hover:rotate-3 origin-center">
-                  <rect
-                    x="114"
-                    y="92"
-                    width="48"
-                    height="52"
-                    rx="9"
-                    fill="#14a800"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                    transform="rotate(-5 138 118)"
-                  />
-                  {/* 3 Rising Dark Green Bars */}
-                  <g transform="rotate(-5 138 118)">
-                    <rect x="123" y="122" width="7" height="15" rx="2" fill="#1c3422" />
-                    <rect x="134" y="113" width="7" height="24" rx="2" fill="#1c3422" />
-                    <rect x="145" y="104" width="7" height="33" rx="2" fill="#1c3422" />
-                  </g>
+                {/* Floating Safe Lock Badge */}
+                <g className="transition-transform duration-500 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-1.5 origin-center">
+                  <circle cx="146" cy="44" r="14" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" />
+                  <rect x="140" y="42" width="12" height="10" rx="2" fill="#1c3422" />
+                  <path d="M 143 42 V 38 C 143 36 149 36 149 38 V 42" stroke="#1c3422" strokeWidth="2" fill="none" />
                 </g>
 
-                {/* White Document Card (Center Left) */}
-                <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:-translate-y-1 group-hover:rotate-[-6deg] origin-center">
-                  <rect
-                    x="50"
-                    y="42"
-                    width="62"
-                    height="74"
-                    rx="9"
-                    fill="#ffffff"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                    transform="rotate(-10 81 79)"
-                  />
-                  {/* Circular Green Donor Stamp & Text Lines */}
-                  <g transform="rotate(-10 81 79)">
-                    <circle cx="66" cy="58" r="6" fill="#14a800" stroke="#1c3422" strokeWidth="2" />
-                    <line x1="64" y1="74" x2="98" y2="74" stroke="#1c3422" strokeWidth="2.4" strokeLinecap="round" />
-                    <line x1="64" y1="84" x2="96" y2="84" stroke="#1c3422" strokeWidth="2.4" strokeLinecap="round" />
-                    <line x1="64" y1="94" x2="88" y2="94" stroke="#1c3422" strokeWidth="2.4" strokeLinecap="round" />
-                  </g>
-                </g>
-
-                {/* White Mail Envelope (Center Right) */}
-                <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:translate-y-0.5 group-hover:rotate-[-3deg] origin-center">
-                  <rect
-                    x="100"
-                    y="65"
-                    width="58"
-                    height="42"
-                    rx="7"
-                    fill="#ffffff"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                    transform="rotate(4 129 86)"
-                  />
-                  {/* V-Flap of Envelope */}
-                  <path
-                    d="M 102 68 L 129 88 L 156 68"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    fill="none"
-                    transform="rotate(4 129 86)"
-                  />
-                </g>
-
-                {/* Energetic Spark / Action Rays */}
+                {/* Action Rays */}
                 <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
-                  {/* Top-Left Spark Rays */}
                   <line x1="42" y1="36" x2="35" y2="28" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                   <line x1="52" y1="30" x2="52" y2="20" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="62" y1="34" x2="70" y2="26" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-
-                  {/* Bottom-Right Spark Rays */}
                   <line x1="166" y1="126" x2="176" y2="128" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                   <line x1="164" y1="135" x2="173" y2="144" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                 </g>
@@ -144,20 +99,20 @@ export const HowItWorksCards: React.FC = () => {
           </div>
 
           {/* ========================================================
-              Card 2: Reporting takes too long
+              Card 2: It connects to what you already use.
           ======================================================== */}
           <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
               <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
-                Reporting Takes Too&nbsp;Long.
+                It Connects to What You Already&nbsp;Use.
               </h3>
               <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
-                Staff spend hours gathering information before leadership or
-                board&nbsp;meetings.
+                No migration. No re-entering donor records. No new system for your
+                team to learn from&nbsp;scratch.
               </p>
             </div>
 
-            {/* Illustration: Modern Clock with Rotating Hands, Stacked Report Binders & Metric Cards */}
+            {/* Illustration: Seamless Plug Connectors & Bi-directional Sync Hub */}
             <div
               aria-hidden="true"
               className="relative w-[165px] sm:w-[185px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
@@ -174,145 +129,65 @@ export const HowItWorksCards: React.FC = () => {
                   fill="#e7f5e3"
                 />
 
-                {/* Back Report Page with Metric Sparkline (Top Right) */}
-                <g className="transition-transform duration-500 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-2 group-hover:rotate-4 origin-center">
-                  <rect
-                    x="106"
-                    y="24"
-                    width="54"
-                    height="66"
-                    rx="8"
-                    fill="#c8f0be"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                    transform="rotate(8 133 57)"
-                  />
-                  <g transform="rotate(8 133 57)">
-                    <rect x="114" y="32" width="22" height="6" rx="2" fill="#1c3422" />
-                    <path
-                      d="M 114 56 L 126 48 L 136 54 L 150 42"
-                      stroke="#1c3422"
-                      strokeWidth="2.4"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      fill="none"
-                    />
-                    <line x1="114" y1="68" x2="148" y2="68" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-                    <line x1="114" y1="76" x2="140" y2="76" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-                  </g>
+                {/* Left Connector Node */}
+                <g className="transition-transform duration-500 ease-out group-hover:translate-x-1.5 origin-center">
+                  <rect x="46" y="62" width="36" height="36" rx="8" fill="#ffffff" stroke="#1c3422" strokeWidth="2.4" />
+                  <line x1="32" y1="80" x2="46" y2="80" stroke="#1c3422" strokeWidth="2.4" strokeLinecap="round" />
+                  {/* Plug Prongs */}
+                  <rect x="82" y="68" width="10" height="6" rx="1.5" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" />
+                  <rect x="82" y="86" width="10" height="6" rx="1.5" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" />
                 </g>
 
-                {/* Stacked Report Binders (Bottom Left) */}
-                <g className="transition-transform duration-500 ease-out group-hover:-translate-x-1 group-hover:translate-y-1 origin-center">
-                  <rect
-                    x="44"
-                    y="108"
-                    width="62"
-                    height="18"
-                    rx="5"
-                    fill="#ffffff"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                    transform="rotate(-4 75 117)"
-                  />
-                  <rect
-                    x="48"
-                    y="124"
-                    width="62"
-                    height="18"
-                    rx="5"
-                    fill="#14a800"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                    transform="rotate(-4 79 133)"
-                  />
-                  <circle cx="56" cy="116" r="3" fill="#1c3422" transform="rotate(-4 75 117)" />
-                  <circle cx="60" cy="132" r="3" fill="#1c3422" transform="rotate(-4 79 133)" />
+                {/* Right Connector Jack */}
+                <g className="transition-transform duration-500 ease-out group-hover:-translate-x-1.5 origin-center">
+                  <rect x="108" y="60" width="40" height="40" rx="8" fill="#14a800" stroke="#1c3422" strokeWidth="2.4" />
+                  <line x1="148" y1="80" x2="162" y2="80" stroke="#1c3422" strokeWidth="2.4" strokeLinecap="round" />
+                  {/* Jack Slots */}
+                  <rect x="104" y="67" width="5" height="8" rx="1.5" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.6" />
+                  <rect x="104" y="85" width="5" height="8" rx="1.5" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.6" />
                 </g>
 
-                {/* Central Friendly Retro Clock Dial */}
-                <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-[114px_92px]">
-                  {/* Alarm Bell Button / Loop at Top */}
-                  <rect
-                    x="108"
-                    y="54"
-                    width="12"
-                    height="8"
-                    rx="3"
-                    fill="#14a800"
-                    stroke="#1c3422"
-                    strokeWidth="2.2"
-                  />
-                  {/* Two Little Clock Stand Legs */}
-                  <line x1="96" y1="120" x2="90" y2="128" stroke="#1c3422" strokeWidth="3" strokeLinecap="round" />
-                  <line x1="132" y1="120" x2="138" y2="128" stroke="#1c3422" strokeWidth="3" strokeLinecap="round" />
-
-                  {/* Main Clock Face */}
-                  <circle
-                    cx="114"
-                    cy="92"
-                    r="32"
-                    fill="#ffffff"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                  />
-
-                  {/* Dial Hour Dots */}
-                  <circle cx="114" cy="68" r="2.2" fill="#1c3422" />
-                  <circle cx="138" cy="92" r="2.2" fill="#1c3422" />
-                  <circle cx="114" cy="116" r="2.2" fill="#1c3422" />
-                  <circle cx="90" cy="92" r="2.2" fill="#1c3422" />
-
-                  {/* Clock Hands with Smooth Hover Rotation */}
-                  <g className="transition-transform duration-700 ease-out group-hover:rotate-60 origin-[114px_92px]">
-                    <line
-                      x1="114"
-                      y1="92"
-                      x2="114"
-                      y2="76"
-                      stroke="#1c3422"
-                      strokeWidth="2.8"
-                      strokeLinecap="round"
-                    />
-                    <line
-                      x1="114"
-                      y1="92"
-                      x2="128"
-                      y2="92"
-                      stroke="#1c3422"
-                      strokeWidth="2.4"
-                      strokeLinecap="round"
-                    />
-                    <circle cx="114" cy="92" r="3.5" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" />
-                  </g>
+                {/* Top Floating App Card (CRM) */}
+                <g className="transition-transform duration-500 ease-out group-hover:-translate-y-2 origin-center">
+                  <rect x="82" y="24" width="34" height="26" rx="6" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" />
+                  <line x1="88" y1="32" x2="110" y2="32" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="88" y1="39" x2="104" y2="39" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="99" y1="50" x2="99" y2="58" stroke="#14a800" strokeWidth="2" strokeDasharray="2 2" />
                 </g>
 
-                {/* Action Rays around Clock */}
+                {/* Bottom Floating App Card (Finance) */}
+                <g className="transition-transform duration-500 ease-out group-hover:translate-y-2 origin-center">
+                  <rect x="78" y="112" width="38" height="26" rx="6" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
+                  <circle cx="88" cy="125" r="4" fill="#14a800" />
+                  <line x1="96" y1="125" x2="110" y2="125" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="97" y1="102" x2="97" y2="110" stroke="#14a800" strokeWidth="2" strokeDasharray="2 2" />
+                </g>
+
+                {/* Spark Rays */}
                 <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
-                  <line x1="78" y1="62" x2="70" y2="54" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="86" y1="52" x2="84" y2="42" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="146" y1="56" x2="154" y2="48" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="154" y1="66" x2="164" y2="64" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="90" y1="60" x2="96" y2="52" stroke="#14a800" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="102" y1="60" x2="98" y2="52" stroke="#14a800" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="96" y1="100" x2="96" y2="108" stroke="#14a800" strokeWidth="2.2" strokeLinecap="round" />
                 </g>
               </svg>
             </div>
           </div>
 
           {/* ========================================================
-              Card 3: Too much work is still manual
+              Card 3: AI agents watch continuously, not once a quarter.
           ======================================================== */}
           <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
               <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
-                Too Much Work Is Still&nbsp;Manual.
+                AI Agents Watch Continuously, Not Once a&nbsp;Quarter.
               </h3>
               <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
-                Follow-ups, summaries, grant reporting, meeting actions and data
-                cleanup consume valuable staff&nbsp;time.
+                Duplicate donor records, unmatched transactions, a grant deadline
+                in 10 days — agents catch it the day it&nbsp;happens.
               </p>
             </div>
 
-            {/* Illustration: Checklist Clipboard, Repetitive Arrow Loops & Tilted Stylus/Pen */}
+            {/* Illustration: 24/7 AI Scanner Lens, Continuous Radar & Alert Tag */}
             <div
               aria-hidden="true"
               className="relative w-[165px] sm:w-[185px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
@@ -329,117 +204,53 @@ export const HowItWorksCards: React.FC = () => {
                   fill="#e7f5e3"
                 />
 
-                {/* Backing Green Clipboard Frame */}
-                <g className="transition-transform duration-500 ease-out group-hover:translate-x-1 group-hover:-translate-y-1 origin-center">
-                  <rect
-                    x="56"
-                    y="32"
-                    width="72"
-                    height="92"
-                    rx="12"
-                    fill="#14a800"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                    transform="rotate(-5 92 78)"
-                  />
-                  {/* Dark Clipboard Clamp */}
-                  <rect
-                    x="76"
-                    y="24"
-                    width="32"
-                    height="12"
-                    rx="4"
-                    fill="#1c3422"
-                    transform="rotate(-5 92 30)"
-                  />
-                  <rect
-                    x="86"
-                    y="22"
-                    width="12"
-                    height="6"
-                    rx="2"
-                    fill="#ffffff"
-                    transform="rotate(-5 92 25)"
-                  />
-                </g>
-
-                {/* Foreground White Checklist Sheet */}
-                <g className="transition-transform duration-500 ease-out group-hover:-translate-x-1.5 group-hover:-translate-y-1.5 origin-center">
-                  <rect
-                    x="64"
-                    y="42"
-                    width="64"
-                    height="84"
-                    rx="8"
+                {/* Center Scanning Eye / Lens */}
+                <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-center">
+                  {/* Outer Outer Radar Halo */}
+                  <circle cx="95" cy="80" r="42" stroke="#14a800" strokeWidth="1.8" strokeDasharray="4 4" fill="none" opacity="0.6" />
+                  
+                  {/* Outer Eye Shell */}
+                  <path
+                    d="M 52 80 C 66 58, 124 58, 138 80 C 124 102, 66 102, 52 80 Z"
                     fill="#ffffff"
                     stroke="#1c3422"
                     strokeWidth="2.4"
                   />
 
-                  {/* Checklist Row 1 */}
-                  <rect x="74" y="56" width="11" height="11" rx="3" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" />
-                  <path d="M 76 61.5 L 78.5 64 L 83 58.5" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                  <line x1="92" y1="62" x2="118" y2="62" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  {/* Iris */}
+                  <circle cx="95" cy="80" r="18" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" />
 
-                  {/* Checklist Row 2 */}
-                  <rect x="74" y="74" width="11" height="11" rx="3" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" />
-                  <path d="M 76 79.5 L 78.5 82 L 83 76.5" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                  <line x1="92" y1="80" x2="116" y2="80" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  {/* Pupil with AI Spark Core */}
+                  <circle cx="95" cy="80" r="9" fill="#14a800" />
+                  <circle cx="92" cy="77" r="2.5" fill="#ffffff" />
 
-                  {/* Checklist Row 3 */}
-                  <rect x="74" y="92" width="11" height="11" rx="3" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" />
-                  <path d="M 76 97.5 L 78.5 100 L 83 94.5" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                  <line x1="92" y1="98" x2="112" y2="98" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-
-                  {/* Checklist Row 4 (In Progress / Pending) */}
-                  <rect x="74" y="110" width="11" height="11" rx="3" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.8" />
-                  <line x1="92" y1="116" x2="108" y2="116" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                </g>
-
-                {/* Tilted Stylus / Pen (Right) */}
-                <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:-translate-y-2 group-hover:rotate-12 origin-[140px_100px]">
-                  <rect
-                    x="136"
-                    y="50"
-                    width="12"
-                    height="58"
-                    rx="4"
-                    fill="#c8f0be"
-                    stroke="#1c3422"
-                    strokeWidth="2.2"
-                    transform="rotate(32 142 79)"
-                  />
-                  {/* Pen Nib */}
-                  <path
-                    d="M 124 100 L 118 108 L 129 104 Z"
-                    fill="#1c3422"
-                    stroke="#1c3422"
-                    strokeWidth="1.5"
-                  />
-                  {/* Top Cap */}
-                  <rect
-                    x="152"
-                    y="45"
-                    width="12"
-                    height="8"
-                    rx="2"
-                    fill="#ffffff"
-                    stroke="#1c3422"
-                    strokeWidth="2"
-                    transform="rotate(32 158 49)"
-                  />
-                </g>
-
-                {/* Repetitive Loop Arc Indicator (Top Right) */}
-                <g className="transition-transform duration-500 ease-out group-hover:rotate-[28deg] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 origin-[145px_36px]">
-                  <path
-                    d="M 136 32 C 144 26, 154 30, 156 38"
+                  {/* Horizontal Scan Beam */}
+                  <line
+                    x1="62"
+                    y1="80"
+                    x2="128"
+                    y2="80"
                     stroke="#14a800"
-                    strokeWidth="2.4"
-                    strokeLinecap="round"
-                    fill="none"
+                    strokeWidth="2"
+                    className="transition-all duration-700 group-hover:translate-y-[-8px]"
                   />
-                  <polygon points="159,34 156,41 151,37" fill="#14a800" />
+                </g>
+
+                {/* Floating Notification Badge: "10d Grant" Alert */}
+                <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:-translate-y-1.5 origin-center">
+                  <rect x="116" y="32" width="48" height="26" rx="7" fill="#14a800" stroke="#1c3422" strokeWidth="2.2" />
+                  <path d="M 125 45 L 129 49 L 137 41" stroke="#ffffff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                  <rect x="142" y="42" width="14" height="6" rx="2" fill="#ffffff" />
+                </g>
+
+                {/* Floating Calendar Icon (Bottom Left) */}
+                <g className="transition-transform duration-500 ease-out group-hover:-translate-x-1.5 group-hover:translate-y-1.5 origin-center">
+                  <rect x="36" y="96" width="32" height="30" rx="6" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
+                  <rect x="36" y="96" width="32" height="9" rx="2" fill="#c8f0be" />
+                  <line x1="36" y1="105" x2="68" y2="105" stroke="#1c3422" strokeWidth="1.8" />
+                  <circle cx="45" cy="114" r="2" fill="#1c3422" />
+                  <circle cx="53" cy="114" r="2" fill="#1c3422" />
+                  <circle cx="60" cy="114" r="2" fill="#14a800" />
                 </g>
 
                 {/* Action Rays */}
@@ -447,31 +258,26 @@ export const HowItWorksCards: React.FC = () => {
                   <line x1="48" y1="46" x2="40" y2="40" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                   <line x1="56" y1="36" x2="52" y2="28" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                   <line x1="168" y1="96" x2="176" y2="94" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="166" y1="106" x2="174" y2="114" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                 </g>
               </svg>
             </div>
           </div>
 
           {/* ========================================================
-              Card 4: Leadership lacks one clear view
+              Card 4: Every role sees what matters to them.
           ======================================================== */}
           <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
               <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
-                Leadership Lacks One Clear&nbsp;View.
+                Every Role Sees What Matters to&nbsp;Them.
               </h3>
               <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
-                When an Executive Director asks,{" "}
-                <strong className="font-bold text-slate-900">
-                  “Where do we stand?”
-                </strong>{" "}
-                The answer should not require five systems and
-                three&nbsp;spreadsheets.
+                ED sees board readiness. Finance sees reconciliation. Development
+                sees the donor pipeline. No digging through five&nbsp;systems.
               </p>
             </div>
 
-            {/* Illustration: Disconnected Windows, Scattered Spreadsheets & Focus Magnifying Glass */}
+            {/* Illustration: Segmented Role Views & Command Center Tabs */}
             <div
               aria-hidden="true"
               className="relative w-[165px] sm:w-[185px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
@@ -488,128 +294,156 @@ export const HowItWorksCards: React.FC = () => {
                   fill="#e7f5e3"
                 />
 
-                {/* Tilted Green App Window 1 (Top Right) */}
-                <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:-translate-y-1.5 group-hover:rotate-6 origin-center">
-                  <rect
-                    x="110"
-                    y="24"
-                    width="54"
-                    height="44"
-                    rx="7"
-                    fill="#c8f0be"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                    transform="rotate(8 137 46)"
-                  />
-                  <g transform="rotate(8 137 46)">
-                    <circle cx="118" cy="32" r="2" fill="#1c3422" />
-                    <circle cx="124" cy="32" r="2" fill="#1c3422" />
-                    <circle cx="130" cy="32" r="2" fill="#1c3422" />
-                    <line x1="110" y1="38" x2="164" y2="38" stroke="#1c3422" strokeWidth="1.8" />
-                    <rect x="116" y="44" width="12" height="18" rx="2" fill="#1c3422" />
-                    <rect x="132" y="50" width="12" height="12" rx="2" fill="#1c3422" />
-                    <rect x="148" y="46" width="10" height="16" rx="2" fill="#1c3422" />
-                  </g>
+                {/* Back Window - Finance View (Top Right) */}
+                <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:-translate-y-1.5 origin-center">
+                  <rect x="100" y="28" width="56" height="48" rx="8" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.4" />
+                  <rect x="108" y="36" width="18" height="6" rx="2" fill="#1c3422" />
+                  <line x1="108" y1="52" x2="148" y2="52" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="108" y1="60" x2="136" y2="60" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
                 </g>
 
-                {/* Tilted Green Spreadsheet Window 2 (Bottom Left) */}
-                <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:translate-y-1 group-hover:rotate-[-4deg] origin-center">
-                  <rect
-                    x="48"
-                    y="88"
-                    width="58"
-                    height="46"
-                    rx="7"
-                    fill="#14a800"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                    transform="rotate(-6 77 111)"
-                  />
-                  <g transform="rotate(-6 77 111)">
-                    <circle cx="56" cy="96" r="2" fill="#1c3422" />
-                    <circle cx="62" cy="96" r="2" fill="#1c3422" />
-                    <line x1="48" y1="102" x2="106" y2="102" stroke="#1c3422" strokeWidth="1.8" />
-                    <line x1="48" y1="118" x2="106" y2="118" stroke="#1c3422" strokeWidth="1.6" />
-                    <line x1="72" y1="102" x2="72" y2="134" stroke="#1c3422" strokeWidth="1.6" />
-                    <line x1="88" y1="102" x2="88" y2="134" stroke="#1c3422" strokeWidth="1.6" />
-                  </g>
+                {/* Back Window - Dev Pipeline (Bottom Left) */}
+                <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:translate-y-1 origin-center">
+                  <rect x="42" y="84" width="58" height="48" rx="8" fill="#14a800" stroke="#1c3422" strokeWidth="2.4" />
+                  <rect x="50" y="92" width="20" height="6" rx="2" fill="#ffffff" />
+                  <rect x="50" y="104" width="12" height="18" rx="2" fill="#ffffff" />
+                  <rect x="66" y="108" width="12" height="14" rx="2" fill="#ffffff" />
+                  <rect x="82" y="100" width="12" height="22" rx="2" fill="#ffffff" />
                 </g>
 
-                {/* Central White Dashboard Window */}
+                {/* Center Foreground Window - ED Command Center */}
                 <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-center">
-                  <rect
-                    x="76"
-                    y="46"
-                    width="66"
-                    height="54"
-                    rx="8"
-                    fill="#ffffff"
-                    stroke="#1c3422"
-                    strokeWidth="2.4"
-                  />
-                  <circle cx="84" cy="54" r="2.2" fill="#1c3422" />
-                  <circle cx="91" cy="54" r="2.2" fill="#1c3422" />
-                  <circle cx="98" cy="54" r="2.2" fill="#1c3422" />
-                  <line x1="76" y1="60" x2="142" y2="60" stroke="#1c3422" strokeWidth="2" />
-                  {/* Split metric boxes inside */}
-                  <rect x="82" y="66" width="24" height="26" rx="4" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.8" />
-                  <rect x="112" y="66" width="24" height="26" rx="4" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.8" />
-                  <line x1="86" y1="74" x2="102" y2="74" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-                  <line x1="86" y1="82" x2="98" y2="82" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-                  <circle cx="124" cy="79" r="6" fill="#14a800" />
-                </g>
+                  <rect x="68" y="48" width="74" height="62" rx="10" fill="#ffffff" stroke="#1c3422" strokeWidth="2.4" />
+                  {/* Top Window Bar with 3 Dots */}
+                  <rect x="68" y="48" width="74" height="15" rx="9" fill="#e7f5e3" />
+                  <line x1="68" y1="63" x2="142" y2="63" stroke="#1c3422" strokeWidth="2" />
+                  <circle cx="78" cy="56" r="2" fill="#1c3422" />
+                  <circle cx="85" cy="56" r="2" fill="#1c3422" />
+                  <circle cx="92" cy="56" r="2" fill="#1c3422" />
 
-                {/* Focus Magnifying Glass with Question Mark */}
-                <g className="transition-transform duration-500 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-1.5 group-hover:rotate-[-8deg] origin-[128px_98px]">
-                  {/* Magnifier Lens */}
-                  <circle
-                    cx="122"
-                    cy="94"
-                    r="20"
-                    fill="#ffffff"
-                    stroke="#1c3422"
-                    strokeWidth="2.6"
-                  />
-                  {/* Green Focus Ring */}
-                  <circle
-                    cx="122"
-                    cy="94"
-                    r="14"
-                    fill="#e7f5e3"
-                    stroke="#14a800"
-                    strokeWidth="1.8"
-                    strokeDasharray="3 3"
-                  />
-                  {/* Center Question Mark Icon */}
-                  <text
-                    x="122"
-                    y="100"
-                    textAnchor="middle"
-                    fill="#118f00"
-                    fontSize="16"
-                    fontWeight="900"
-                    fontFamily="sans-serif"
-                  >
-                    ?
-                  </text>
-                  {/* Magnifier Handle */}
-                  <line
-                    x1="136"
-                    y1="108"
-                    x2="152"
-                    y2="124"
-                    stroke="#1c3422"
-                    strokeWidth="4"
-                    strokeLinecap="round"
-                  />
+                  {/* 3 Role Tiles inside */}
+                  <rect x="76" y="70" width="16" height="16" rx="3" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.6" />
+                  <rect x="97" y="70" width="16" height="16" rx="3" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
+                  <rect x="118" y="70" width="16" height="16" rx="3" fill="#14a800" stroke="#1c3422" strokeWidth="1.6" />
+
+                  <line x1="76" y1="96" x2="134" y2="96" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="76" y1="103" x2="114" y2="103" stroke="#14a800" strokeWidth="2.2" strokeLinecap="round" />
                 </g>
 
                 {/* Action Rays */}
                 <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
                   <line x1="46" y1="56" x2="38" y2="50" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="56" y1="46" x2="52" y2="38" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                   <line x1="166" y1="84" x2="176" y2="84" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="164" y1="94" x2="172" y2="102" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                </g>
+              </svg>
+            </div>
+          </div>
+
+          {/* ========================================================
+              Card 5: One click does the busywork.
+          ======================================================== */}
+          <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20 md:col-span-2 md:max-w-2xl md:mx-auto w-full">
+            <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
+              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+                One Click Does the&nbsp;Busywork.
+              </h3>
+              <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
+                The board report. The grant draft. The donor thank-you letter. A
+                human reviews it before it goes&nbsp;out.
+              </p>
+            </div>
+
+            {/* Illustration: Magic One-Click Button, Outgoing Document & Sparkles */}
+            <div
+              aria-hidden="true"
+              className="relative w-[165px] sm:w-[185px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
+            >
+              <svg
+                viewBox="0 0 190 160"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-full h-full overflow-visible"
+              >
+                {/* Soft Mint Organic Background Aura Blob */}
+                <path
+                  d="M 38 78 C 30 38, 88 18, 134 26 C 176 34, 188 78, 172 118 C 154 154, 94 158, 54 138 C 34 122, 44 98, 38 78 Z"
+                  fill="#e7f5e3"
+                />
+
+                {/* Back Document Generated (Right) */}
+                <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:-translate-y-2 origin-center">
+                  <rect
+                    x="104"
+                    y="32"
+                    width="54"
+                    height="70"
+                    rx="8"
+                    fill="#ffffff"
+                    stroke="#1c3422"
+                    strokeWidth="2.4"
+                    transform="rotate(6 131 67)"
+                  />
+                  {/* Verified Checkmark Ribbon Badge */}
+                  <g transform="rotate(6 131 67)">
+                    <circle cx="118" cy="46" r="6" fill="#14a800" />
+                    <path d="M 115 46 L 117.5 48.5 L 122 44" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                    <line x1="114" y1="60" x2="148" y2="60" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                    <line x1="114" y1="70" x2="142" y2="70" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                    <line x1="114" y1="80" x2="134" y2="80" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  </g>
+                </g>
+
+                {/* Interactive Click Button (Left / Center) */}
+                <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-[80px_90px]">
+                  {/* Button Shadow Base */}
+                  <rect x="48" y="78" width="68" height="42" rx="10" fill="#1c3422" />
+                  {/* Raised Button Face */}
+                  <rect
+                    x="48"
+                    y="74"
+                    width="68"
+                    height="40"
+                    rx="10"
+                    fill="#14a800"
+                    stroke="#1c3422"
+                    strokeWidth="2.4"
+                    className="transition-transform duration-200 group-hover:translate-y-1"
+                  />
+                  {/* Button Label: "1-CLICK" */}
+                  <text
+                    x="82"
+                    y="99"
+                    textAnchor="middle"
+                    fill="#ffffff"
+                    fontSize="13"
+                    fontWeight="800"
+                    fontFamily="sans-serif"
+                    letterSpacing="1"
+                    className="transition-transform duration-200 group-hover:translate-y-1"
+                  >
+                    1-CLICK
+                  </text>
+                </g>
+
+                {/* Click Cursor Pointer */}
+                <g className="transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-1">
+                  <path
+                    d="M 98 106 L 112 118 L 105 120 L 110 130 L 105 132 L 100 122 L 94 126 Z"
+                    fill="#ffffff"
+                    stroke="#1c3422"
+                    strokeWidth="2.2"
+                    strokeLinejoin="round"
+                  />
+                </g>
+
+                {/* Magic Sparkles around button */}
+                <g className="transition-transform duration-300 ease-out group-hover:scale-115 origin-center">
+                  {/* Sparkle 1 (Top Left) */}
+                  <path d="M 44 46 L 46 40 L 48 46 L 54 48 L 48 50 L 46 56 L 44 50 L 38 48 Z" fill="#14a800" />
+                  {/* Sparkle 2 (Top Right) */}
+                  <path d="M 88 34 L 89.5 29 L 91 34 L 96 35.5 L 91 37 L 89.5 42 L 88 37 L 83 35.5 Z" fill="#14a800" />
+                  {/* Sparkle 3 (Bottom Left) */}
+                  <circle cx="36" cy="74" r="3" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.5" />
                 </g>
               </svg>
             </div>

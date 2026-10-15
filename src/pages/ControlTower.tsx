@@ -1,5 +1,6 @@
 import { SiteLayout } from "@/components/layout/SiteLayout";
 import { NewsletterSignup } from "@/components/newsletter/NewsletterSignup";
+import { CardStack } from "@/components/home/CardStack";
 import { SecurityCardStack } from "@/components/home/SecurityCardStack";
 import { TrustedPartnersSection } from "@/components/home/TrustedPartnersSection";
 import { SuccessStoriesSection } from "@/components/home/SuccessStoriesSection";
@@ -61,8 +62,28 @@ const tileCardStyle = {
   borderRadius: 12,
   boxShadow: "0 1px 3px rgba(0, 0, 0, 0.04), 0 4px 12px rgba(0, 0, 0, 0.04)",
 };
-
-
+const problems = [
+  {
+    icon: Layers,
+    title: "Tool Sprawl",
+    desc: "Donor data in Salesforce, finances in QuickBooks, events in Eventbrite, grants in spreadsheets. Your team wastes hours switching between systems.",
+  },
+  {
+    icon: Database,
+    title: "Data Quality Decay",
+    desc: "Duplicates, incomplete profiles, and stale records silently erode your fundraising effectiveness — and nobody catches it until audit season.",
+  },
+  {
+    icon: RefreshCw,
+    title: "Manual Busywork",
+    desc: "Writing thank-you letters, reconciling transactions, preparing board reports. Your team's talent is buried under repetitive tasks.",
+  },
+  {
+    icon: Search,
+    title: "No Single Source of Truth",
+    desc: "The ED asks 'how are we doing?' and gets five different answers from five different systems.",
+  },
+];
 
 const featureModules = [
   { icon: LayoutDashboard, title: "Dashboard", desc: "Role-specific command centers for ED, Development, Finance, and Operations" },
@@ -270,7 +291,28 @@ const ControlTower = () => {
 
         <HowItWorksCards />
 
-
+        {/* Problem Section */}
+        <section className="py-12 md:py-16 px-6 lg:px-12">
+          <div className="max-w-5xl mx-auto">
+            <div className="mb-10 text-center">
+              <h2
+                className="text-3xl md:text-4xl font-bold mb-3"
+                style={{ color: colors.headline }}
+              >
+                Sound Familiar?
+              </h2>
+              <p className="text-lg max-w-2xl mx-auto" style={{ color: colors.body }}>
+                These aren&apos;t edge cases — they&apos;re the daily reality for most nonprofits.
+              </p>
+            </div>
+            <CardStack
+              items={problems}
+              colors={colors}
+              tileCardStyle={tileCardStyle}
+              ariaLabel="Problem cards"
+            />
+          </div>
+        </section>
         {/* Core Value Props */}
         <section className="section-tint py-12 md:py-16 px-6 lg:px-12">
           <div className="max-w-5xl mx-auto">
