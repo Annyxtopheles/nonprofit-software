@@ -119,26 +119,42 @@ export const WhatWeCanDoSection: React.FC = () => {
 
                 {/* Directory Sheet */}
                 <g className="transition-transform duration-500 ease-out group-hover:-translate-y-1 origin-center">
+                  <defs>
+                    <clipPath id="donor-row-1-clip"><circle cx="42" cy="52" r="8.5" /></clipPath>
+                    <clipPath id="donor-row-2-clip"><circle cx="42" cy="76" r="8.5" /></clipPath>
+                    <clipPath id="donor-row-3-clip"><circle cx="42" cy="100" r="8.5" /></clipPath>
+                    <clipPath id="donor-featured-clip"><circle cx="126" cy="50" r="19" /></clipPath>
+                  </defs>
+
                   <rect x="24" y="32" width="102" height="104" rx="10" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
 
                   {/* List Row 1: Donor Item */}
                   <circle cx="42" cy="52" r="9" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.5" />
-                  <circle cx="42" cy="49" r="3.5" fill="#108a00" />
-                  <path d="M 36 57 C 36 53, 48 53, 48 57 Z" fill="#108a00" />
+                  <g clipPath="url(#donor-row-1-clip)">
+                    <circle cx="42" cy="48.5" r="3.2" fill="#108a00" />
+                    <path d="M 34 61 C 34 55.5, 37.5 53.2, 42 53.2 C 46.5 53.2, 50 55.5, 50 61 Z" fill="#108a00" />
+                  </g>
+                  <circle cx="42" cy="52" r="9" fill="none" stroke="#1c3422" strokeWidth="1.5" />
                   <line x1="57" y1="50" x2="102" y2="50" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                   <line x1="57" y1="56" x2="86" y2="56" stroke="#1c3422" strokeWidth="1.6" strokeLinecap="round" opacity="0.45" />
 
                   {/* List Row 2: Donor Item */}
                   <circle cx="42" cy="76" r="9" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.5" />
-                  <circle cx="42" cy="73" r="3.5" fill="#2d6842" />
-                  <path d="M 36 81 C 36 77, 48 77, 48 81 Z" fill="#2d6842" />
+                  <g clipPath="url(#donor-row-2-clip)">
+                    <circle cx="42" cy="72.5" r="3.2" fill="#108a00" />
+                    <path d="M 34 85 C 34 79.5, 37.5 77.2, 42 77.2 C 46.5 77.2, 50 79.5, 50 85 Z" fill="#108a00" />
+                  </g>
+                  <circle cx="42" cy="76" r="9" fill="none" stroke="#1c3422" strokeWidth="1.5" />
                   <line x1="57" y1="74" x2="108" y2="74" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                   <line x1="57" y1="80" x2="90" y2="80" stroke="#1c3422" strokeWidth="1.6" strokeLinecap="round" opacity="0.45" />
 
                   {/* List Row 3: Donor Item */}
                   <circle cx="42" cy="100" r="9" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.5" />
-                  <circle cx="42" cy="97" r="3.5" fill="#108a00" />
-                  <path d="M 36 105 C 36 101, 48 101, 48 105 Z" fill="#108a00" />
+                  <g clipPath="url(#donor-row-3-clip)">
+                    <circle cx="42" cy="96.5" r="3.2" fill="#108a00" />
+                    <path d="M 34 109 C 34 103.5, 37.5 101.2, 42 101.2 C 46.5 101.2, 50 103.5, 50 109 Z" fill="#108a00" />
+                  </g>
+                  <circle cx="42" cy="100" r="9" fill="none" stroke="#1c3422" strokeWidth="1.5" />
                   <line x1="57" y1="98" x2="98" y2="98" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                   <line x1="57" y1="104" x2="80" y2="104" stroke="#1c3422" strokeWidth="1.6" strokeLinecap="round" opacity="0.45" />
 
@@ -146,13 +162,16 @@ export const WhatWeCanDoSection: React.FC = () => {
                   <line x1="57" y1="120" x2="94" y2="120" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" opacity="0.3" />
                 </g>
 
-                {/* Refined Modern Featured Donor Avatar Badge (Top Right) */}
+                {/* Featured Donor Avatar Badge (Top Right) with exact perfected silhouette design */}
                 <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-[126px_50px]">
                   <circle cx="126" cy="50" r="23" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
-                  <circle cx="126" cy="50" r="19" fill="#e7f5e3" />
-                  {/* Clean Vector Profile Silhouette */}
-                  <circle cx="126" cy="44" r="7" fill="#108a00" />
-                  <path d="M 113 62 C 113 54, 139 54, 139 62 Z" fill="#108a00" />
+                  <circle cx="126" cy="50" r="19" fill="#c8f0be" />
+                  <g clipPath="url(#donor-featured-clip)">
+                    <circle cx="126" cy="43" r="7.2" fill="#108a00" />
+                    <path d="M 109 69 C 109 57.5, 116 53, 126 53 C 136 53, 143 57.5, 143 69 Z" fill="#108a00" />
+                  </g>
+                  <circle cx="126" cy="50" r="23" fill="none" stroke="#1c3422" strokeWidth="2.2" />
+
                   {/* VIP / Retained Star Badge */}
                   <circle cx="143" cy="34" r="7.5" fill="#ffd166" stroke="#1c3422" strokeWidth="1.4" />
                   <path d="M 143 30.5 L 144.2 33.2 L 147 33.5 L 144.9 35.3 L 145.5 38 L 143 36.6 L 140.5 38 L 141.1 35.3 L 139 33.5 L 141.8 33.2 Z" fill="#1c3422" />
@@ -423,50 +442,60 @@ export const WhatWeCanDoSection: React.FC = () => {
                 {/* Soft Base Shadow */}
                 <ellipse cx="85" cy="148" rx="60" ry="7" fill="#e7f5e3" />
 
-                {/* Team Group of Volunteers */}
+                {/* Team Group of Volunteers with Silhouette Avatars */}
                 <g className="transition-transform duration-500 ease-out group-hover:-translate-y-1 origin-bottom">
-                  {/* Left Volunteer */}
-                  <g>
-                    <rect x="45" y="82" width="6" height="10" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.5" />
-                    <circle cx="48" cy="74" r="10.5" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.8" />
-                    <path d="M 38 72 C 38 62, 58 62, 58 72 C 54 68, 42 68, 38 72 Z" fill="#1c3422" />
-                    <path d="M 28 138 L 28 102 C 28 92, 40 90, 48 90 C 56 90, 68 92, 68 102 L 68 138 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="2" />
-                    <path d="M 44 90 L 48 96 L 52 90" stroke="#1c3422" strokeWidth="1.5" fill="none" />
+                  <defs>
+                    <clipPath id="vol-avatar-lead"><circle cx="85" cy="74" r="22" /></clipPath>
+                    <clipPath id="vol-avatar-left"><circle cx="44" cy="86" r="17" /></clipPath>
+                    <clipPath id="vol-avatar-right"><circle cx="126" cy="86" r="17" /></clipPath>
+                  </defs>
+
+                  {/* Left Volunteer Badge */}
+                  <g className="transition-transform duration-500 ease-out group-hover:-translate-x-1 origin-center">
+                    <circle cx="44" cy="86" r="17" fill="#e7f5e3" stroke="#1c3422" strokeWidth="2" />
+                    <g clipPath="url(#vol-avatar-left)">
+                      <circle cx="44" cy="79.5" r="5.8" fill="#108a00" />
+                      <path d="M 30 103 C 30 93, 36.5 88.5, 44 88.5 C 51.5 88.5, 58 93, 58 103 Z" fill="#108a00" />
+                    </g>
+                    <circle cx="44" cy="86" r="17" fill="none" stroke="#1c3422" strokeWidth="2" />
                   </g>
 
-                  {/* Right Volunteer */}
-                  <g>
-                    <rect x="119" y="82" width="6" height="10" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.5" />
-                    <circle cx="122" cy="74" r="10.5" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.8" />
-                    <path d="M 112 72 C 112 62, 132 62, 132 72 C 128 68, 116 68, 112 72 Z" fill="#1c3422" />
-                    <path d="M 102 138 L 102 102 C 102 92, 114 90, 122 90 C 130 90, 142 92, 142 102 L 142 138 Z" fill="#52b86a" stroke="#1c3422" strokeWidth="2" />
-                    <path d="M 118 90 L 122 96 L 126 90" stroke="#1c3422" strokeWidth="1.5" fill="none" />
+                  {/* Right Volunteer Badge */}
+                  <g className="transition-transform duration-500 ease-out group-hover:translate-x-1 origin-center">
+                    <circle cx="126" cy="86" r="17" fill="#e7f5e3" stroke="#1c3422" strokeWidth="2" />
+                    <g clipPath="url(#vol-avatar-right)">
+                      <circle cx="126" cy="79.5" r="5.8" fill="#108a00" />
+                      <path d="M 112 103 C 112 93, 118.5 88.5, 126 88.5 C 133.5 88.5, 140 93, 140 103 Z" fill="#108a00" />
+                    </g>
+                    <circle cx="126" cy="86" r="17" fill="none" stroke="#1c3422" strokeWidth="2" />
                   </g>
 
-                  {/* Center Key Volunteer with Heart Emblem */}
-                  <g>
-                    <rect x="80.5" y="75" width="9" height="11" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.8" />
-                    <circle cx="85" cy="65" r="13" fill="#fde6d2" stroke="#1c3422" strokeWidth="2.2" />
-                    {/* Modern Hair & Face */}
-                    <path d="M 72 63 C 72 49, 98 49, 98 63 C 93 58, 77 58, 72 63 Z" fill="#1c3422" />
-                    <circle cx="80.5" cy="65" r="1.3" fill="#1c3422" />
-                    <circle cx="89.5" cy="65" r="1.3" fill="#1c3422" />
-                    <path d="M 81.5 71 C 83.5 73, 86.5 73, 88.5 71" stroke="#1c3422" strokeWidth="1.5" fill="none" strokeLinecap="round" />
-
-                    {/* Torso & Uniform */}
-                    <path d="M 60 142 L 60 100 C 60 86, 76 84, 85 84 C 94 84, 110 86, 110 100 L 110 142 Z" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" />
-                    <path d="M 79 84 L 85 94 L 91 84" stroke="#1c3422" strokeWidth="1.8" fill="none" />
-                    {/* White Heart on Shirt */}
-                    <path d="M 85 116 C 85 116, 76 110, 76 104 C 76 100, 80 98, 83 100 C 85 101.5, 85 101.5, 85 101.5 C 85 101.5, 85 101.5, 87 100 C 90 98, 94 100, 94 104 C 94 110, 85 116, 85 116 Z" fill="#ffffff" />
+                  {/* Center Key Volunteer Leader with Heart Emblem */}
+                  <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-center">
+                    <circle cx="85" cy="74" r="22" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" />
+                    <g clipPath="url(#vol-avatar-lead)">
+                      <circle cx="85" cy="65.5" r="7.5" fill="#108a00" />
+                      <path d="M 67 96 C 67 83, 75 77.5, 85 77.5 C 95 77.5, 103 83, 103 96 Z" fill="#108a00" />
+                      {/* White Heart on Silhouette Torso */}
+                      <path d="M 85 89 C 85 89, 81 85.5, 81 82.5 C 81 80.5, 83 79.2, 85 80.5 C 87 79.2, 89 80.5, 89 82.5 C 89 85.5, 85 89, 85 89 Z" fill="#ffffff" />
+                    </g>
+                    <circle cx="85" cy="74" r="22" fill="none" stroke="#1c3422" strokeWidth="2.2" />
                   </g>
+
+                  {/* Team Training & Schedule Roster Bar */}
+                  <rect x="26" y="112" width="118" height="26" rx="8" fill="#ffffff" stroke="#1c3422" strokeWidth="2" />
+                  {/* Verified Trained Pill */}
+                  <rect x="32" y="117" width="28" height="16" rx="8" fill="#c8f0be" stroke="#108a00" strokeWidth="1" />
+                  <path d="M 40 125 L 43.5 128.5 L 49.5 121.5" stroke="#108a00" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                  {/* Active Training Lines */}
+                  <line x1="68" y1="121" x2="132" y2="121" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="68" y1="128" x2="114" y2="128" stroke="#108a00" strokeWidth="2" strokeLinecap="round" />
                 </g>
 
-                {/* Training Gear Settings Badge (Top Right) */}
-                <g className="transition-transform duration-500 ease-out group-hover:rotate-45 origin-[140px_46px]">
-                  <circle cx="140" cy="46" r="15" fill="#4a8b5e" stroke="#1c3422" strokeWidth="2" />
-                  {/* Gear Wheel */}
-                  <circle cx="140" cy="46" r="5" fill="#4a8b5e" stroke="#ffffff" strokeWidth="2" />
-                  <path d="M 140 36 L 140 39 M 140 53 L 140 56 M 130 46 L 133 46 M 147 46 L 150 46 M 133 39 L 135 41 M 145 51 L 147 53 M 133 53 L 135 51 M 145 41 L 147 39" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
+                {/* Training Certification Badge (Top Right) */}
+                <g className="transition-transform duration-500 ease-out group-hover:scale-110 origin-[140px_42px]">
+                  <circle cx="140" cy="42" r="16" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" />
+                  <path d="M 132 42 L 137 47 L 148 36" stroke="#ffffff" strokeWidth="2.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
                 </g>
 
                 {/* Action Rays on Left */}
@@ -502,7 +531,13 @@ export const WhatWeCanDoSection: React.FC = () => {
 
                 {/* Board Meeting Window */}
                 <g className="transition-transform duration-500 ease-out group-hover:-translate-y-1 origin-center">
-                  {/* Outer Window Frame matching width perfectly */}
+                  <defs>
+                    <clipPath id="board-chair-clip"><circle cx="75" cy="74" r="13" /></clipPath>
+                    <clipPath id="board-left-clip"><circle cx="45" cy="79" r="10.5" /></clipPath>
+                    <clipPath id="board-right-clip"><circle cx="105" cy="79" r="10.5" /></clipPath>
+                  </defs>
+
+                  {/* Outer Window Frame */}
                   <rect x="24" y="32" width="102" height="98" rx="10" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
                   {/* Top Window Bar */}
                   <rect x="24" y="32" width="102" height="18" rx="10" fill="#f4fbf1" />
@@ -512,63 +547,66 @@ export const WhatWeCanDoSection: React.FC = () => {
                   <circle cx="40" cy="41" r="2" fill="#1c3422" />
                   <circle cx="46" cy="41" r="2" fill="#1c3422" />
 
-                  {/* Agenda Lines */}
-                  <line x1="36" y1="64" x2="84" y2="64" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="36" y1="74" x2="72" y2="74" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" opacity="0.5" />
+                  {/* Agenda Header Line */}
+                  <line x1="56" y1="41" x2="88" y2="41" stroke="#108a00" strokeWidth="1.6" strokeLinecap="round" opacity="0.6" />
 
-                  {/* Seated Board Members naturally seated behind Conference Table */}
+                  {/* Seated Board Members with Silhouette Avatars */}
                   <g>
-                    {/* Seated Members (Layered behind table) */}
                     {/* Left Member */}
-                    <g>
-                      <rect x="44" y="93" width="4" height="8" fill="#fde6d2" />
-                      <circle cx="46" cy="87" r="6.5" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.4" />
-                      <path d="M 40 85 C 40 78, 52 78, 52 85 Z" fill="#1c3422" />
-                      <path d="M 34 120 C 34 100, 58 100, 58 120 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.5" />
+                    <circle cx="45" cy="79" r="10.5" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.6" />
+                    <g clipPath="url(#board-left-clip)">
+                      <circle cx="45" cy="74.5" r="3.8" fill="#108a00" />
+                      <path d="M 36 89.5 C 36 83.5, 40 80.5, 45 80.5 C 50 80.5, 54 83.5, 54 89.5 Z" fill="#108a00" />
                     </g>
+                    <circle cx="45" cy="79" r="10.5" fill="none" stroke="#1c3422" strokeWidth="1.6" />
 
                     {/* Right Member */}
-                    <g>
-                      <rect x="102" y="93" width="4" height="8" fill="#fde6d2" />
-                      <circle cx="104" cy="87" r="6.5" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.4" />
-                      <path d="M 98 85 C 98 78, 110 78, 110 85 Z" fill="#1c3422" />
-                      <path d="M 92 120 C 92 100, 116 100, 116 120 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.5" />
+                    <circle cx="105" cy="79" r="10.5" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.6" />
+                    <g clipPath="url(#board-right-clip)">
+                      <circle cx="105" cy="74.5" r="3.8" fill="#108a00" />
+                      <path d="M 96 89.5 C 96 83.5, 100 80.5, 105 80.5 C 110 80.5, 114 83.5, 114 89.5 Z" fill="#108a00" />
                     </g>
+                    <circle cx="105" cy="79" r="10.5" fill="none" stroke="#1c3422" strokeWidth="1.6" />
 
                     {/* Center Board Chair */}
-                    <g>
-                      <rect x="72.5" y="87" width="5" height="9" fill="#fde6d2" />
-                      <circle cx="75" cy="80" r="8" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.6" />
-                      <path d="M 67 78 C 67 69, 83 69, 83 78 Z" fill="#1c3422" />
-                      <path d="M 60 120 C 60 96, 90 96, 90 120 Z" fill="#108a00" stroke="#1c3422" strokeWidth="1.8" />
-                      <path d="M 72 98 L 75 104 L 78 98" stroke="#ffffff" strokeWidth="1.2" fill="none" />
+                    <circle cx="75" cy="74" r="13" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.8" />
+                    <g clipPath="url(#board-chair-clip)">
+                      <circle cx="75" cy="68.5" r="4.8" fill="#108a00" />
+                      <path d="M 63 87 C 63 79.5, 68 76, 75 76 C 82 76, 87 79.5, 87 87 Z" fill="#108a00" />
                     </g>
+                    <circle cx="75" cy="74" r="13" fill="none" stroke="#1c3422" strokeWidth="1.8" />
 
                     {/* Conference Table in front of members */}
-                    <rect x="26" y="106" width="98" height="20" rx="8" fill="#f0f7ee" stroke="#1c3422" strokeWidth="1.8" />
-                    <line x1="32" y1="110" x2="118" y2="110" stroke="#108a00" strokeWidth="1" strokeLinecap="round" opacity="0.4" />
-                    {/* Tablet/agenda notes on table */}
-                    <rect x="69" y="111" width="12" height="7" rx="1.5" fill="#108a00" stroke="#1c3422" strokeWidth="1" />
-                    <rect x="40" y="112" width="9" height="5" rx="1" fill="#ffffff" stroke="#1c3422" strokeWidth="0.9" />
-                    <rect x="101" y="112" width="9" height="5" rx="1" fill="#ffffff" stroke="#1c3422" strokeWidth="0.9" />
+                    <rect x="28" y="96" width="94" height="26" rx="8" fill="#f0f7ee" stroke="#1c3422" strokeWidth="1.8" />
+                    <line x1="34" y1="100" x2="116" y2="100" stroke="#108a00" strokeWidth="1.2" strokeLinecap="round" opacity="0.4" />
+                    {/* Tablet on left */}
+                    <rect x="36" y="106" width="14" height="9" rx="1.5" fill="#108a00" stroke="#1c3422" strokeWidth="1" />
+                    {/* Board Agenda in Center */}
+                    <rect x="66" y="103" width="18" height="14" rx="2" fill="#ffffff" stroke="#1c3422" strokeWidth="1.2" />
+                    <line x1="70" y1="107" x2="80" y2="107" stroke="#108a00" strokeWidth="1.4" strokeLinecap="round" />
+                    <line x1="70" y1="112" x2="77" y2="112" stroke="#1c3422" strokeWidth="1.2" strokeLinecap="round" />
+                    {/* Notepad on right */}
+                    <rect x="100" y="106" width="14" height="9" rx="1.5" fill="#ffffff" stroke="#1c3422" strokeWidth="1" />
                   </g>
                 </g>
 
                 {/* Floating Gavel Authority Stamp (Top Right) */}
                 <g className="transition-transform duration-500 ease-out group-hover:scale-105 group-hover:rotate-6 origin-[124px_44px]">
                   <circle cx="124" cy="44" r="22" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" />
-                  {/* Executive Gavel & Sound Block */}
-                  <g transform="translate(124, 42) rotate(-28) translate(-124, -42)">
-                    {/* Gavel Head */}
-                    <rect x="112" y="28" width="24" height="11" rx="3" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
-                    {/* Golden brass ring in center */}
-                    <rect x="122" y="28" width="4" height="11" fill="#ffd166" />
-                    {/* Gavel Handle */}
-                    <line x1="124" y1="39" x2="124" y2="57" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" />
-                    <circle cx="124" cy="57" r="2" fill="#ffd166" stroke="#1c3422" strokeWidth="0.8" />
+                  {/* Sound Block underneath */}
+                  <ellipse cx="124" cy="56" rx="13" ry="4" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
+                  <ellipse cx="124" cy="56" rx="8" ry="2.2" fill="#ffd166" opacity="0.7" />
+                  {/* Executive Gavel striking block */}
+                  <g transform="rotate(-30 117 44)">
+                    <rect x="106" y="38" width="22" height="11" rx="2.5" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
+                    <rect x="115" y="38" width="4" height="11" fill="#ffd166" />
                   </g>
-                  {/* Round Sound Block underneath */}
-                  <ellipse cx="124" cy="56" rx="11" ry="3.5" fill="#ffffff" stroke="#1c3422" strokeWidth="1.4" />
+                  {/* Gavel Handle */}
+                  <line x1="117" y1="44" x2="135" y2="28" stroke="#ffffff" strokeWidth="3.2" strokeLinecap="round" />
+                  <circle cx="136" cy="27" r="2.2" fill="#ffd166" stroke="#1c3422" strokeWidth="0.8" />
+                  {/* Impact Sparks */}
+                  <line x1="108" y1="51" x2="104" y2="48" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" />
+                  <line x1="111" y1="58" x2="106" y2="60" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" />
                 </g>
 
                 {/* Action Rays */}
@@ -658,9 +696,12 @@ export const WhatWeCanDoSection: React.FC = () => {
                       strokeLinejoin="round"
                     />
                   </g>
-                  {/* Voice Broadcast Waves on Top Left */}
-                  <path d="M 28 64 C 23 59, 23 52, 28 47" stroke="#108a00" strokeWidth="2" fill="none" strokeLinecap="round" />
-                  <path d="M 23 68 C 16 61, 16 48, 23 42" stroke="#108a00" strokeWidth="2" fill="none" strokeLinecap="round" opacity="0.6" />
+                  {/* Audio Broadcast Waves rotated precisely to top-left */}
+                  <g transform="translate(46, 80) rotate(-135)">
+                    <path d="M 22 -9.5 A 24 24 0 0 1 22 9.5" stroke="#108a00" strokeWidth="2.2" fill="none" strokeLinecap="round" />
+                    <path d="M 26.5 -13 A 29.5 29.5 0 0 1 26.5 13" stroke="#108a00" strokeWidth="2" fill="none" strokeLinecap="round" opacity="0.75" />
+                    <path d="M 31 -16.5 A 35 35 0 0 1 31 16.5" stroke="#108a00" strokeWidth="1.8" fill="none" strokeLinecap="round" opacity="0.5" />
+                  </g>
                 </g>
 
                 {/* Action Rays on Top Right */}
