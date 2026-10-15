@@ -3,6 +3,7 @@ import { NewsletterSignup } from "@/components/newsletter/NewsletterSignup";
 import { SoundFamiliarCards } from "@/components/home/SoundFamiliarCards";
 import { SecuritySection } from "@/components/home/SecuritySection";
 import { HowItComesTogetherSection } from "@/components/home/HowItComesTogetherSection";
+import { CompanyTrackRecordSection } from "@/components/home/CompanyTrackRecordSection";
 import { TrustedPartnersSection } from "@/components/home/TrustedPartnersSection";
 import { SuccessStoriesSection } from "@/components/home/SuccessStoriesSection";
 import { ControlTowerPreviewCTA } from "@/components/home/ControlTowerPreviewCTA";
@@ -612,6 +613,9 @@ const ControlTower = () => {
 
         {/* How It Comes Together */}
         <HowItComesTogetherSection />
+
+        {/* 22+ Years Behind the Technology */}
+        <CompanyTrackRecordSection />
 
 
         <TestimonialsSection colors={colors} />
