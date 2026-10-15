@@ -4,7 +4,12 @@ import previewIllustration from "@/assets/screenshots/control-tower-preview-illu
 
 export function ControlTowerPreviewCTA() {
   return (
-    <section className="py-16 md:py-24 px-6 lg:px-12 bg-white border-t border-[#108a00]/20">
+    <section
+      className="py-16 md:py-24 px-6 lg:px-12 border-t border-[#108a00]/10"
+      style={{
+        background: "linear-gradient(180deg, #FFFFFF 0%, #FAFCF9 50%, #F5F9F4 100%)",
+      }}
+    >
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column - Content */}

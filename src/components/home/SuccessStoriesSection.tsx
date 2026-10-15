@@ -123,9 +123,9 @@ export function SuccessStoriesSection() {
   return (
     <section
       id="success-stories"
-      className="py-16 md:py-24 px-6 lg:px-12 border-t border-[#108a00]/20"
+      className="py-16 md:py-24 px-6 lg:px-12"
       style={{
-        background: "linear-gradient(180deg, #FFFFFF 0%, #F9FCF8 12%, #F1F9EF 40%, #ECF7EA 70%, #E7F5E3 100%)",
+        background: "linear-gradient(180deg, #FFFFFF 0%, #FAFCF9 15%, #F4F8F3 45%, #EEF6EB 75%, #EBF4E8 100%)",
       }}
     >
       <div className="max-w-6xl mx-auto">

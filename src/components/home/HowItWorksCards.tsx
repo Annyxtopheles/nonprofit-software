@@ -2,8 +2,26 @@ import React from "react";
 
 export const HowItWorksCards: React.FC = () => {
   return (
-    <section className="py-14 md:py-20 bg-white">
+    <section
+      className="py-16 md:py-24"
+      style={{
+        background: "linear-gradient(180deg, #F5F9F4 0%, #EFF6EE 50%, #E9F3E7 100%)",
+      }}
+    >
       <div className="container mx-auto max-w-6xl px-4">
+        {/* Section Header */}
+        <div className="mb-12 md:mb-14 text-center max-w-3xl mx-auto">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#108a00] mb-3">
+            HOW IT ACTUALLY WORKS
+          </p>
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-[#0c180a] mb-3">
+            How It Actually Works
+          </h2>
+          <p className="text-base sm:text-lg leading-relaxed text-slate-600 text-pretty">
+            Five ways the Control Tower simplifies your operations without replacing your tools.
+          </p>
+        </div>
+
         {/* Responsive grid for the 5 cards - static, apparent layout (no sliding) */}
         <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
           {/* ========================================================

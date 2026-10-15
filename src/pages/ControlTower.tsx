@@ -163,10 +163,7 @@ const ControlTower = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
               {/* Left Column: Hero Content */}
               <div className="lg:col-span-7 xl:col-span-6 text-center lg:text-left">
-                <div
-                  className="inline-flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-full mb-6"
-                  style={{ backgroundColor: colors.accentLight, color: colors.accent }}
-                >
+                <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-[#108a00]/30 bg-[#108a00]/10 text-[#108a00] mb-6">
                   <Layers className="w-4 h-4" />
                   NONPROFIT AI CONTROL TOWER
                 </div>
@@ -224,7 +221,12 @@ const ControlTower = () => {
         <HowItWorksCards />
 
         {/* Problem Section */}
-        <section className="py-14 md:py-20 px-6 lg:px-12 bg-white">
+        <section
+          className="py-14 md:py-20 px-6 lg:px-12"
+          style={{
+            background: "linear-gradient(180deg, #E9F3E7 0%, #EEF6EB 50%, #F5F9F4 100%)",
+          }}
+        >
           <div className="max-w-6xl mx-auto">
             <div className="mb-12 md:mb-14 text-center">
               <h2
@@ -480,10 +482,7 @@ const ControlTower = () => {
               style={{ color: colors.accent }}
               strokeWidth={1.75}
             />
-            <span
-              className="inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-5"
-              style={{ backgroundColor: colors.bg, color: colors.accent }}
-            >
+            <span className="inline-block text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-[#108a00]/30 bg-white text-[#108a00] mb-5">
               Free Trial
             </span>
             <h2
