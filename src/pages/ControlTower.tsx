@@ -2,6 +2,7 @@ import { SiteLayout } from "@/components/layout/SiteLayout";
 import { NewsletterSignup } from "@/components/newsletter/NewsletterSignup";
 import { SoundFamiliarCards } from "@/components/home/SoundFamiliarCards";
 import { SecuritySection } from "@/components/home/SecuritySection";
+import { HowItComesTogetherSection } from "@/components/home/HowItComesTogetherSection";
 import { TrustedPartnersSection } from "@/components/home/TrustedPartnersSection";
 import { SuccessStoriesSection } from "@/components/home/SuccessStoriesSection";
 import { ControlTowerPreviewCTA } from "@/components/home/ControlTowerPreviewCTA";
@@ -609,71 +610,9 @@ const ControlTower = () => {
         <SecuritySection />
 
 
-        {/* Deployment Options */}
-        <section className="py-12 md:py-16 px-6 lg:px-12">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-10 text-center">
-              <h2
-                className="text-3xl md:text-4xl font-bold mb-3"
-                style={{ color: colors.headline }}
-              >
-                Two Ways to Deploy
-              </h2>
-              <p className="text-lg max-w-2xl mx-auto" style={{ color: colors.body }}>
-                Choose managed cloud or full self-hosted control.
-              </p>
-            </div>
-            <div className="grid sm:grid-cols-2 gap-5">
-              <div
-                className="relative p-5 md:p-6 text-center transition-shadow duration-200 hover:shadow-[0_4px_16px_rgba(0,0,0,0.08)]"
-                style={{
-                  ...tileCardStyle,
-                  borderColor: colors.accent,
-                }}
-              >
-                <span
-                  className="absolute top-4 right-4 text-[11px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-md"
-                  style={{ backgroundColor: colors.accentLight, color: colors.accent }}
-                >
-                  Recommended
-                </span>
-                <Cloud className="w-7 h-7 mb-3 mx-auto" style={{ color: colors.accent }} strokeWidth={1.5} />
-                <h3 className="text-[15px] font-medium mb-4" style={{ color: colors.headline }}>
-                  Lovable Cloud
-                </h3>
-                <ul className="mt-1 space-y-2 inline-block text-left">
-                  {["10-minute setup, no CLI needed", "AI features included — no API key required", "One-click publish and automatic updates", "Managed infrastructure and backups"].map((b) => (
-                    <li key={b} className="text-sm flex items-start gap-2" style={{ color: colors.body }}>
-                      <span className="mt-0.5" style={{ color: colors.accent }}>✓</span> {b}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div
-                className="relative p-5 md:p-6 text-center transition-shadow duration-200 hover:shadow-[0_4px_16px_rgba(0,0,0,0.08)]"
-                style={tileCardStyle}
-              >
-                <span
-                  className="absolute top-4 right-4 text-[11px] font-bold uppercase tracking-wide px-2.5 py-1 rounded-md"
-                  style={{ backgroundColor: colors.accentLight, color: colors.accent }}
-                >
-                  Full Control
-                </span>
-                <Server className="w-7 h-7 mb-3 mx-auto" style={{ color: colors.accent }} strokeWidth={1.5} />
-                <h3 className="text-[15px] font-medium mb-4" style={{ color: colors.headline }}>
-                  Self-Hosted
-                </h3>
-                <ul className="mt-1 space-y-2 inline-block text-left">
-                  {["Full code ownership and data sovereignty", "Use your own AI API keys (OpenAI, Anthropic, Google)", "Deploy anywhere — AWS, GCP, Azure, on-premise", "Complete customization and white-labeling"].map((b) => (
-                    <li key={b} className="text-sm flex items-start gap-2" style={{ color: colors.body }}>
-                      <span className="mt-0.5" style={{ color: colors.accent }}>✓</span> {b}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* How It Comes Together */}
+        <HowItComesTogetherSection />
+
 
         <TestimonialsSection colors={colors} />
 
