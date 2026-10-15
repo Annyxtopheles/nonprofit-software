@@ -6,7 +6,7 @@ export const WhatWeCanDoSection: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-[2.6rem] font-extrabold tracking-tight text-[#0c180a] mb-3">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-[#0c180a] mb-3">
             WHAT WE CAN DO
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-600 text-pretty">
@@ -19,9 +19,9 @@ export const WhatWeCanDoSection: React.FC = () => {
           {/* ========================================================
               ROW 1 - CARD 1 (Wide / 7 cols): Leadership & Program Dashboard
           ======================================================== */}
-          <div className="lg:col-span-7 group relative flex flex-col sm:flex-row items-center justify-between gap-6 overflow-hidden rounded-3xl border border-[#14a800]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/15">
+          <div className="lg:col-span-7 group relative flex flex-col sm:flex-row items-center justify-between gap-6 overflow-hidden rounded-3xl border border-[#108a00]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/15">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[55%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a] leading-tight">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a] leading-tight">
                 Leadership &amp;
                 <br />
                 Program Dashboard
@@ -56,12 +56,12 @@ export const WhatWeCanDoSection: React.FC = () => {
                   <polygon points="38,82 58,62 82,72 108,48 132,56 132,82 38,82" fill="#e7f5e3" fillOpacity="0.8" />
                   {/* Line Chart */}
                   <path d="M 38 82 L 58 62 L 82 72 L 108 48 L 132 56" stroke="#4a8b5e" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                  <circle cx="108" cy="48" r="3.5" fill="#14a800" stroke="#1c3422" strokeWidth="1.4" />
+                  <circle cx="108" cy="48" r="3.5" fill="#108a00" stroke="#1c3422" strokeWidth="1.4" />
 
                   {/* Mini 3-Bar Chart */}
                   <line x1="38" y1="120" x2="78" y2="120" stroke="#1c3422" strokeWidth="1.4" strokeLinecap="round" />
                   <rect x="42" y="96" width="7" height="24" rx="2" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.4" />
-                  <rect x="53" y="88" width="7" height="32" rx="2" fill="#14a800" stroke="#1c3422" strokeWidth="1.4" />
+                  <rect x="53" y="88" width="7" height="32" rx="2" fill="#108a00" stroke="#1c3422" strokeWidth="1.4" />
                   <rect x="64" y="92" width="7" height="28" rx="2" fill="#52b86a" stroke="#1c3422" strokeWidth="1.4" />
 
                   {/* Donut Chart */}
@@ -110,9 +110,9 @@ export const WhatWeCanDoSection: React.FC = () => {
           {/* ========================================================
               ROW 1 - CARD 2 (Narrow / 5 cols): Donor Management & Retention
           ======================================================== */}
-          <div className="lg:col-span-5 group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/15">
+          <div className="lg:col-span-5 group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/15">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[55%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
                 Donor Management &amp; Retention
               </h3>
               <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -186,9 +186,9 @@ export const WhatWeCanDoSection: React.FC = () => {
           {/* ========================================================
               ROW 2 - CARD 3 (Narrow / 5 cols): Fundraising & Donations
           ======================================================== */}
-          <div className="lg:col-span-5 group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/15">
+          <div className="lg:col-span-5 group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/15">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[55%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
                 Fundraising &amp; Donations
               </h3>
               <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -244,9 +244,9 @@ export const WhatWeCanDoSection: React.FC = () => {
           {/* ========================================================
               ROW 2 - CARD 4 (Wide / 7 cols): Grant Management
           ======================================================== */}
-          <div className="lg:col-span-7 group relative flex flex-col sm:flex-row items-center justify-between gap-6 overflow-hidden rounded-3xl border border-[#14a800]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/15">
+          <div className="lg:col-span-7 group relative flex flex-col sm:flex-row items-center justify-between gap-6 overflow-hidden rounded-3xl border border-[#108a00]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/15">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[55%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
                 Grant Management
               </h3>
               <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -305,9 +305,9 @@ export const WhatWeCanDoSection: React.FC = () => {
           {/* ========================================================
               ROW 3 - CARD 5 (Wide / 7 cols): Event Management
           ======================================================== */}
-          <div className="lg:col-span-7 group relative flex flex-col sm:flex-row items-center justify-between gap-6 overflow-hidden rounded-3xl border border-[#14a800]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/15">
+          <div className="lg:col-span-7 group relative flex flex-col sm:flex-row items-center justify-between gap-6 overflow-hidden rounded-3xl border border-[#108a00]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/15">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[55%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
                 Event Management
               </h3>
               <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -369,7 +369,7 @@ export const WhatWeCanDoSection: React.FC = () => {
                   <circle cx="164" cy="74" r="18" fill="#c8f0be" stroke="#1c3422" strokeWidth="2" />
                   <circle cx="164" cy="70" r="7.5" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.4" />
                   <path d="M 158 68 C 158 64, 170 64, 170 68" stroke="#1c3422" strokeWidth="1.8" fill="#1c3422" />
-                  <path d="M 152 86 C 152 80, 176 80, 176 86 Z" fill="#14a800" stroke="#1c3422" strokeWidth="1.4" />
+                  <path d="M 152 86 C 152 80, 176 80, 176 86 Z" fill="#108a00" stroke="#1c3422" strokeWidth="1.4" />
                 </g>
 
                 {/* Attendee Bubble 2 (Bottom Left) */}
@@ -393,9 +393,9 @@ export const WhatWeCanDoSection: React.FC = () => {
           {/* ========================================================
               ROW 3 - CARD 6 (Narrow / 5 cols): Volunteer Management & Training
           ======================================================== */}
-          <div className="lg:col-span-5 group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/15">
+          <div className="lg:col-span-5 group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/15">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[55%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
                 Volunteer Management &amp; Training
               </h3>
               <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -463,9 +463,9 @@ export const WhatWeCanDoSection: React.FC = () => {
           {/* ========================================================
               ROW 4 - CARD 7 (Narrow / 5 cols): Board Governance & Meetings
           ======================================================== */}
-          <div className="lg:col-span-5 group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/15">
+          <div className="lg:col-span-5 group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/15">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[55%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
                 Board Governance &amp; Meetings
               </h3>
               <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -533,9 +533,9 @@ export const WhatWeCanDoSection: React.FC = () => {
           {/* ========================================================
               ROW 4 - CARD 8 (Wide / 7 cols): Donor Call Notes Analysis
           ======================================================== */}
-          <div className="lg:col-span-7 group relative flex flex-col sm:flex-row items-center justify-between gap-6 overflow-hidden rounded-3xl border border-[#14a800]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/15">
+          <div className="lg:col-span-7 group relative flex flex-col sm:flex-row items-center justify-between gap-6 overflow-hidden rounded-3xl border border-[#108a00]/40 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/15">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[55%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
                 Donor Call Notes Analysis
               </h3>
               <p className="mt-3 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -599,3 +599,4 @@ export const WhatWeCanDoSection: React.FC = () => {
 };
 
 export default WhatWeCanDoSection;
+

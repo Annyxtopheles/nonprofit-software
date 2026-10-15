@@ -8,10 +8,10 @@ export const CompanyTrackRecordSection: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#14a800] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#108a00] mb-3">
             PROVEN ENTERPRISE FOUNDATION
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-[2.6rem] font-extrabold tracking-tight text-[#0c180a] text-balance mb-4 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-[#0c180a] text-balance mb-4 leading-tight">
             22+ Years Behind the Technology.
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-600 text-pretty max-w-2xl mx-auto">
@@ -22,15 +22,15 @@ export const CompanyTrackRecordSection: React.FC = () => {
         {/* 4 Track Record Cards */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {/* Card 1: 500+ Companies */}
-          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800]/40 hover:bg-white hover:shadow-lg">
+          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00]/40 hover:bg-white hover:shadow-lg">
             <div>
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#e7f5e3] text-[#14a800] mb-6 transition-transform duration-300 group-hover:scale-105">
+              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#e7f5e3] text-[#108a00] mb-6 transition-transform duration-300 group-hover:scale-105">
                 <Building2 className="h-5 w-5" />
               </div>
-              <div className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#0c180a] mb-1">
+              <div className="text-3xl sm:text-4xl font-semibold tracking-tight text-[#0c180a] mb-1">
                 500+
               </div>
-              <div className="text-base font-bold text-[#14a800] tracking-tight mb-2">
+              <div className="text-base font-semibold text-[#108a00] tracking-tight mb-2">
                 Companies
               </div>
               <p className="text-sm leading-relaxed text-slate-600 text-pretty">
@@ -40,15 +40,15 @@ export const CompanyTrackRecordSection: React.FC = () => {
           </div>
 
           {/* Card 2: 1,000+ Projects */}
-          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800]/40 hover:bg-white hover:shadow-lg">
+          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00]/40 hover:bg-white hover:shadow-lg">
             <div>
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#e7f5e3] text-[#14a800] mb-6 transition-transform duration-300 group-hover:scale-105">
+              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#e7f5e3] text-[#108a00] mb-6 transition-transform duration-300 group-hover:scale-105">
                 <Layers className="h-5 w-5" />
               </div>
-              <div className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#0c180a] mb-1">
+              <div className="text-3xl sm:text-4xl font-semibold tracking-tight text-[#0c180a] mb-1">
                 1,000+
               </div>
-              <div className="text-base font-bold text-[#14a800] tracking-tight mb-2">
+              <div className="text-base font-semibold text-[#108a00] tracking-tight mb-2">
                 Projects
               </div>
               <p className="text-sm leading-relaxed text-slate-600 text-pretty">
@@ -58,10 +58,10 @@ export const CompanyTrackRecordSection: React.FC = () => {
           </div>
 
           {/* Card 3: ISO/IEC 27001:2022 */}
-          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800]/40 hover:bg-white hover:shadow-lg">
+          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00]/40 hover:bg-white hover:shadow-lg">
             <div>
               <div className="flex items-center justify-between mb-6">
-                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#e7f5e3] text-[#14a800] transition-transform duration-300 group-hover:scale-105">
+                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#e7f5e3] text-[#108a00] transition-transform duration-300 group-hover:scale-105">
                   <ShieldCheck className="h-5 w-5" />
                 </div>
                 <img
@@ -70,10 +70,10 @@ export const CompanyTrackRecordSection: React.FC = () => {
                   className="h-8 w-auto object-contain opacity-90 transition-opacity group-hover:opacity-100"
                 />
               </div>
-              <div className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a] mb-1">
+              <div className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a] mb-1">
                 ISO/IEC 27001:2022
               </div>
-              <div className="text-xs font-bold uppercase tracking-wider text-[#14a800] mb-2">
+              <div className="text-xs font-semibold uppercase tracking-wider text-[#108a00] mb-2">
                 Certified Security
               </div>
               <p className="text-sm leading-relaxed text-slate-600 text-pretty">
@@ -83,12 +83,12 @@ export const CompanyTrackRecordSection: React.FC = () => {
           </div>
 
           {/* Card 4: Recognition */}
-          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800]/40 hover:bg-white hover:shadow-lg">
+          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00]/40 hover:bg-white hover:shadow-lg">
             <div>
-              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#e7f5e3] text-[#14a800] mb-6 transition-transform duration-300 group-hover:scale-105">
+              <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-[#e7f5e3] text-[#108a00] mb-6 transition-transform duration-300 group-hover:scale-105">
                 <Award className="h-5 w-5" />
               </div>
-              <div className="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#0c180a] mb-3">
+              <div className="text-2xl sm:text-3xl font-semibold tracking-tight text-[#0c180a] mb-3">
                 Recognition
               </div>
               <div className="flex flex-wrap gap-1.5 mb-2.5">
@@ -114,3 +114,4 @@ export const CompanyTrackRecordSection: React.FC = () => {
 };
 
 export default CompanyTrackRecordSection;
+

@@ -9,9 +9,9 @@ export const HowItWorksCards: React.FC = () => {
           {/* ========================================================
               Card 1: Your data already lives where it lives.
           ======================================================== */}
-          <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20">
+          <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/20">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
                 Your Data Already Lives Where It&nbsp;Lives.
               </h3>
               <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -44,7 +44,7 @@ export const HowItWorksCards: React.FC = () => {
                   <g className="transition-transform duration-500 ease-out group-hover:translate-y-1">
                     <path
                       d="M 64 102 C 64 96 82 92 104 92 C 126 92 144 96 144 102 V 116 C 144 122 126 126 104 126 C 82 126 64 122 64 116 Z"
-                      fill="#14a800"
+                      fill="#108a00"
                       stroke="#1c3422"
                       strokeWidth="2.4"
                     />
@@ -62,8 +62,8 @@ export const HowItWorksCards: React.FC = () => {
                       strokeWidth="2.4"
                     />
                     <ellipse cx="104" cy="72" rx="40" ry="10" fill="#e7f5e3" stroke="#1c3422" strokeWidth="2.4" />
-                    <circle cx="82" cy="83" r="2.5" fill="#14a800" />
-                    <circle cx="92" cy="83" r="2.5" fill="#14a800" />
+                    <circle cx="82" cy="83" r="2.5" fill="#108a00" />
+                    <circle cx="92" cy="83" r="2.5" fill="#108a00" />
                   </g>
 
                   {/* Database Cylinder 3 (Top) */}
@@ -75,8 +75,8 @@ export const HowItWorksCards: React.FC = () => {
                       strokeWidth="2.4"
                     />
                     <ellipse cx="104" cy="42" rx="40" ry="10" fill="#ffffff" stroke="#1c3422" strokeWidth="2.4" />
-                    <circle cx="82" cy="53" r="2.5" fill="#14a800" />
-                    <circle cx="92" cy="53" r="2.5" fill="#14a800" />
+                    <circle cx="82" cy="53" r="2.5" fill="#108a00" />
+                    <circle cx="92" cy="53" r="2.5" fill="#108a00" />
                   </g>
                 </g>
 
@@ -101,9 +101,9 @@ export const HowItWorksCards: React.FC = () => {
           {/* ========================================================
               Card 2: It connects to what you already use.
           ======================================================== */}
-          <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20">
+          <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/20">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
                 It Connects to What You Already&nbsp;Use.
               </h3>
               <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -134,13 +134,13 @@ export const HowItWorksCards: React.FC = () => {
                   <rect x="46" y="62" width="36" height="36" rx="8" fill="#ffffff" stroke="#1c3422" strokeWidth="2.4" />
                   <line x1="32" y1="80" x2="46" y2="80" stroke="#1c3422" strokeWidth="2.4" strokeLinecap="round" />
                   {/* Plug Prongs */}
-                  <rect x="82" y="68" width="10" height="6" rx="1.5" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" />
-                  <rect x="82" y="86" width="10" height="6" rx="1.5" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" />
+                  <rect x="82" y="68" width="10" height="6" rx="1.5" fill="#108a00" stroke="#1c3422" strokeWidth="1.8" />
+                  <rect x="82" y="86" width="10" height="6" rx="1.5" fill="#108a00" stroke="#1c3422" strokeWidth="1.8" />
                 </g>
 
                 {/* Right Connector Jack */}
                 <g className="transition-transform duration-500 ease-out group-hover:-translate-x-1.5 origin-center">
-                  <rect x="108" y="60" width="40" height="40" rx="8" fill="#14a800" stroke="#1c3422" strokeWidth="2.4" />
+                  <rect x="108" y="60" width="40" height="40" rx="8" fill="#108a00" stroke="#1c3422" strokeWidth="2.4" />
                   <line x1="148" y1="80" x2="162" y2="80" stroke="#1c3422" strokeWidth="2.4" strokeLinecap="round" />
                   {/* Jack Slots */}
                   <rect x="104" y="67" width="5" height="8" rx="1.5" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.6" />
@@ -152,22 +152,22 @@ export const HowItWorksCards: React.FC = () => {
                   <rect x="82" y="24" width="34" height="26" rx="6" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" />
                   <line x1="88" y1="32" x2="110" y2="32" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
                   <line x1="88" y1="39" x2="104" y2="39" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-                  <line x1="99" y1="50" x2="99" y2="58" stroke="#14a800" strokeWidth="2" strokeDasharray="2 2" />
+                  <line x1="99" y1="50" x2="99" y2="58" stroke="#108a00" strokeWidth="2" strokeDasharray="2 2" />
                 </g>
 
                 {/* Bottom Floating App Card (Finance) */}
                 <g className="transition-transform duration-500 ease-out group-hover:translate-y-2 origin-center">
                   <rect x="78" y="112" width="38" height="26" rx="6" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
-                  <circle cx="88" cy="125" r="4" fill="#14a800" />
+                  <circle cx="88" cy="125" r="4" fill="#108a00" />
                   <line x1="96" y1="125" x2="110" y2="125" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-                  <line x1="97" y1="102" x2="97" y2="110" stroke="#14a800" strokeWidth="2" strokeDasharray="2 2" />
+                  <line x1="97" y1="102" x2="97" y2="110" stroke="#108a00" strokeWidth="2" strokeDasharray="2 2" />
                 </g>
 
                 {/* Spark Rays */}
                 <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
-                  <line x1="90" y1="60" x2="96" y2="52" stroke="#14a800" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="102" y1="60" x2="98" y2="52" stroke="#14a800" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="96" y1="100" x2="96" y2="108" stroke="#14a800" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="90" y1="60" x2="96" y2="52" stroke="#108a00" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="102" y1="60" x2="98" y2="52" stroke="#108a00" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="96" y1="100" x2="96" y2="108" stroke="#108a00" strokeWidth="2.2" strokeLinecap="round" />
                 </g>
               </svg>
             </div>
@@ -176,9 +176,9 @@ export const HowItWorksCards: React.FC = () => {
           {/* ========================================================
               Card 3: AI agents watch continuously, not once a quarter.
           ======================================================== */}
-          <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20">
+          <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/20">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
                 AI Agents Watch Continuously, Not Once a&nbsp;Quarter.
               </h3>
               <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -207,7 +207,7 @@ export const HowItWorksCards: React.FC = () => {
                 {/* Center Scanning Eye / Lens */}
                 <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-center">
                   {/* Outer Outer Radar Halo */}
-                  <circle cx="95" cy="80" r="42" stroke="#14a800" strokeWidth="1.8" strokeDasharray="4 4" fill="none" opacity="0.6" />
+                  <circle cx="95" cy="80" r="42" stroke="#108a00" strokeWidth="1.8" strokeDasharray="4 4" fill="none" opacity="0.6" />
                   
                   {/* Outer Eye Shell */}
                   <path
@@ -221,7 +221,7 @@ export const HowItWorksCards: React.FC = () => {
                   <circle cx="95" cy="80" r="18" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" />
 
                   {/* Pupil with AI Spark Core */}
-                  <circle cx="95" cy="80" r="9" fill="#14a800" />
+                  <circle cx="95" cy="80" r="9" fill="#108a00" />
                   <circle cx="92" cy="77" r="2.5" fill="#ffffff" />
 
                   {/* Horizontal Scan Beam */}
@@ -230,7 +230,7 @@ export const HowItWorksCards: React.FC = () => {
                     y1="80"
                     x2="128"
                     y2="80"
-                    stroke="#14a800"
+                    stroke="#108a00"
                     strokeWidth="2"
                     className="transition-all duration-700 group-hover:translate-y-[-8px]"
                   />
@@ -238,7 +238,7 @@ export const HowItWorksCards: React.FC = () => {
 
                 {/* Floating Notification Badge: "10d Grant" Alert */}
                 <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:-translate-y-1.5 origin-center">
-                  <rect x="116" y="32" width="48" height="26" rx="7" fill="#14a800" stroke="#1c3422" strokeWidth="2.2" />
+                  <rect x="116" y="32" width="48" height="26" rx="7" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" />
                   <path d="M 125 45 L 129 49 L 137 41" stroke="#ffffff" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
                   <rect x="142" y="42" width="14" height="6" rx="2" fill="#ffffff" />
                 </g>
@@ -250,7 +250,7 @@ export const HowItWorksCards: React.FC = () => {
                   <line x1="36" y1="105" x2="68" y2="105" stroke="#1c3422" strokeWidth="1.8" />
                   <circle cx="45" cy="114" r="2" fill="#1c3422" />
                   <circle cx="53" cy="114" r="2" fill="#1c3422" />
-                  <circle cx="60" cy="114" r="2" fill="#14a800" />
+                  <circle cx="60" cy="114" r="2" fill="#108a00" />
                 </g>
 
                 {/* Action Rays */}
@@ -266,9 +266,9 @@ export const HowItWorksCards: React.FC = () => {
           {/* ========================================================
               Card 4: Every role sees what matters to them.
           ======================================================== */}
-          <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20">
+          <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/20">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
                 Every Role Sees What Matters to&nbsp;Them.
               </h3>
               <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -304,7 +304,7 @@ export const HowItWorksCards: React.FC = () => {
 
                 {/* Back Window - Dev Pipeline (Bottom Left) */}
                 <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:translate-y-1 origin-center">
-                  <rect x="42" y="84" width="58" height="48" rx="8" fill="#14a800" stroke="#1c3422" strokeWidth="2.4" />
+                  <rect x="42" y="84" width="58" height="48" rx="8" fill="#108a00" stroke="#1c3422" strokeWidth="2.4" />
                   <rect x="50" y="92" width="20" height="6" rx="2" fill="#ffffff" />
                   <rect x="50" y="104" width="12" height="18" rx="2" fill="#ffffff" />
                   <rect x="66" y="108" width="12" height="14" rx="2" fill="#ffffff" />
@@ -324,10 +324,10 @@ export const HowItWorksCards: React.FC = () => {
                   {/* 3 Role Tiles inside */}
                   <rect x="76" y="70" width="16" height="16" rx="3" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.6" />
                   <rect x="97" y="70" width="16" height="16" rx="3" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
-                  <rect x="118" y="70" width="16" height="16" rx="3" fill="#14a800" stroke="#1c3422" strokeWidth="1.6" />
+                  <rect x="118" y="70" width="16" height="16" rx="3" fill="#108a00" stroke="#1c3422" strokeWidth="1.6" />
 
                   <line x1="76" y1="96" x2="134" y2="96" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="76" y1="103" x2="114" y2="103" stroke="#14a800" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="76" y1="103" x2="114" y2="103" stroke="#108a00" strokeWidth="2.2" strokeLinecap="round" />
                 </g>
 
                 {/* Action Rays */}
@@ -342,9 +342,9 @@ export const HowItWorksCards: React.FC = () => {
           {/* ========================================================
               Card 5: One click does the busywork.
           ======================================================== */}
-          <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20 md:col-span-2 md:max-w-2xl md:mx-auto w-full">
+          <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/20 md:col-span-2 md:max-w-2xl md:mx-auto w-full">
             <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
-              <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
                 One Click Does the&nbsp;Busywork.
               </h3>
               <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -385,7 +385,7 @@ export const HowItWorksCards: React.FC = () => {
                   />
                   {/* Verified Checkmark Ribbon Badge */}
                   <g transform="rotate(6 131 67)">
-                    <circle cx="118" cy="46" r="6" fill="#14a800" />
+                    <circle cx="118" cy="46" r="6" fill="#108a00" />
                     <path d="M 115 46 L 117.5 48.5 L 122 44" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
                     <line x1="114" y1="60" x2="148" y2="60" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                     <line x1="114" y1="70" x2="142" y2="70" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
@@ -404,7 +404,7 @@ export const HowItWorksCards: React.FC = () => {
                     width="68"
                     height="40"
                     rx="10"
-                    fill="#14a800"
+                    fill="#108a00"
                     stroke="#1c3422"
                     strokeWidth="2.4"
                     className="transition-transform duration-200 group-hover:translate-y-1"
@@ -439,9 +439,9 @@ export const HowItWorksCards: React.FC = () => {
                 {/* Magic Sparkles around button */}
                 <g className="transition-transform duration-300 ease-out group-hover:scale-115 origin-center">
                   {/* Sparkle 1 (Top Left) */}
-                  <path d="M 44 46 L 46 40 L 48 46 L 54 48 L 48 50 L 46 56 L 44 50 L 38 48 Z" fill="#14a800" />
+                  <path d="M 44 46 L 46 40 L 48 46 L 54 48 L 48 50 L 46 56 L 44 50 L 38 48 Z" fill="#108a00" />
                   {/* Sparkle 2 (Top Right) */}
-                  <path d="M 88 34 L 89.5 29 L 91 34 L 96 35.5 L 91 37 L 89.5 42 L 88 37 L 83 35.5 Z" fill="#14a800" />
+                  <path d="M 88 34 L 89.5 29 L 91 34 L 96 35.5 L 91 37 L 89.5 42 L 88 37 L 83 35.5 Z" fill="#108a00" />
                   {/* Sparkle 3 (Bottom Left) */}
                   <circle cx="36" cy="74" r="3" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.5" />
                 </g>
@@ -455,3 +455,4 @@ export const HowItWorksCards: React.FC = () => {
 };
 
 export default HowItWorksCards;
+

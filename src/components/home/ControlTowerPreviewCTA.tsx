@@ -4,12 +4,12 @@ import previewIllustration from "@/assets/screenshots/control-tower-preview-illu
 
 export function ControlTowerPreviewCTA() {
   return (
-    <section className="py-16 md:py-24 px-6 lg:px-12 bg-white border-t border-[#14A800]/20">
+    <section className="py-16 md:py-24 px-6 lg:px-12 bg-white border-t border-[#108a00]/20">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column - Content */}
           <div className="lg:col-span-7 xl:col-span-6">
-            <h2 className="text-3xl md:text-4xl lg:text-[2.75rem] font-extrabold tracking-tight text-foreground leading-[1.25] mb-6 text-balance">
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-foreground leading-tight mb-6 text-balance">
               See What the Control Tower Could Look Like for Your Nonprofit.
             </h2>
 
@@ -33,7 +33,7 @@ export function ControlTowerPreviewCTA() {
             <div>
               <Button
                 size="lg"
-                className="font-bold text-white bg-[#14A800] hover:bg-[#129200] rounded-lg px-6 py-3.5 shadow-sm transition-all"
+                className="font-bold text-white bg-[#108a00] hover:bg-[#0e7700] rounded-lg px-6 py-3.5 shadow-sm transition-all"
                 asChild
               >
                 <a

@@ -123,7 +123,7 @@ export function SuccessStoriesSection() {
   return (
     <section
       id="success-stories"
-      className="py-16 md:py-24 px-6 lg:px-12 border-t border-[#14A800]/20"
+      className="py-16 md:py-24 px-6 lg:px-12 border-t border-[#108a00]/20"
       style={{
         background: "linear-gradient(180deg, #FFFFFF 0%, #F9FCF8 12%, #F1F9EF 40%, #ECF7EA 70%, #E7F5E3 100%)",
       }}
@@ -134,7 +134,7 @@ export function SuccessStoriesSection() {
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3">
             SUCCESS STORIES
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-[2.6rem] font-bold tracking-tight text-foreground text-balance">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-foreground text-balance">
             Built Around How Real Organizations Work.
           </h2>
         </div>
@@ -159,10 +159,10 @@ export function SuccessStoriesSection() {
                 </div>
 
                 {/* Organization & Headline */}
-                <h3 className="text-2xl md:text-3xl font-extrabold text-foreground tracking-tight mb-2">
+                <h3 className="text-2xl md:text-3xl font-semibold text-foreground tracking-tight mb-2">
                   {story.org}
                 </h3>
-                <h4 className="text-xl md:text-2xl font-bold text-primary mb-6 leading-snug">
+                <h4 className="text-xl md:text-2xl font-semibold text-primary mb-6 leading-snug">
                   {story.headline}
                 </h4>
 

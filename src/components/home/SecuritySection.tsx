@@ -18,10 +18,10 @@ export const SecuritySection: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#14a800] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#108a00] mb-3">
             SECURITY &amp; DATA CONTROL
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-[2.6rem] font-extrabold tracking-tight text-[#0c180a] text-balance mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-[#0c180a] text-balance mb-4">
             Your Data Is Private, Protected and Under Your Control.
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-600 text-pretty">
@@ -34,9 +34,9 @@ export const SecuritySection: React.FC = () => {
         {/* 6 Clean Structural Cards with Micro-UI Proof Elements */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {/* Card 1: Role-based access */}
-          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-200 hover:border-[#14a800]/40 hover:bg-white hover:shadow-lg">
+          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-200 hover:border-[#108a00]/40 hover:bg-white hover:shadow-lg">
             <div>
-              <h3 className="text-xl font-bold text-[#0c180a] tracking-tight">
+              <h3 className="text-xl font-semibold text-[#0c180a] tracking-tight">
                 Role-based access
               </h3>
             </div>
@@ -56,7 +56,7 @@ export const SecuritySection: React.FC = () => {
                   <tr>
                     <td className="py-1.5 font-bold text-slate-800">Staff</td>
                     <td className="py-1.5 text-center">
-                      <Check className="mx-auto h-3.5 w-3.5 text-[#14a800]" />
+                      <Check className="mx-auto h-3.5 w-3.5 text-[#108a00]" />
                     </td>
                     <td className="py-1.5 text-center text-slate-300">
                       <Minus className="mx-auto h-3.5 w-3.5" />
@@ -68,10 +68,10 @@ export const SecuritySection: React.FC = () => {
                   <tr>
                     <td className="py-1.5 font-bold text-slate-800">Leadership</td>
                     <td className="py-1.5 text-center">
-                      <Check className="mx-auto h-3.5 w-3.5 text-[#14a800]" />
+                      <Check className="mx-auto h-3.5 w-3.5 text-[#108a00]" />
                     </td>
                     <td className="py-1.5 text-center">
-                      <Check className="mx-auto h-3.5 w-3.5 text-[#14a800]" />
+                      <Check className="mx-auto h-3.5 w-3.5 text-[#108a00]" />
                     </td>
                     <td className="py-1.5 text-center text-slate-300">
                       <Minus className="mx-auto h-3.5 w-3.5" />
@@ -80,13 +80,13 @@ export const SecuritySection: React.FC = () => {
                   <tr>
                     <td className="py-1.5 font-bold text-slate-800">Board</td>
                     <td className="py-1.5 text-center">
-                      <Check className="mx-auto h-3.5 w-3.5 text-[#14a800]" />
+                      <Check className="mx-auto h-3.5 w-3.5 text-[#108a00]" />
                     </td>
                     <td className="py-1.5 text-center">
-                      <Check className="mx-auto h-3.5 w-3.5 text-[#14a800]" />
+                      <Check className="mx-auto h-3.5 w-3.5 text-[#108a00]" />
                     </td>
                     <td className="py-1.5 text-center">
-                      <Check className="mx-auto h-3.5 w-3.5 text-[#14a800]" />
+                      <Check className="mx-auto h-3.5 w-3.5 text-[#108a00]" />
                     </td>
                   </tr>
                 </tbody>
@@ -95,9 +95,9 @@ export const SecuritySection: React.FC = () => {
           </div>
 
           {/* Card 2: Encryption in transit and at rest */}
-          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-200 hover:border-[#14a800]/40 hover:bg-white hover:shadow-lg">
+          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-200 hover:border-[#108a00]/40 hover:bg-white hover:shadow-lg">
             <div>
-              <h3 className="text-xl font-bold text-[#0c180a] tracking-tight">
+              <h3 className="text-xl font-semibold text-[#0c180a] tracking-tight">
                 Encryption in transit and at rest
               </h3>
             </div>
@@ -105,7 +105,7 @@ export const SecuritySection: React.FC = () => {
             {/* Micro-UI Proof: Dual Encryption Badges */}
             <div className="mt-6 grid grid-cols-2 gap-2.5">
               <div className="rounded-2xl border border-slate-200/80 bg-white p-3 shadow-2xs flex items-center gap-2.5">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#e7f5e3] text-[#14a800]">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#e7f5e3] text-[#108a00]">
                   <Lock className="h-4 w-4" />
                 </div>
                 <div className="text-left">
@@ -115,7 +115,7 @@ export const SecuritySection: React.FC = () => {
               </div>
 
               <div className="rounded-2xl border border-slate-200/80 bg-white p-3 shadow-2xs flex items-center gap-2.5">
-                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#e7f5e3] text-[#14a800]">
+                <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#e7f5e3] text-[#108a00]">
                   <Database className="h-4 w-4" />
                 </div>
                 <div className="text-left">
@@ -127,9 +127,9 @@ export const SecuritySection: React.FC = () => {
           </div>
 
           {/* Card 3: Controlled access to client information */}
-          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-200 hover:border-[#14a800]/40 hover:bg-white hover:shadow-lg">
+          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-200 hover:border-[#108a00]/40 hover:bg-white hover:shadow-lg">
             <div>
-              <h3 className="text-xl font-bold text-[#0c180a] tracking-tight">
+              <h3 className="text-xl font-semibold text-[#0c180a] tracking-tight">
                 Controlled access to client information
               </h3>
             </div>
@@ -138,11 +138,11 @@ export const SecuritySection: React.FC = () => {
             <div className="mt-6 rounded-2xl border border-slate-200/80 bg-white p-3.5 shadow-2xs">
               <div className="flex items-center justify-between gap-2">
                 {/* Organization Isolated Tenant Box */}
-                <div className="flex-1 rounded-xl border-2 border-[#14a800] bg-[#e7f5e3]/40 p-2.5 text-left">
+                <div className="flex-1 rounded-xl border-2 border-[#108a00] bg-[#e7f5e3]/40 p-2.5 text-left">
                   <div className="text-xs font-bold text-[#0c180a]">
                     Your Organization
                   </div>
-                  <span className="text-[10px] font-semibold text-[#118f00] block mt-0.5">
+                  <span className="text-[10px] font-semibold text-[#0e7700] block mt-0.5">
                     Isolated tenant
                   </span>
                 </div>
@@ -162,9 +162,9 @@ export const SecuritySection: React.FC = () => {
           </div>
 
           {/* Card 4: Client data is not used to train public AI models */}
-          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-200 hover:border-[#14a800]/40 hover:bg-white hover:shadow-lg">
+          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-200 hover:border-[#108a00]/40 hover:bg-white hover:shadow-lg">
             <div>
-              <h3 className="text-xl font-bold text-[#0c180a] tracking-tight">
+              <h3 className="text-xl font-semibold text-[#0c180a] tracking-tight">
                 Client data is not used to train public AI models
               </h3>
             </div>
@@ -173,12 +173,12 @@ export const SecuritySection: React.FC = () => {
             <div className="mt-6 rounded-2xl border border-slate-200/80 bg-white p-3.5 shadow-2xs">
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-2">
-                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#e7f5e3] text-[#14a800]">
+                  <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-xl bg-[#e7f5e3] text-[#108a00]">
                     <Database className="h-4 w-4" />
                   </div>
                   <div className="text-left">
                     <span className="text-xs font-bold text-slate-800 block">Your Data</span>
-                    <span className="text-[10px] text-[#118f00] font-semibold block">Stays private</span>
+                    <span className="text-[10px] text-[#0e7700] font-semibold block">Stays private</span>
                   </div>
                 </div>
 
@@ -200,9 +200,9 @@ export const SecuritySection: React.FC = () => {
           </div>
 
           {/* Card 5: Private infrastructure options available when required */}
-          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-200 hover:border-[#14a800]/40 hover:bg-white hover:shadow-lg">
+          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-200 hover:border-[#108a00]/40 hover:bg-white hover:shadow-lg">
             <div>
-              <h3 className="text-xl font-bold text-[#0c180a] tracking-tight">
+              <h3 className="text-xl font-semibold text-[#0c180a] tracking-tight">
                 Private infrastructure options available when required
               </h3>
             </div>
@@ -215,18 +215,18 @@ export const SecuritySection: React.FC = () => {
                 <span className="text-[10px] text-slate-400 block">On-prem / private cloud</span>
               </div>
 
-              <div className="rounded-2xl border-2 border-[#14a800] bg-[#e7f5e3]/40 p-3 shadow-2xs text-left">
-                <Cloud className="h-4 w-4 text-[#14a800]" />
+              <div className="rounded-2xl border-2 border-[#108a00] bg-[#e7f5e3]/40 p-3 shadow-2xs text-left">
+                <Cloud className="h-4 w-4 text-[#108a00]" />
                 <div className="mt-2 text-xs font-bold text-[#0c180a]">Our cloud</div>
-                <span className="text-[10px] text-[#118f00] font-semibold block">Secure, isolated</span>
+                <span className="text-[10px] text-[#0e7700] font-semibold block">Secure, isolated</span>
               </div>
             </div>
           </div>
 
           {/* Card 6: SJ Innovation is certified to ISO/IEC 27001:2022 */}
-          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-200 hover:border-[#14a800]/40 hover:bg-white hover:shadow-lg">
+          <div className="group flex flex-col justify-between rounded-3xl border border-slate-200/90 bg-[#fbfdfa] p-7 transition-all duration-200 hover:border-[#108a00]/40 hover:bg-white hover:shadow-lg">
             <div>
-              <h3 className="text-xl font-bold text-[#0c180a] tracking-tight">
+              <h3 className="text-xl font-semibold text-[#0c180a] tracking-tight">
                 SJ Innovation is certified to ISO/IEC 27001:2022
               </h3>
             </div>
@@ -241,10 +241,10 @@ export const SecuritySection: React.FC = () => {
                 />
                 <div className="text-left">
                   <span className="text-xs font-bold text-slate-900 block">ISO/IEC 27001:2022</span>
-                  <span className="text-[10px] font-semibold text-[#118f00] block">Globally certified</span>
+                  <span className="text-[10px] font-semibold text-[#0e7700] block">Globally certified</span>
                 </div>
               </div>
-              <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#e7f5e3] text-[#14a800]">
+              <div className="flex h-7 w-7 items-center justify-center rounded-full bg-[#e7f5e3] text-[#108a00]">
                 <ShieldCheck className="h-4 w-4" />
               </div>
             </div>
@@ -257,7 +257,7 @@ export const SecuritySection: React.FC = () => {
             href="https://sjinnovation.com/security"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-sm font-bold text-[#14a800] hover:text-[#118f00] hover:underline"
+            className="inline-flex items-center gap-1.5 text-sm font-bold text-[#108a00] hover:text-[#0e7700] hover:underline"
           >
             <span>Learn more about our security standards</span>
             <ExternalLink className="h-4 w-4" />
@@ -269,3 +269,4 @@ export const SecuritySection: React.FC = () => {
 };
 
 export default SecuritySection;
+

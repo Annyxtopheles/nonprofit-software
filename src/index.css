@@ -7,7 +7,7 @@
   Theme: Clean, trustworthy Upwork-inspired greens
   
   Color Philosophy:
-  - Lime green primary (#14A800) for energy and trust
+  - Lime green primary (#108a00) for energy and trust
   - Deep green-black headlines (#001E00)
   - Soft sage body text (#5E6D55)
   - White backgrounds with light tile cards
@@ -26,8 +26,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 120 100% 6%;
 
-    /* Brand green #14A800 */
-    --primary: 113 100% 33%;
+    /* Brand green #108a00 */
+    --primary: 113 100% 27%;
     --primary-foreground: 0 0% 100%;
 
     /* Soft green tint #E7F5E3 */
@@ -39,7 +39,7 @@
     --muted-foreground: 98 12% 38%;
 
     /* Accent matches brand green for CTAs & icons */
-    --accent: 113 100% 33%;
+    --accent: 113 100% 27%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 65% 50%;
@@ -48,25 +48,25 @@
     /* Soft gray borders #E4E4E4 */
     --border: 0 0% 89%;
     --input: 0 0% 89%;
-    --ring: 113 100% 33%;
+    --ring: 113 100% 27%;
 
     --radius: 0.75rem;
 
     /* Sidebar */
     --sidebar-background: 0 0% 100%;
     --sidebar-foreground: 120 100% 6%;
-    --sidebar-primary: 113 100% 33%;
+    --sidebar-primary: 113 100% 27%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 107 47% 93%;
     --sidebar-accent-foreground: 120 100% 6%;
     --sidebar-border: 0 0% 89%;
-    --sidebar-ring: 113 100% 33%;
+    --sidebar-ring: 113 100% 27%;
 
     /* Custom tokens */
-    --teal: 113 100% 33%;
+    --teal: 113 100% 27%;
     --teal-light: 107 47% 93%;
-    --teal-dark: 113 100% 27%;
-    --coral: 113 100% 33%;
+    --teal-dark: 113 100% 22%;
+    --coral: 113 100% 27%;
     --coral-light: 107 47% 93%;
     --charcoal: 120 100% 6%;
     --charcoal-light: 98 12% 38%;
@@ -272,7 +272,7 @@
     height: 280px;
     top: -80px;
     right: 8%;
-    background: rgba(20, 168, 0, 0.18);
+    background: rgba(16, 138, 0, 0.18);
   }
 
   .section-glow::after {
@@ -280,7 +280,7 @@
     height: 220px;
     bottom: -60px;
     left: 6%;
-    background: rgba(20, 168, 0, 0.12);
+    background: rgba(16, 138, 0, 0.12);
     animation-delay: -4s;
   }
 
@@ -297,7 +297,7 @@
     width: 320px;
     height: 320px;
     border-radius: 9999px;
-    background: rgba(20, 168, 0, 0.2);
+    background: rgba(16, 138, 0, 0.2);
     filter: blur(50px);
     pointer-events: none;
     animation: pulse-soft 6s ease-in-out infinite;

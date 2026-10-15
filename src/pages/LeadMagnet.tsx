@@ -53,7 +53,7 @@ const colors = {
   bg: "#FFFFFF",
   headline: "#001E00",
   body: "#5E6D55",
-  accent: "#14A800",
+  accent: "#108a00",
   accentLight: "#E7F5E3",
   border: "#E0E0E0",
   divider: "#D5E0D5",

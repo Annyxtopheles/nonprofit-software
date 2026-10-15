@@ -34,7 +34,7 @@ export function TrustedPartnersSection({ colors }: { colors: Colors }) {
           Trusted Partners
         </p>
         <h2
-          className="text-2xl md:text-3xl font-bold text-balance mb-3"
+          className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-balance mb-3"
           style={{ color: colors.headline }}
         >
           Trusted by Mission-Driven Organizations

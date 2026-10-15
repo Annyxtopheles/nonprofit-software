@@ -7,10 +7,10 @@ export const HowItComesTogetherSection: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#14a800] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#108a00] mb-3">
             HOW IT COMES TOGETHER
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-[2.6rem] font-extrabold tracking-tight text-[#0c180a] text-balance mb-4 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-[#0c180a] text-balance mb-4 leading-tight">
             From Scattered Information to
             <span className="block">One Clear View.</span>
           </h2>
@@ -24,7 +24,7 @@ export const HowItComesTogetherSection: React.FC = () => {
           <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl bg-[#0a5200] p-7 sm:p-8 min-h-[300px] text-white shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-[#0a5200]/30">
             {/* Top Text Content */}
             <div className="relative z-10">
-              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-3">
+              <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white mb-3">
                 Connect
               </h3>
               <p className="text-sm sm:text-base leading-relaxed text-white/85 text-pretty max-w-[85%]">
@@ -66,15 +66,15 @@ export const HowItComesTogetherSection: React.FC = () => {
                 {/* Satellite System Nodes */}
                 <g className="transition-transform duration-500 group-hover:translate-x-1">
                   {/* Source Node 1 (CRM / Systems) */}
-                  <circle cx="25" cy="160" r="10" fill="#14a800" stroke="#52d039" strokeWidth="2" />
+                  <circle cx="25" cy="160" r="10" fill="#108a00" stroke="#52d039" strokeWidth="2" />
                   <circle cx="25" cy="160" r="4" fill="#ffffff" />
 
                   {/* Source Node 2 (Financial / Database) */}
-                  <circle cx="65" cy="185" r="8" fill="#14a800" stroke="#52d039" strokeWidth="1.8" />
+                  <circle cx="65" cy="185" r="8" fill="#108a00" stroke="#52d039" strokeWidth="1.8" />
                   <circle cx="65" cy="185" r="3" fill="#ffffff" />
 
                   {/* Source Node 3 (Documents / Workflows) */}
-                  <circle cx="40" cy="115" r="9" fill="#14a800" stroke="#52d039" strokeWidth="1.8" />
+                  <circle cx="40" cy="115" r="9" fill="#108a00" stroke="#52d039" strokeWidth="1.8" />
                   <circle cx="40" cy="115" r="3.5" fill="#ffffff" />
                 </g>
 
@@ -99,7 +99,7 @@ export const HowItComesTogetherSection: React.FC = () => {
           <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl bg-[#0a5200] p-7 sm:p-8 min-h-[300px] text-white shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-[#0a5200]/30">
             {/* Top Text Content */}
             <div className="relative z-10">
-              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-3">
+              <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white mb-3">
                 Configure
               </h3>
               <p className="text-sm sm:text-base leading-relaxed text-white/85 text-pretty max-w-[85%]">
@@ -151,7 +151,7 @@ export const HowItComesTogetherSection: React.FC = () => {
           <div className="group relative flex flex-col justify-between overflow-hidden rounded-3xl bg-[#0a5200] p-7 sm:p-8 min-h-[300px] text-white shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-[#0a5200]/30">
             {/* Top Text Content */}
             <div className="relative z-10">
-              <h3 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-3">
+              <h3 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white mb-3">
                 Use
               </h3>
               <p className="text-sm sm:text-base leading-relaxed text-white/85 text-pretty max-w-[85%]">
@@ -261,11 +261,11 @@ export const HowItComesTogetherSection: React.FC = () => {
 
             <div className="grid sm:grid-cols-2 gap-6">
               {/* Lovable Cloud */}
-              <div className="relative rounded-3xl border-2 border-[#14a800] bg-white p-7 text-center shadow-xs transition-shadow duration-200 hover:shadow-xl">
-                <span className="absolute top-5 right-5 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#e7f5e3] text-[#14a800]">
+              <div className="relative rounded-3xl border-2 border-[#108a00] bg-white p-7 text-center shadow-xs transition-shadow duration-200 hover:shadow-xl">
+                <span className="absolute top-5 right-5 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#e7f5e3] text-[#108a00]">
                   Recommended
                 </span>
-                <Cloud className="w-8 h-8 mb-4 mx-auto text-[#14a800]" strokeWidth={1.75} />
+                <Cloud className="w-8 h-8 mb-4 mx-auto text-[#108a00]" strokeWidth={1.75} />
                 <h4 className="text-lg font-bold text-[#0c180a] mb-4">
                   Managed Cloud
                 </h4>
@@ -277,7 +277,7 @@ export const HowItComesTogetherSection: React.FC = () => {
                     "Fully managed infrastructure, compliance monitoring, and daily backups",
                   ].map((b) => (
                     <li key={b} className="text-sm flex items-start gap-2.5 text-slate-600">
-                      <span className="mt-0.5 text-[#14a800] font-bold">✓</span> {b}
+                      <span className="mt-0.5 text-[#108a00] font-bold">✓</span> {b}
                     </li>
                   ))}
                 </ul>
@@ -300,7 +300,7 @@ export const HowItComesTogetherSection: React.FC = () => {
                     "Complete customization, white-labeling, and custom integrations",
                   ].map((b) => (
                     <li key={b} className="text-sm flex items-start gap-2.5 text-slate-600">
-                      <span className="mt-0.5 text-[#14a800] font-bold">✓</span> {b}
+                      <span className="mt-0.5 text-[#108a00] font-bold">✓</span> {b}
                     </li>
                   ))}
                 </ul>
@@ -314,3 +314,4 @@ export const HowItComesTogetherSection: React.FC = () => {
 };
 
 export default HowItComesTogetherSection;
+

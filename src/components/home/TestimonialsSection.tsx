@@ -32,7 +32,7 @@ export function TestimonialsSection({ colors }: { colors: Colors }) {
       <div className="max-w-5xl mx-auto">
         <div className="mb-10 text-center">
           <h2
-            className="text-3xl md:text-4xl font-bold text-balance mb-3"
+            className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-balance mb-3"
             style={{ color: colors.headline }}
           >
             What Nonprofit Leaders Say
@@ -63,7 +63,7 @@ export function TestimonialsSection({ colors }: { colors: Colors }) {
                 &ldquo;{t.quote}&rdquo;
               </blockquote>
               <figcaption className="mt-6 pt-5" style={{ borderTop: `1px solid ${colors.border}` }}>
-                <span className="block font-bold" style={{ color: colors.headline }}>
+                <span className="block font-semibold" style={{ color: colors.headline }}>
                   {t.name}
                 </span>
                 <span className="block text-sm" style={{ color: colors.body }}>

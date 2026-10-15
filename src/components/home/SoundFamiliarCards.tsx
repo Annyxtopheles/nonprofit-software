@@ -6,9 +6,9 @@ export const SoundFamiliarCards: React.FC = () => {
       {/* ========================================================
           Card 1: Tool Sprawl
       ======================================================== */}
-      <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20">
+      <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/20">
         <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
-          <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+          <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
             Tool Sprawl
           </h3>
           <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -65,7 +65,7 @@ export const SoundFamiliarCards: React.FC = () => {
             {/* Top-Right Island: Spreadsheet */}
             <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:-translate-y-2 origin-center">
               <rect x="118" y="22" width="50" height="44" rx="8" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" />
-              <rect x="123" y="27" width="40" height="10" rx="3" fill="#14a800" />
+              <rect x="123" y="27" width="40" height="10" rx="3" fill="#108a00" />
               <text x="143" y="34.5" fill="#ffffff" fontSize="6.5" fontWeight="800" textAnchor="middle" fontFamily="sans-serif">SHEET</text>
               <line x1="123" y1="45" x2="163" y2="45" stroke="#1c3422" strokeWidth="1.6" />
               <line x1="123" y1="54" x2="163" y2="54" stroke="#1c3422" strokeWidth="1.6" />
@@ -75,9 +75,9 @@ export const SoundFamiliarCards: React.FC = () => {
 
             {/* Bottom-Left Island: Finance / QuickBooks Ledger */}
             <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:translate-y-2 origin-center">
-              <rect x="22" y="94" width="52" height="44" rx="8" fill="#14a800" stroke="#1c3422" strokeWidth="2.2" />
+              <rect x="22" y="94" width="52" height="44" rx="8" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" />
               <rect x="27" y="99" width="42" height="34" rx="5" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
-              <text x="37" y="120" fill="#14a800" fontSize="13" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$</text>
+              <text x="37" y="120" fill="#108a00" fontSize="13" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$</text>
               <line x1="46" y1="109" x2="63" y2="109" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
               <line x1="46" y1="116" x2="60" y2="116" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
               <line x1="46" y1="123" x2="62" y2="123" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
@@ -92,7 +92,7 @@ export const SoundFamiliarCards: React.FC = () => {
                 strokeWidth="2.2"
               />
               <line x1="140" y1="96" x2="140" y2="134" stroke="#1c3422" strokeWidth="1.6" strokeDasharray="3 3" />
-              <circle cx="129" cy="115" r="5" fill="#14a800" />
+              <circle cx="129" cy="115" r="5" fill="#108a00" />
               <line x1="146" y1="108" x2="159" y2="108" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
               <line x1="146" y1="115" x2="156" y2="115" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
               <line x1="146" y1="122" x2="158" y2="122" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
@@ -112,9 +112,9 @@ export const SoundFamiliarCards: React.FC = () => {
       {/* ========================================================
           Card 2: Data Quality Decay
       ======================================================== */}
-      <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20">
+      <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/20">
         <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
-          <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+          <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
             Data Quality Decay
           </h3>
           <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -155,7 +155,7 @@ export const SoundFamiliarCards: React.FC = () => {
               />
               <g transform="rotate(7 102 74)">
                 <line x1="52" y1="40" x2="152" y2="40" stroke="#1c3422" strokeWidth="1.6" opacity="0.4" />
-                <rect x="62" y="48" width="18" height="18" rx="4" fill="#14a800" opacity="0.3" />
+                <rect x="62" y="48" width="18" height="18" rx="4" fill="#108a00" opacity="0.3" />
                 <line x1="86" y1="54" x2="136" y2="54" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
                 <line x1="86" y1="62" x2="120" y2="62" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" opacity="0.4" />
                 <line x1="62" y1="78" x2="142" y2="78" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" strokeDasharray="3 3" opacity="0.4" />
@@ -208,7 +208,7 @@ export const SoundFamiliarCards: React.FC = () => {
 
             {/* Floating Audit Shield Badge (Bottom Right, Roomy & Non-Colliding) */}
             <g className="transition-transform duration-500 ease-out group-hover:scale-108 group-hover:rotate-3 origin-[148px_110px]">
-              <circle cx="148" cy="108" r="19" fill="#14a800" stroke="#1c3422" strokeWidth="2.2" />
+              <circle cx="148" cy="108" r="19" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" />
               <circle cx="148" cy="108" r="14" fill="#ffffff" />
               {/* Warning Triangle inside (Green-themed, no red) */}
               <polygon points="148,99 157,114 139,114" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.4" strokeLinejoin="round" />
@@ -232,9 +232,9 @@ export const SoundFamiliarCards: React.FC = () => {
       {/* ========================================================
           Card 3: Manual Busywork
       ======================================================== */}
-      <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20">
+      <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/20">
         <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
-          <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+          <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
             Manual Busywork
           </h3>
           <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -280,7 +280,7 @@ export const SoundFamiliarCards: React.FC = () => {
               width="60"
               height="72"
               rx="6"
-              fill="#14a800"
+              fill="#108a00"
               stroke="#1c3422"
               strokeWidth="2.2"
               transform="rotate(6 66 84)"
@@ -299,10 +299,10 @@ export const SoundFamiliarCards: React.FC = () => {
                 strokeWidth="2.4"
               />
               {/* Thank You Header Stamp with Heart */}
-              <rect x="40" y="50" width="13" height="13" rx="3" fill="#e7f5e3" stroke="#14a800" strokeWidth="1.4" />
+              <rect x="40" y="50" width="13" height="13" rx="3" fill="#e7f5e3" stroke="#108a00" strokeWidth="1.4" />
               <path
                 d="M 43.5 56.5 C 43.5 54.8 45.5 53.5 46.5 55 C 47.5 53.5 49.5 54.8 49.5 56.5 C 49.5 58.5 46.5 60.5 46.5 60.5 C 46.5 60.5 43.5 58.5 43.5 56.5 Z"
-                fill="#14a800"
+                fill="#108a00"
               />
               <line x1="58" y1="54" x2="88" y2="54" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
               <line x1="58" y1="60" x2="82" y2="60" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
@@ -312,12 +312,12 @@ export const SoundFamiliarCards: React.FC = () => {
               <line x1="40" y1="80" x2="86" y2="80" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
               <line x1="40" y1="88" x2="82" y2="88" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
               <line x1="40" y1="96" x2="76" y2="96" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-              <line x1="40" y1="104" x2="68" y2="104" stroke="#14a800" strokeWidth="2" strokeLinecap="round" strokeDasharray="3 3" />
+              <line x1="40" y1="104" x2="68" y2="104" stroke="#108a00" strokeWidth="2" strokeLinecap="round" strokeDasharray="3 3" />
             </g>
 
             {/* Tilted Pen / Stylus */}
             <g className="transition-transform duration-500 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-2 group-hover:rotate-12 origin-[82px_104px]">
-              <rect x="76" y="74" width="7" height="38" rx="2.5" fill="#14a800" stroke="#1c3422" strokeWidth="1.8" transform="rotate(26 79 93)" />
+              <rect x="76" y="74" width="7" height="38" rx="2.5" fill="#108a00" stroke="#1c3422" strokeWidth="1.8" transform="rotate(26 79 93)" />
               <polygon points="72,112 75,117 80,113" fill="#1c3422" />
             </g>
 
@@ -338,13 +338,13 @@ export const SoundFamiliarCards: React.FC = () => {
               <line x1="140" y1="72" x2="152" y2="68" stroke="#ef4444" strokeWidth="2" strokeLinecap="round" />
               <circle cx="140" cy="72" r="3" fill="#1c3422" />
               {/* Ticking Rays */}
-              <line x1="166" y1="56" x2="173" y2="50" stroke="#14a800" strokeWidth="2" strokeLinecap="round" />
-              <line x1="170" y1="66" x2="178" y2="64" stroke="#14a800" strokeWidth="2" strokeLinecap="round" />
+              <line x1="166" y1="56" x2="173" y2="50" stroke="#108a00" strokeWidth="2" strokeLinecap="round" />
+              <line x1="170" y1="66" x2="178" y2="64" stroke="#108a00" strokeWidth="2" strokeLinecap="round" />
             </g>
 
             {/* Endless Loop Arrow Badge (Bottom Right) */}
             <g className="transition-transform duration-500 ease-out group-hover:rotate-45 origin-[140px_120px]">
-              <circle cx="140" cy="120" r="15" fill="#14a800" stroke="#1c3422" strokeWidth="2.2" />
+              <circle cx="140" cy="120" r="15" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" />
               <path d="M 133 120 A 7 7 0 1 1 147 120" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
               <polygon points="146,114 151,120 144,122" fill="#ffffff" />
               <path d="M 147 120 A 7 7 0 1 1 133 120" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
@@ -363,9 +363,9 @@ export const SoundFamiliarCards: React.FC = () => {
       {/* ========================================================
           Card 4: No Single Source of Truth
       ======================================================== */}
-      <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#14a800]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#14a800] hover:shadow-lg hover:shadow-[#14a800]/20">
+      <div className="group relative flex flex-col sm:flex-row items-center justify-between gap-5 overflow-hidden rounded-3xl border border-[#108a00]/30 bg-white p-6 sm:p-7 md:p-8 min-h-[220px] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#108a00] hover:shadow-lg hover:shadow-[#108a00]/20">
         <div className="relative z-10 flex-1 max-w-full sm:max-w-[56%] md:max-w-[58%] text-left">
-          <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight text-[#0c180a]">
+          <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-[#0c180a]">
             No Single Source of Truth
           </h3>
           <p className="mt-3.5 text-sm sm:text-base leading-relaxed text-slate-600 text-pretty">
@@ -396,12 +396,12 @@ export const SoundFamiliarCards: React.FC = () => {
             <ellipse cx="92" cy="146" rx="24" ry="6" fill="#c8f0be" stroke="#1c3422" strokeWidth="2" />
 
             {/* Thought Bubbles Leading to Question */}
-            <circle cx="80" cy="18" r="2.5" fill="#14a800" />
-            <circle cx="85" cy="12" r="4" fill="#14a800" />
+            <circle cx="80" cy="18" r="2.5" fill="#108a00" />
+            <circle cx="85" cy="12" r="4" fill="#108a00" />
 
             {/* Sign 1: CRM says "$62,000" (Pointing Left, Green) */}
             <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:-rotate-2 origin-[88px_45px]">
-              <path d="M 22 45 L 34 32 L 88 32 L 88 58 L 34 58 Z" fill="#14a800" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
+              <path d="M 22 45 L 34 32 L 88 32 L 88 58 L 34 58 Z" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
               <text x="56" y="49" fill="#ffffff" fontSize="10.5" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$62,000</text>
               <path d="M 31 47 L 34 43 L 37 47" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
             </g>
@@ -441,4 +441,5 @@ export const SoundFamiliarCards: React.FC = () => {
 };
 
 export default SoundFamiliarCards;
+
 

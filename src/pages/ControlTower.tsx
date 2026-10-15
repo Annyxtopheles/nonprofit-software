@@ -32,7 +32,7 @@ const colors = {
   surface: "#F9F9F9",
   headline: "#001E00",
   body: "#5E6D55",
-  accent: "#14A800",
+  accent: "#108a00",
   accentLight: "#E7F5E3",
   border: "#E4E4E4",
   divider: "#D5E0D5",
@@ -152,7 +152,7 @@ const ControlTower = () => {
               NONPROFIT AI CONTROL TOWER
             </div>
             <h1
-              className="text-4xl md:text-5xl lg:text-[3.25rem] font-bold leading-tight mb-6"
+              className="text-4xl md:text-5xl lg:text-[52px] font-extrabold leading-tight mb-6"
               style={{ color: colors.headline }}
             >
               One place to run your nonprofit.
@@ -197,7 +197,7 @@ const ControlTower = () => {
           <div className="max-w-6xl mx-auto">
             <div className="mb-12 md:mb-14 text-center">
               <h2
-                className="text-3xl md:text-4xl lg:text-[2.6rem] font-bold mb-3 tracking-tight"
+                className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
                 style={{ color: colors.headline }}
               >
                 Sound Familiar?
@@ -214,7 +214,7 @@ const ControlTower = () => {
           <div className="max-w-5xl mx-auto">
             <div className="mb-10 text-center">
               <h2
-                className="text-3xl md:text-4xl font-bold mb-3"
+                className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
                 style={{ color: colors.headline }}
               >
                 It Doesn&apos;t Replace Your CRM. It Makes It Brilliant.
@@ -236,7 +236,7 @@ const ControlTower = () => {
                       strokeWidth={1.5}
                     />
                   </div>
-                  <h3 className="text-[15px] font-medium mb-1" style={{ color: colors.headline }}>
+                  <h3 className="text-[15px] font-semibold mb-1" style={{ color: colors.headline }}>
                     {item.label}
                   </h3>
                   <p className="text-sm" style={{ color: colors.body }}>
@@ -256,7 +256,7 @@ const ControlTower = () => {
           <div className="max-w-5xl mx-auto relative z-[1]">
             <div className="mb-10 text-center">
               <h2
-                className="text-3xl md:text-4xl font-bold mb-3"
+                className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
                 style={{ color: colors.headline }}
               >
                 16 AI Agents. Four Specialized Teams.
@@ -279,7 +279,7 @@ const ControlTower = () => {
                         style={{ color: colors.accent }}
                         strokeWidth={1.5}
                       />
-                      <h3 className="text-[15px] font-medium mb-4" style={{ color: colors.headline }}>
+                      <h3 className="text-base font-semibold mb-4" style={{ color: colors.headline }}>
                         {team.team}
                       </h3>
                       <div className="space-y-3">
@@ -325,7 +325,7 @@ const ControlTower = () => {
           <div className="max-w-5xl mx-auto">
             <div className="mb-10 text-center">
               <h2
-                className="text-3xl md:text-4xl font-bold mb-3"
+                className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
                 style={{ color: colors.headline }}
               >
                 Built for Every Role on Your Team
@@ -402,7 +402,7 @@ const ControlTower = () => {
           >
             <Layers className="w-10 h-10 mx-auto mb-4" style={{ color: colors.accent }} strokeWidth={1.5} />
             <h2
-              className="text-3xl md:text-4xl font-bold mb-4"
+              className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-4"
               style={{ color: colors.headline }}
             >
               Ready to See It in Action?
@@ -456,7 +456,7 @@ const ControlTower = () => {
               Free Trial
             </span>
             <h2
-              className="text-3xl md:text-4xl font-extrabold tracking-tight mb-4"
+              className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-4"
               style={{ color: colors.headline }}
             >
               Board Meetings Shouldn&apos;t Be This Painful
