@@ -363,18 +363,32 @@ export const WhatWeCanDoSection: React.FC = () => {
 
                 {/* Attendee Bubble 1 (Top Right) */}
                 <g className="transition-transform duration-500 ease-out group-hover:scale-110 origin-[164px_74px]">
+                  <defs>
+                    <clipPath id="event-avatar-clip-1">
+                      <circle cx="164" cy="74" r="17" />
+                    </clipPath>
+                  </defs>
                   <circle cx="164" cy="74" r="18" fill="#c8f0be" stroke="#1c3422" strokeWidth="2" />
-                  <circle cx="164" cy="70" r="7.5" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.4" />
-                  <path d="M 158 68 C 158 64, 170 64, 170 68" stroke="#1c3422" strokeWidth="1.8" fill="#1c3422" />
-                  <path d="M 152 86 C 152 80, 176 80, 176 86 Z" fill="#108a00" stroke="#1c3422" strokeWidth="1.4" />
+                  <g clipPath="url(#event-avatar-clip-1)">
+                    <circle cx="164" cy="68" r="6" fill="#108a00" />
+                    <path d="M 148 92 C 148 79, 180 79, 180 92 Z" fill="#108a00" />
+                  </g>
+                  <circle cx="164" cy="74" r="18" fill="none" stroke="#1c3422" strokeWidth="2" />
                 </g>
 
                 {/* Attendee Bubble 2 (Bottom Left) */}
                 <g className="transition-transform duration-500 ease-out group-hover:scale-110 origin-[72px_122px]">
+                  <defs>
+                    <clipPath id="event-avatar-clip-2">
+                      <circle cx="72" cy="122" r="17" />
+                    </clipPath>
+                  </defs>
                   <circle cx="72" cy="122" r="18" fill="#c8f0be" stroke="#1c3422" strokeWidth="2" />
-                  <circle cx="72" cy="118" r="7.5" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.4" />
-                  <path d="M 66 116 C 66 112, 78 112, 78 116" stroke="#1c3422" strokeWidth="1.8" fill="#1c3422" />
-                  <path d="M 60 134 C 60 128, 84 128, 84 134 Z" fill="#4d9b67" stroke="#1c3422" strokeWidth="1.4" />
+                  <g clipPath="url(#event-avatar-clip-2)">
+                    <circle cx="72" cy="116" r="6" fill="#108a00" />
+                    <path d="M 56 140 C 56 127, 88 127, 88 140 Z" fill="#108a00" />
+                  </g>
+                  <circle cx="72" cy="122" r="18" fill="none" stroke="#1c3422" strokeWidth="2" />
                 </g>
 
                 {/* Action Rays */}
@@ -644,9 +658,9 @@ export const WhatWeCanDoSection: React.FC = () => {
                       strokeLinejoin="round"
                     />
                   </g>
-                  {/* Voice Broadcast Waves */}
-                  <path d="M 72 74 C 75 77, 75 83, 72 86" stroke="#108a00" strokeWidth="1.8" fill="none" strokeLinecap="round" />
-                  <path d="M 77 70 C 81 75, 81 85, 77 90" stroke="#108a00" strokeWidth="1.8" fill="none" strokeLinecap="round" opacity="0.6" />
+                  {/* Voice Broadcast Waves on Top Left */}
+                  <path d="M 28 64 C 23 59, 23 52, 28 47" stroke="#108a00" strokeWidth="2" fill="none" strokeLinecap="round" />
+                  <path d="M 23 68 C 16 61, 16 48, 23 42" stroke="#108a00" strokeWidth="2" fill="none" strokeLinecap="round" opacity="0.6" />
                 </g>
 
                 {/* Action Rays on Top Right */}
