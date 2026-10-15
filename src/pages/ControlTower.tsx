@@ -201,9 +201,6 @@ const ControlTower = () => {
 
               {/* Right Column: Control Tower Hub & Spoke Animated Graphic */}
               <div className="lg:col-span-5 xl:col-span-6 flex items-center justify-center relative">
-                {/* Soft ambient glow behind diagram */}
-                <div className="absolute w-[360px] h-[360px] sm:w-[480px] sm:h-[480px] rounded-full bg-[#108a00]/10 blur-3xl pointer-events-none -z-10" />
-
                 <div className="relative w-full max-w-[560px] sm:max-w-[620px] transition-transform duration-500">
                   <ControlTowerHubGraphic />
                 </div>

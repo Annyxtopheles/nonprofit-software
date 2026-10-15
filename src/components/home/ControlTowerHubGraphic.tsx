@@ -3,10 +3,8 @@ import React, { useState } from "react";
 interface NodeData {
   id: string;
   titleLines: string[];
-  status: "Connected" | "Available";
   color: string;
   iconBg: string;
-  statusColor: string;
   rectX: number;
   rectY: number;
   width: number;
@@ -16,10 +14,6 @@ interface NodeData {
   textX: number;
   lineY1: number;
   lineY2?: number;
-  dotX: number;
-  dotY: number;
-  statusTextX: number;
-  statusTextY: number;
   spokeX1: number;
   spokeY1: number;
   spokeX2: number;
@@ -34,27 +28,21 @@ const NODES: NodeData[] = [
   {
     id: "crm",
     titleLines: ["CRM / Donor", "Database"],
-    status: "Connected",
     color: "#2563eb",
     iconBg: "#eff6ff",
-    statusColor: "#2563eb",
     rectX: 255,
     rectY: 28,
     width: 190,
-    height: 68,
+    height: 64,
     iconCx: 284,
-    iconCy: 62,
+    iconCy: 60,
     textX: 312,
-    lineY1: 52,
-    lineY2: 67,
-    dotX: 315,
-    dotY: 81,
-    statusTextX: 324,
-    statusTextY: 84,
+    lineY1: 54,
+    lineY2: 70,
     spokeX1: 350,
     spokeY1: 245,
     spokeX2: 350,
-    spokeY2: 96,
+    spokeY2: 92,
     dur: "6.2s",
     iconType: "database",
   },
@@ -62,26 +50,20 @@ const NODES: NodeData[] = [
   {
     id: "payments",
     titleLines: ["Payments & Donations"],
-    status: "Connected",
     color: "#108a00",
     iconBg: "#e7f5e3",
-    statusColor: "#108a00",
     rectX: 446,
-    rectY: 114,
+    rectY: 116,
     width: 200,
-    height: 60,
+    height: 56,
     iconCx: 476,
     iconCy: 144,
     textX: 504,
-    lineY1: 139,
-    dotX: 507,
-    dotY: 156,
-    statusTextX: 516,
-    statusTextY: 159,
+    lineY1: 148,
     spokeX1: 396,
     spokeY1: 264,
     spokeX2: 456,
-    spokeY2: 174,
+    spokeY2: 172,
     dur: "6.8s",
     delay: "0.8s",
     iconType: "payments",
@@ -90,23 +72,17 @@ const NODES: NodeData[] = [
   {
     id: "email",
     titleLines: ["Email &", "Communications"],
-    status: "Connected",
     color: "#ea580c",
     iconBg: "#fff7ed",
-    statusColor: "#ea580c",
     rectX: 476,
-    rectY: 290,
+    rectY: 292,
     width: 192,
-    height: 68,
+    height: 64,
     iconCx: 505,
     iconCy: 324,
     textX: 532,
-    lineY1: 314,
-    lineY2: 329,
-    dotX: 535,
-    dotY: 343,
-    statusTextX: 544,
-    statusTextY: 346,
+    lineY1: 318,
+    lineY2: 334,
     spokeX1: 415,
     spokeY1: 310,
     spokeX2: 476,
@@ -119,22 +95,16 @@ const NODES: NodeData[] = [
   {
     id: "events",
     titleLines: ["Events & Registration"],
-    status: "Connected",
     color: "#9333ea",
     iconBg: "#faf5ff",
-    statusColor: "#9333ea",
     rectX: 374,
     rectY: 486,
     width: 200,
-    height: 60,
+    height: 56,
     iconCx: 404,
-    iconCy: 516,
+    iconCy: 514,
     textX: 432,
-    lineY1: 511,
-    dotX: 435,
-    dotY: 528,
-    statusTextX: 444,
-    statusTextY: 531,
+    lineY1: 518,
     spokeX1: 390,
     spokeY1: 355,
     spokeX2: 445,
@@ -147,22 +117,16 @@ const NODES: NodeData[] = [
   {
     id: "accounting",
     titleLines: ["Accounting & Finance"],
-    status: "Available",
     color: "#0891b2",
     iconBg: "#ecfeff",
-    statusColor: "#64748b",
     rectX: 126,
     rectY: 486,
     width: 196,
-    height: 60,
+    height: 56,
     iconCx: 156,
-    iconCy: 516,
+    iconCy: 514,
     textX: 184,
-    lineY1: 511,
-    dotX: 187,
-    dotY: 528,
-    statusTextX: 196,
-    statusTextY: 531,
+    lineY1: 518,
     spokeX1: 310,
     spokeY1: 355,
     spokeX2: 255,
@@ -175,22 +139,16 @@ const NODES: NodeData[] = [
   {
     id: "grants",
     titleLines: ["Grant Portals"],
-    status: "Available",
     color: "#e11d48",
     iconBg: "#fff1f2",
-    statusColor: "#64748b",
     rectX: 32,
-    rectY: 294,
+    rectY: 296,
     width: 180,
-    height: 60,
+    height: 56,
     iconCx: 62,
     iconCy: 324,
     textX: 90,
-    lineY1: 319,
-    dotX: 93,
-    dotY: 336,
-    statusTextX: 102,
-    statusTextY: 339,
+    lineY1: 328,
     spokeX1: 285,
     spokeY1: 310,
     spokeX2: 212,
@@ -203,23 +161,17 @@ const NODES: NodeData[] = [
   {
     id: "volunteers",
     titleLines: ["Volunteer", "Management"],
-    status: "Connected",
     color: "#d97706",
     iconBg: "#fffbeb",
-    statusColor: "#d97706",
     rectX: 52,
-    rectY: 114,
+    rectY: 116,
     width: 190,
-    height: 68,
+    height: 64,
     iconCx: 82,
     iconCy: 148,
     textX: 110,
-    lineY1: 138,
-    lineY2: 153,
-    dotX: 113,
-    dotY: 167,
-    statusTextX: 122,
-    statusTextY: 170,
+    lineY1: 142,
+    lineY2: 158,
     spokeX1: 304,
     spokeY1: 264,
     spokeX2: 242,
@@ -329,38 +281,38 @@ export const ControlTowerHubGraphic: React.FC = () => {
 
         {/* 1. Concentric Background Radar Wave Pulses from Center (350, 310) */}
         <g>
-          {/* Expanding gentle radar wave pulses */}
+          {/* Expanding gentle radar wave pulses (very soft and subtle) */}
           <circle cx="350" cy="310" r="65" fill="#108a00" opacity="0">
-            <animate attributeName="r" values="62;155" dur="4.8s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0.26;0" dur="4.8s" repeatCount="indefinite" />
+            <animate attributeName="r" values="62;150" dur="5.2s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.08;0" dur="5.2s" repeatCount="indefinite" />
           </circle>
           <circle cx="350" cy="310" r="65" fill="#108a00" opacity="0">
-            <animate attributeName="r" values="62;155" dur="4.8s" begin="1.6s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0.26;0" dur="4.8s" begin="1.6s" repeatCount="indefinite" />
+            <animate attributeName="r" values="62;150" dur="5.2s" begin="1.7s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.08;0" dur="5.2s" begin="1.7s" repeatCount="indefinite" />
           </circle>
           <circle cx="350" cy="310" r="65" fill="#108a00" opacity="0">
-            <animate attributeName="r" values="62;155" dur="4.8s" begin="3.2s" repeatCount="indefinite" />
-            <animate attributeName="opacity" values="0.26;0" dur="4.8s" begin="3.2s" repeatCount="indefinite" />
+            <animate attributeName="r" values="62;150" dur="5.2s" begin="3.4s" repeatCount="indefinite" />
+            <animate attributeName="opacity" values="0.08;0" dur="5.2s" begin="3.4s" repeatCount="indefinite" />
           </circle>
 
-          {/* Prominent Outer Aura Rings (scaled up to match software reference) */}
+          {/* Soft neutral aura rings around central hub (no intense green tint) */}
           <circle
             cx="350"
             cy="310"
-            r="96"
-            fill="#eef8eb"
-            fillOpacity="0.85"
-            stroke="#c8ecc0"
-            strokeWidth="1.6"
+            r="94"
+            fill="#f8faf6"
+            fillOpacity="0.75"
+            stroke="#e2ebe0"
+            strokeWidth="1.4"
           />
           <circle
             cx="350"
             cy="310"
             r="78"
-            fill="#e2f5dc"
-            fillOpacity="0.92"
-            stroke="#a3e698"
-            strokeWidth="1.6"
+            fill="#edf5ec"
+            fillOpacity="0.8"
+            stroke="#d4e6d0"
+            strokeWidth="1.4"
           />
         </g>
 
@@ -449,7 +401,7 @@ export const ControlTowerHubGraphic: React.FC = () => {
               width="22"
               height="30"
               rx="4"
-              fill="#eef8eb"
+              fill="#f4faf2"
               stroke="#108a00"
               strokeWidth="2.4"
             />
@@ -491,7 +443,7 @@ export const ControlTowerHubGraphic: React.FC = () => {
           </text>
         </g>
 
-        {/* 5. The 7 Satellite Module Cards with Ample Internal Spacing */}
+        {/* 5. The 7 Satellite Module Cards with Clean Spacing (no redundant 'Connected' text) */}
         {NODES.map((node) => {
           const isHovered = hoveredNode === node.id;
 
@@ -509,7 +461,7 @@ export const ControlTowerHubGraphic: React.FC = () => {
                 y={node.rectY}
                 width={node.width}
                 height={node.height}
-                rx="20"
+                rx="18"
                 fill="#ffffff"
                 stroke={isHovered ? node.color : "#e2e8f0"}
                 strokeWidth={isHovered ? 2 : 1.2}
@@ -528,11 +480,11 @@ export const ControlTowerHubGraphic: React.FC = () => {
               {/* Render Vector Icon inside circular badge */}
               {renderIcon(node.iconType, node.iconCx, node.iconCy, node.color)}
 
-              {/* Title Text (1 or 2 lines with comfortable line height) */}
+              {/* Title Text (1 or 2 lines centered comfortably) */}
               <text
                 x={node.textX}
                 y={node.lineY1}
-                fontSize="12.5"
+                fontSize="13"
                 fontWeight="600"
                 fill="#0c180a"
                 fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
@@ -544,7 +496,7 @@ export const ControlTowerHubGraphic: React.FC = () => {
                 <text
                   x={node.textX}
                   y={node.lineY2}
-                  fontSize="12.5"
+                  fontSize="13"
                   fontWeight="600"
                   fill="#0c180a"
                   fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
@@ -553,33 +505,6 @@ export const ControlTowerHubGraphic: React.FC = () => {
                   {node.titleLines[1]}
                 </text>
               )}
-
-              {/* Live Status Indicator Dot with subtle pulse */}
-              <circle
-                cx={node.dotX}
-                cy={node.dotY}
-                r="3.2"
-                fill={node.statusColor}
-              >
-                <animate
-                  attributeName="opacity"
-                  values="1;0.35;1"
-                  dur="2.2s"
-                  repeatCount="indefinite"
-                />
-              </circle>
-
-              {/* Status Text (Connected / Available) */}
-              <text
-                x={node.statusTextX}
-                y={node.statusTextY}
-                fontSize="10.5"
-                fontWeight="500"
-                fill={node.statusColor}
-                fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
-              >
-                {node.status}
-              </text>
             </g>
           );
         })}
