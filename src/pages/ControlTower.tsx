@@ -11,6 +11,7 @@ import { ControlTowerPreviewCTA } from "@/components/home/ControlTowerPreviewCTA
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { HowItWorksCards } from "@/components/home/HowItWorksCards";
 import { IntegrationsSection } from "@/components/home/IntegrationsSection";
+import { ControlTowerHubGraphic } from "@/components/home/ControlTowerHubGraphic";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -23,7 +24,7 @@ import {
 } from "lucide-react";
 import donorIntelligenceImg from "@/assets/screenshots/agent-donor-intelligence.png";
 import heroBgNetwork from "@/assets/hero-bg-network.png";
-import heroControlTowerHub from "@/assets/hero-control-tower-hub.png";
+
 
 import meetingsImg from "@/assets/screenshots/meetings-view.png";
 import reportsImg from "@/assets/screenshots/reports-analytics.png";
@@ -201,17 +202,13 @@ const ControlTower = () => {
                 </div>
               </div>
 
-              {/* Right Column: Control Tower Hub & Spoke Diagram */}
+              {/* Right Column: Control Tower Hub & Spoke Animated Graphic */}
               <div className="lg:col-span-5 xl:col-span-6 flex items-center justify-center relative">
                 {/* Soft ambient glow behind diagram */}
-                <div className="absolute w-[340px] h-[340px] sm:w-[440px] sm:h-[440px] rounded-full bg-[#108a00]/10 blur-3xl pointer-events-none -z-10" />
+                <div className="absolute w-[360px] h-[360px] sm:w-[480px] sm:h-[480px] rounded-full bg-[#108a00]/10 blur-3xl pointer-events-none -z-10" />
 
-                <div className="relative w-full max-w-[480px] sm:max-w-[540px] lg:max-w-[580px] animate-float-slow transition-transform duration-500 hover:scale-[1.02]">
-                  <img
-                    src={heroControlTowerHub}
-                    alt="Control Tower central hub connecting CRM, Volunteer Management, Grant Portals, Accounting, Events, Email, and Payments"
-                    className="w-full h-auto object-contain drop-shadow-[0_12px_32px_rgba(16,138,0,0.12)]"
-                  />
+                <div className="relative w-full max-w-[560px] sm:max-w-[620px] transition-transform duration-500">
+                  <ControlTowerHubGraphic />
                 </div>
               </div>
             </div>
