@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, ReactNode } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import logo from "@/assets/nonprofit-ai-logo.png";
+import logo from "@/assets/nonprofit-ai-logo.svg";
 
 export interface Slide {
   content: ReactNode;

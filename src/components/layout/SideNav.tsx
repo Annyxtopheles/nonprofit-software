@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/nonprofit-ai-logo.png";
+import logo from "@/assets/nonprofit-ai-logo.svg";
 
 interface SideNavProps {
   activeSection?: string;

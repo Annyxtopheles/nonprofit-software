@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Shield, Layers, ArrowRight } from "lucide-react";
-import logo from "@/assets/nonprofit-ai-logo.png";
+import logo from "@/assets/nonprofit-ai-logo.svg";
 
 const decks = [
   {

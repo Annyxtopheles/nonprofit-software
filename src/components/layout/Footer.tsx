@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from "@/assets/nonprofit-ai-logo.png";
+import logo from "@/assets/nonprofit-ai-logo.svg";
 import { NewsletterSignup } from "@/components/newsletter/NewsletterSignup";
 
 const footerLinks = {
