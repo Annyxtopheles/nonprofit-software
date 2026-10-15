@@ -170,7 +170,7 @@ export function SuccessStoriesSection() {
                 <div className="divide-y divide-border border-y border-border">
                   {story.challenge && (
                     <div className="py-3.5 grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 items-baseline">
-                      <span className="sm:col-span-4 font-bold text-foreground text-sm">
+                      <span className="sm:col-span-4 font-semibold text-foreground text-sm">
                         Challenge
                       </span>
                       <p className="sm:col-span-8 text-sm text-muted-foreground leading-relaxed">
@@ -180,7 +180,7 @@ export function SuccessStoriesSection() {
                   )}
 
                   <div className="py-3.5 grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 items-baseline">
-                    <span className="sm:col-span-4 font-bold text-foreground text-sm">
+                    <span className="sm:col-span-4 font-semibold text-foreground text-sm">
                       What We Delivered
                     </span>
                     <div className="sm:col-span-8">
@@ -205,7 +205,7 @@ export function SuccessStoriesSection() {
 
                   {story.proof && (
                     <div className="py-3.5 grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 items-baseline">
-                      <span className="sm:col-span-4 font-bold text-foreground text-sm">
+                      <span className="sm:col-span-4 font-semibold text-foreground text-sm">
                         Proof
                       </span>
                       <p className="sm:col-span-8 text-sm text-muted-foreground leading-relaxed">
@@ -218,26 +218,26 @@ export function SuccessStoriesSection() {
                 {/* Stat Badges */}
                 <div className="flex items-center gap-6 sm:gap-10 mt-6 pt-2">
                   <div className="flex items-center gap-3">
-                    <Users className="w-6 h-6 text-primary shrink-0" strokeWidth={1.75} />
+                    <Users className="w-5 h-5 text-primary shrink-0 opacity-80" strokeWidth={1.5} />
                     <div>
-                      <div className="text-lg md:text-xl font-extrabold text-foreground leading-none">
+                      <div className="text-base sm:text-lg font-medium text-foreground leading-tight">
                         {story.stat1.value}
                       </div>
-                      <div className="text-[11px] font-bold text-primary uppercase mt-1 tracking-wider">
+                      <div className="text-[11px] font-medium text-muted-foreground uppercase mt-0.5 tracking-wider">
                         {story.stat1.label}
                       </div>
                     </div>
                   </div>
 
-                  <div className="h-10 w-px bg-border shrink-0" />
+                  <div className="h-8 w-px bg-border shrink-0" />
 
                   <div className="flex items-center gap-3">
-                    <Calendar className="w-6 h-6 text-primary shrink-0" strokeWidth={1.75} />
+                    <Calendar className="w-5 h-5 text-primary shrink-0 opacity-80" strokeWidth={1.5} />
                     <div>
-                      <div className="text-lg md:text-xl font-extrabold text-foreground leading-none">
+                      <div className="text-base sm:text-lg font-medium text-foreground leading-tight">
                         {story.stat2.value}
                       </div>
-                      <div className="text-[11px] font-bold text-primary uppercase mt-1 tracking-wider">
+                      <div className="text-[11px] font-medium text-muted-foreground uppercase mt-0.5 tracking-wider">
                         {story.stat2.label}
                       </div>
                     </div>
