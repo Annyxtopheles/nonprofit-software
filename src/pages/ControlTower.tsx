@@ -10,6 +10,7 @@ import { SuccessStoriesSection } from "@/components/home/SuccessStoriesSection";
 import { ControlTowerPreviewCTA } from "@/components/home/ControlTowerPreviewCTA";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { HowItWorksCards } from "@/components/home/HowItWorksCards";
+import { IntegrationsSection } from "@/components/home/IntegrationsSection";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -20,29 +21,8 @@ import {
   Brain, MessageSquare, TrendingUp, Code, Search,
   Globe, ShieldCheck, Link2, ScanEye, Sparkles
 } from "lucide-react";
-import salesforceLogo from "@/assets/logos/sfdc_nonprofits_logo_rgb_v1.webp";
-import blackbaudLogo from "@/assets/logos/blackbaud-re-nxt.png";
-import bloomerangLogo from "@/assets/logos/bloomerang-logo.webp";
-import neonCrmLogo from "@/assets/logos/neon-crm-logo.png";
-import virtuousLogo from "@/assets/logos/virtuous-logo.png";
-import donorPerfectLogo from "@/assets/logos/donorperfect-logo.png";
-import hubspotLogo from "@/assets/logos/hubspot-logo.png";
-import kindfulLogo from "@/assets/logos/kindful-logo.webp";
-import stripeLogo from "@/assets/logos/stripe-logo.png";
-import paypalLogo from "@/assets/logos/paypal-logo.png";
-import quickbooksLogo from "@/assets/logos/quickbooks-logo.png";
-import eventbriteLogo from "@/assets/logos/eventbrite-logo.png";
-import givebutterLogo from "@/assets/logos/givebutter-logo.png";
-import onecauseLogo from "@/assets/logos/onecause-logo.png";
-import googleCalendarLogo from "@/assets/logos/google-calendar-logo.png";
-import outlookLogo from "@/assets/logos/outlook-logo.png";
-import googleDriveLogo from "@/assets/logos/google-drive-logo.png";
-import sharepointLogo from "@/assets/logos/sharepoint-logo.png";
-import googleWorkspaceLogo from "@/assets/logos/google-workspace-logo.svg";
-import microsoft365Logo from "@/assets/logos/microsoft-365-logo.svg";
-import zoomLogo from "@/assets/logos/zoom-logo.svg";
-import mailchimpLogo from "@/assets/logos/mailchimp-logo.svg";
 import donorIntelligenceImg from "@/assets/screenshots/agent-donor-intelligence.png";
+
 import meetingsImg from "@/assets/screenshots/meetings-view.png";
 import reportsImg from "@/assets/screenshots/reports-analytics.png";
 import dashboardImg from "@/assets/screenshots/dashboard-setup.png";
@@ -150,56 +130,6 @@ const valueProps = [
   { icon: Brain, label: "16 AI Agents", desc: "Specialized for nonprofit ops" },
   { icon: LayoutDashboard, label: "Role-Based Views", desc: "Purpose-built for every role" },
   { icon: Lock, label: "Secure by Design", desc: "RLS, encryption, audit trails" },
-];
-
-const stackCategories = [
-  {
-    title: "CRM Partners",
-    logos: [
-      { name: "Salesforce NPSP", logo: salesforceLogo },
-      { name: "Blackbaud RE NXT", logo: blackbaudLogo },
-      { name: "Bloomerang", logo: bloomerangLogo },
-      { name: "Neon CRM", logo: neonCrmLogo },
-      { name: "Virtuous", logo: virtuousLogo },
-      { name: "DonorPerfect", logo: donorPerfectLogo },
-      { name: "HubSpot", logo: hubspotLogo },
-      { name: "Kindful", logo: kindfulLogo },
-    ],
-  },
-  {
-    title: "Payment & Accounting",
-    logos: [
-      { name: "Stripe", logo: stripeLogo },
-      { name: "PayPal", logo: paypalLogo },
-      { name: "QuickBooks", logo: quickbooksLogo },
-    ],
-  },
-  {
-    title: "Events & Engagement",
-    logos: [
-      { name: "Eventbrite", logo: eventbriteLogo },
-      { name: "Givebutter", logo: givebutterLogo },
-      { name: "OneCause", logo: onecauseLogo },
-    ],
-  },
-  {
-    title: "Communication",
-    logos: [
-      { name: "Google Workspace", logo: googleWorkspaceLogo },
-      { name: "Microsoft 365", logo: microsoft365Logo },
-      { name: "Zoom", logo: zoomLogo },
-      { name: "Mailchimp", logo: mailchimpLogo },
-    ],
-  },
-  {
-    title: "Productivity",
-    logos: [
-      { name: "Google Calendar", logo: googleCalendarLogo },
-      { name: "Outlook", logo: outlookLogo },
-      { name: "Google Drive", logo: googleDriveLogo },
-      { name: "SharePoint", logo: sharepointLogo },
-    ],
-  },
 ];
 
 const ControlTower = () => {
@@ -447,122 +377,7 @@ const ControlTower = () => {
         </section>
 
         {/* Integrations */}
-        <section className="py-12 md:py-16 px-6 lg:px-12">
-          <div className="max-w-5xl mx-auto text-center">
-            <div className="mb-10">
-              <h2
-                className="text-3xl md:text-4xl font-bold mb-3"
-                style={{ color: colors.headline }}
-              >
-                Works With Your Existing Stack
-              </h2>
-              <p className="text-lg mb-1" style={{ color: colors.body }}>
-                It doesn&apos;t replace your CRM. Control Tower connects to what you already use.
-              </p>
-              <p className="text-sm" style={{ color: colors.body }}>
-                No migration. No schema redesign.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {stackCategories.map((category, index) => {
-                const isCrm = index === 0;
-                const isIconGrid =
-                  category.title === "Communication" || category.title === "Productivity";
-
-                return (
-                  <div
-                    key={category.title}
-                    className={`flex flex-col items-center text-center p-6 transition-shadow duration-200 hover:shadow-[0_4px_16px_rgba(0,0,0,0.08)] ${
-                      isCrm ? "sm:col-span-2 lg:col-span-4 sm:p-8" : "min-h-[160px]"
-                    }`}
-                    style={{
-                      ...tileCardStyle,
-                      ...(isCrm
-                        ? {
-                            background: `linear-gradient(180deg, ${colors.accentLight} 0%, ${colors.bg} 48%)`,
-                            borderColor: colors.divider,
-                          }
-                        : {}),
-                    }}
-                  >
-                    <p
-                      className="text-xs font-semibold uppercase tracking-widest mb-5"
-                      style={{ color: colors.accent }}
-                    >
-                      {category.title}
-                    </p>
-
-                    {isCrm ? (
-                      <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
-                        {category.logos.map((item) => (
-                          <div
-                            key={item.name}
-                            className="flex items-center justify-center h-[72px] px-3 rounded-xl transition-shadow duration-200 hover:shadow-[0_2px_10px_rgba(0,0,0,0.06)]"
-                            style={{
-                              backgroundColor: colors.bg,
-                              border: `1px solid ${colors.border}`,
-                            }}
-                          >
-                            <img
-                              src={item.logo}
-                              alt={`${item.name} logo`}
-                              className="h-8 sm:h-9 w-auto max-w-[110px] object-contain"
-                              loading="lazy"
-                            />
-                          </div>
-                        ))}
-                      </div>
-                    ) : isIconGrid ? (
-                      <div className="w-full grid grid-cols-2 gap-3 mt-auto">
-                        {category.logos.map((item) => (
-                          <div
-                            key={item.name}
-                            className="flex flex-col items-center justify-center gap-2.5 py-3.5 px-2 rounded-xl transition-shadow duration-200 hover:shadow-[0_2px_10px_rgba(0,0,0,0.06)]"
-                            style={{
-                              backgroundColor: colors.surface,
-                              border: `1px solid ${colors.border}`,
-                            }}
-                          >
-                            <div
-                              className="w-11 h-11 rounded-full flex items-center justify-center"
-                              style={{ backgroundColor: colors.accentLight }}
-                            >
-                              <img
-                                src={item.logo}
-                                alt=""
-                                className="max-h-6 max-w-6 w-auto object-contain"
-                                loading="lazy"
-                              />
-                            </div>
-                            <span
-                              className="text-[11px] font-medium leading-tight"
-                              style={{ color: colors.headline }}
-                            >
-                              {item.name}
-                            </span>
-                          </div>
-                        ))}
-                      </div>
-                    ) : (
-                      <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-4 mt-auto w-full">
-                        {category.logos.map((item) => (
-                          <img
-                            key={item.name}
-                            src={item.logo}
-                            alt={`${item.name} logo`}
-                            className="h-8 sm:h-9 w-auto max-w-[110px] object-contain opacity-90 transition-opacity duration-200 hover:opacity-100"
-                            loading="lazy"
-                          />
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
+        <IntegrationsSection />
 
         {/* Security & Data Control */}
         <SecuritySection />
