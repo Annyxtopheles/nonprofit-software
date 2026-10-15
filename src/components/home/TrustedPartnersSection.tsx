@@ -25,7 +25,7 @@ const partners = [
 
 export function TrustedPartnersSection({ colors }: { colors: Colors }) {
   return (
-    <section className="py-12 md:py-16 px-6 lg:px-12 bg-white">
+    <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-100">
       <div className="max-w-6xl mx-auto text-center">
         <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#108a00] mb-3">
           Trusted Partners
@@ -36,12 +36,12 @@ export function TrustedPartnersSection({ colors }: { colors: Colors }) {
         >
           Trusted by Mission-Driven Organizations
         </h2>
-        <p className="text-base md:text-lg max-w-2xl mx-auto mb-10" style={{ color: colors.body }}>
+        <p className="text-base md:text-lg max-w-2xl mx-auto mb-8" style={{ color: colors.body }}>
           Nonprofits and community organizations rely on us to keep their data, donors, and boards
           moving in the same direction.
         </p>
 
-        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 lg:gap-10 items-center justify-items-center">
+        <ul className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 items-center justify-items-center">
           {partners.map((p) => (
             <li key={p.alt} className="flex h-20 w-full items-center justify-center p-2">
               <img

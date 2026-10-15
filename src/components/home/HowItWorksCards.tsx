@@ -3,14 +3,14 @@ import React from "react";
 export const HowItWorksCards: React.FC = () => {
   return (
     <section
-      className="py-16 md:py-24"
+      className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100"
       style={{
         background: "linear-gradient(180deg, #F5F9F4 0%, #EFF6EE 50%, #E9F3E7 100%)",
       }}
     >
-      <div className="container mx-auto max-w-6xl px-4">
+      <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="mb-12 md:mb-14 text-center max-w-3xl mx-auto">
+        <div className="mb-8 md:mb-10 text-center max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-[#0c180a] mb-3">
             How It Actually Works
           </h2>

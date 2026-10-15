@@ -2,10 +2,10 @@ import React from "react";
 
 export const WhatWeCanDoSection: React.FC = () => {
   return (
-    <section id="what-we-can-do" className="py-16 md:py-24 px-6 lg:px-12 bg-white border-t border-slate-100">
+    <section id="what-we-can-do" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-100">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-10">
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-[#0c180a] mb-3">
             What We Can Do
           </h2>
@@ -15,7 +15,7 @@ export const WhatWeCanDoSection: React.FC = () => {
         </div>
 
         {/* Bento Grid: 4 Alternating Asymmetric Rows */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-7">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* ========================================================
               ROW 1 - CARD 1 (Wide / 7 cols): Leadership & Program Dashboard
           ======================================================== */}

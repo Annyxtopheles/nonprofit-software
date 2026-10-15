@@ -4,11 +4,11 @@ import iso27001Logo from "@/assets/logos/iso-27001-certified.svg";
 
 export const CompanyTrackRecordSection: React.FC = () => {
   return (
-    <section id="track-record" className="py-16 md:py-24 px-6 lg:px-12 bg-white border-t border-slate-100">
+    <section id="track-record" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-100">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-[#0c180a] text-balance mb-4 leading-tight">
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-10">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-[#0c180a] text-balance mb-3 leading-tight">
             22+ Years Behind the Technology.
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-600 text-pretty max-w-2xl mx-auto">

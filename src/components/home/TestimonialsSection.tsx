@@ -28,16 +28,16 @@ const testimonials = [
 
 export function TestimonialsSection({ colors }: { colors: Colors }) {
   return (
-    <section className="section-surface py-12 md:py-16 px-6 lg:px-12">
-      <div className="max-w-5xl mx-auto">
-        <div className="mb-10 text-center">
+    <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-[#F9FBF8] border-t border-slate-100">
+      <div className="max-w-6xl mx-auto">
+        <div className="mb-8 md:mb-10 text-center">
           <h2
             className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-balance mb-3"
             style={{ color: colors.headline }}
           >
             What Nonprofit Leaders Say
           </h2>
-          <p className="text-lg max-w-2xl mx-auto" style={{ color: colors.body }}>
+          <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: colors.body }}>
             Illustrative examples of the outcomes teams aim for with the Control Tower.
           </p>
         </div>

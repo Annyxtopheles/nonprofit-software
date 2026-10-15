@@ -5,20 +5,20 @@ import previewIllustration from "@/assets/screenshots/control-tower-preview-illu
 export function ControlTowerPreviewCTA() {
   return (
     <section
-      className="py-16 md:py-24 px-6 lg:px-12 border-t border-[#108a00]/10"
+      className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-t border-[#108a00]/10"
       style={{
         background: "linear-gradient(180deg, #FFFFFF 0%, #FAFCF9 50%, #F5F9F4 100%)",
       }}
     >
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           {/* Left Column - Content */}
           <div className="lg:col-span-7 xl:col-span-6">
-            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-foreground leading-tight mb-6 text-balance">
+            <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-foreground leading-tight mb-4 text-balance">
               See What the Control Tower Could Look Like for Your Nonprofit.
             </h2>
 
-            <div className="text-base md:text-lg text-muted-foreground leading-relaxed space-y-3 mb-8 max-w-lg">
+            <div className="text-base md:text-lg text-muted-foreground leading-relaxed space-y-2.5 mb-6 max-w-lg">
               <p>
                 Walk us through how you manage donors, grants, programs, events, volunteers, or your board.
               </p>

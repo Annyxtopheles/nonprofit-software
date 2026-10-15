@@ -60,14 +60,14 @@ const integrations: IntegrationItem[] = [
 
 export const IntegrationsSection: React.FC = () => {
   return (
-    <section id="integrations" className="py-16 md:py-24 px-6 lg:px-12 bg-white">
+    <section id="integrations" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-100">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-8 sm:mb-10">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#108a00] mb-3">
             KEEP THE TOOLS YOUR TEAM ALREADY KNOWS
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-[#0c180a] text-balance mb-4 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-[#0c180a] text-balance mb-3 leading-tight">
             Connect What You Already Use.
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-600 text-pretty max-w-2xl mx-auto">
@@ -105,7 +105,7 @@ export const IntegrationsSection: React.FC = () => {
         </div>
 
         {/* Supporting Copy */}
-        <div className="mt-12 sm:mt-14 max-w-2xl mx-auto text-center">
+        <div className="mt-8 sm:mt-10 max-w-2xl mx-auto text-center">
           <p className="text-base sm:text-lg leading-relaxed text-slate-700 font-normal mb-1.5">
             Your fundraising, finance, communications, meetings, and operational tools can remain part of the workflow.
           </p>

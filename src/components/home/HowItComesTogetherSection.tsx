@@ -3,14 +3,14 @@ import { Cloud, Server } from "lucide-react";
 
 export const HowItComesTogetherSection: React.FC = () => {
   return (
-    <section id="how-it-comes-together" className="py-16 md:py-24 px-6 lg:px-12 bg-[#F9FBF8] border-t border-slate-100">
+    <section id="how-it-comes-together" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-slate-100">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-10">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#108a00] mb-3">
             HOW IT COMES TOGETHER
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-[#0c180a] text-balance mb-4 leading-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-[#0c180a] text-balance mb-3 leading-tight">
             From Scattered Information to
             <span className="block">One Clear View.</span>
           </h2>

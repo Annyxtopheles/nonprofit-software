@@ -217,15 +217,15 @@ export function NewsletterSignup({ variant = "section", source }: NewsletterSign
   }
 
   return (
-    <section className="px-6 lg:px-12 py-14 md:py-20 bg-secondary/40 border-t border-border">
+    <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-16 bg-[#e7f5e3]/30 border-t border-border">
       <div className="max-w-3xl mx-auto text-center">
-        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-5">
+        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
           <Mail className="w-6 h-6 text-primary" />
         </div>
         <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
           Nonprofit AI insights, once a month
         </h2>
-        <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
+        <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
           Practical ways nonprofits are using AI to cut admin work, strengthen governance, and
           grow donor relationships — plus product updates from Nonprofit Control Tower.
         </p>

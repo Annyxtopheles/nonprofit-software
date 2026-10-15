@@ -141,7 +141,7 @@ const ControlTower = () => {
       <div style={{ backgroundColor: colors.bg, color: colors.headline }}>
         {/* Hero */}
         <section
-          className="relative overflow-hidden py-16 md:py-24 px-6 lg:px-12"
+          className="relative overflow-hidden py-12 md:py-16 px-4 sm:px-6 lg:px-8"
           style={{
             background: "linear-gradient(180deg, #EBF6E7 0%, #F5FAF3 50%, #FFFFFF 100%)",
           }}
@@ -159,7 +159,7 @@ const ControlTower = () => {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/10 to-white/80" />
           </div>
 
-          <div className="relative z-10 max-w-6xl xl:max-w-7xl mx-auto">
+          <div className="relative z-10 max-w-6xl mx-auto">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
               {/* Left Column: Hero Content */}
               <div className="lg:col-span-7 xl:col-span-6 text-center lg:text-left">
@@ -219,13 +219,13 @@ const ControlTower = () => {
 
         {/* Problem Section */}
         <section
-          className="py-14 md:py-20 px-6 lg:px-12"
+          className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100"
           style={{
             background: "linear-gradient(180deg, #E9F3E7 0%, #EEF6EB 50%, #F5F9F4 100%)",
           }}
         >
           <div className="max-w-6xl mx-auto">
-            <div className="mb-12 md:mb-14 text-center">
+            <div className="mb-8 md:mb-10 text-center">
               <h2
                 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
                 style={{ color: colors.headline }}
@@ -240,20 +240,20 @@ const ControlTower = () => {
           </div>
         </section>
         {/* Core Value Props */}
-        <section className="section-tint py-12 md:py-16 px-6 lg:px-12">
-          <div className="max-w-5xl mx-auto">
-            <div className="mb-10 text-center">
+        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100 bg-[#F9FBF8]">
+          <div className="max-w-6xl mx-auto">
+            <div className="mb-8 md:mb-10 text-center">
               <h2
                 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
                 style={{ color: colors.headline }}
               >
                 It Doesn&apos;t Replace Your CRM. It Makes It Brilliant.
               </h2>
-              <p className="text-lg max-w-2xl mx-auto" style={{ color: colors.body }}>
+              <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: colors.body }}>
                 Connect your existing systems in minutes. See insights in real time. No migration. No duplicate data entry. Ever.
               </p>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {valueProps.map((item) => (
                 <div key={item.label} className="p-5 md:p-6 text-center">
                   <div
@@ -266,7 +266,7 @@ const ControlTower = () => {
                       strokeWidth={1.5}
                     />
                   </div>
-                  <h3 className="text-[15px] font-semibold mb-1" style={{ color: colors.headline }}>
+                  <h3 className="text-base font-semibold mb-1" style={{ color: colors.headline }}>
                     {item.label}
                   </h3>
                   <p className="text-sm" style={{ color: colors.body }}>
@@ -282,20 +282,20 @@ const ControlTower = () => {
         <WhatWeCanDoSection />
 
         {/* AI Agents */}
-        <section className="section-glow py-12 md:py-16 px-6 lg:px-12">
-          <div className="max-w-5xl mx-auto relative z-[1]">
-            <div className="mb-10 text-center">
+        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100 bg-[#F9FBF8]">
+          <div className="max-w-6xl mx-auto relative z-[1]">
+            <div className="mb-8 md:mb-10 text-center">
               <h2
                 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
                 style={{ color: colors.headline }}
               >
                 16 AI Agents. Four Specialized Teams.
               </h2>
-              <p className="text-lg max-w-2xl mx-auto" style={{ color: colors.body }}>
+              <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: colors.body }}>
                 Not generic chatbots — purpose-built agents trained on nonprofit operations with access to your data.
               </p>
             </div>
-            <div className="space-y-5">
+            <div className="space-y-6">
               {agentTeams.map((team) => (
                 <div
                   key={team.team}
@@ -351,20 +351,20 @@ const ControlTower = () => {
         </section>
 
         {/* Role-Based Dashboards */}
-        <section className="section-mesh py-12 md:py-16 px-6 lg:px-12">
-          <div className="max-w-5xl mx-auto">
-            <div className="mb-10 text-center">
+        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100 bg-white">
+          <div className="max-w-6xl mx-auto">
+            <div className="mb-8 md:mb-10 text-center">
               <h2
                 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
                 style={{ color: colors.headline }}
               >
                 Built for Every Role on Your Team
               </h2>
-              <p className="text-lg max-w-2xl mx-auto" style={{ color: colors.body }}>
+              <p className="text-base md:text-lg max-w-2xl mx-auto" style={{ color: colors.body }}>
                 Four purpose-built dashboards ensure every team member sees what matters to them — not a generic overview.
               </p>
             </div>
-            <div className="grid sm:grid-cols-2 gap-8 md:gap-10">
+            <div className="grid sm:grid-cols-2 gap-6 md:gap-8">
               {roles.map((role) => (
                 <div key={role.title} className="flex gap-4 text-left">
                   <div
@@ -406,6 +406,7 @@ const ControlTower = () => {
           </div>
         </section>
 
+
         {/* Integrations */}
         <IntegrationsSection />
 
@@ -425,41 +426,41 @@ const ControlTower = () => {
 
 
         {/* CTA */}
-        <section className="section-cta-glow py-12 md:py-16 px-6 lg:px-12">
+        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100 bg-white">
           <div
-            className="max-w-3xl mx-auto text-center p-8 md:p-12 relative z-[1]"
+            className="max-w-4xl mx-auto text-center p-8 md:p-10 relative z-[1]"
             style={tileCardStyle}
           >
-            <Layers className="w-10 h-10 mx-auto mb-4" style={{ color: colors.accent }} strokeWidth={1.5} />
+            <Layers className="w-10 h-10 mx-auto mb-3" style={{ color: colors.accent }} strokeWidth={1.5} />
             <h2
-              className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-4"
+              className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
               style={{ color: colors.headline }}
             >
               Ready to See It in Action?
             </h2>
-            <p className="text-lg mb-8" style={{ color: colors.body }}>
+            <p className="text-base md:text-lg mb-6 max-w-xl mx-auto" style={{ color: colors.body }}>
               Connect your systems. Surface your insights. Amplify your mission.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex flex-col sm:flex-row gap-3.5 justify-center">
               <Button
                 size="lg"
-                className="font-bold text-white hover:opacity-90"
+                className="font-bold text-white hover:opacity-90 rounded-xl px-7 py-3.5 shadow-sm transition-all"
                 style={{ backgroundColor: colors.accent }}
                 asChild
               >
                 <a href="https://demo.nonprofitai.software/" target="_blank" rel="noopener noreferrer">
-                  Try Live Demo <ArrowRight className="w-4 h-4 ml-1" />
+                  Try Live Demo <ArrowRight className="w-4 h-4 ml-1.5" />
                 </a>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="font-bold"
+                className="font-bold rounded-xl px-7 py-3.5 border"
                 style={{ borderColor: colors.border, color: colors.headline }}
                 asChild
               >
                 <a href="https://collabai.software/contact" target="_blank" rel="noopener noreferrer">
-                  <Phone className="w-4 h-4 mr-1" /> Schedule a Call
+                  <Phone className="w-4 h-4 mr-1.5" /> Schedule a Call
                 </a>
               </Button>
             </div>
@@ -470,28 +471,28 @@ const ControlTower = () => {
         <NewsletterSignup source="home_section" />
 
         <section
-          className="w-full py-16 px-6 lg:px-12"
+          className="w-full py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100"
           style={{ backgroundColor: colors.accentLight }}
         >
-          <div className="max-w-5xl mx-auto text-center">
+          <div className="max-w-6xl mx-auto text-center">
             <ShieldCheck
-              className="w-12 h-12 mx-auto mb-5"
+              className="w-12 h-12 mx-auto mb-4"
               style={{ color: colors.accent }}
               strokeWidth={1.75}
             />
-            <span className="inline-block text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-[#108a00]/30 bg-white text-[#108a00] mb-5">
+            <span className="inline-block text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-[#108a00]/30 bg-white text-[#108a00] mb-4">
               Free Trial
             </span>
             <h2
-              className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-4"
+              className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
               style={{ color: colors.headline }}
             >
               Board Meetings Shouldn&apos;t Be This Painful
             </h2>
-            <p className="text-lg max-w-2xl mx-auto mb-8" style={{ color: colors.body }}>
+            <p className="text-base md:text-lg max-w-2xl mx-auto mb-6" style={{ color: colors.body }}>
               From messy agendas to lost documents — our Board Governance module fixes it all. 10 AI agents, 21 features, zero cost.
             </p>
-            <div className="flex flex-wrap justify-center gap-3 mb-8">
+            <div className="flex flex-wrap justify-center gap-2.5 mb-7">
               {[
                 "10 AI Agents Working 24/7",
                 "21 Features for Board Management",
@@ -513,18 +514,18 @@ const ControlTower = () => {
             <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
               <Button
                 size="lg"
-                className="font-bold text-white hover:opacity-90"
+                className="font-bold text-white hover:opacity-90 rounded-xl px-7 py-3.5 shadow-sm transition-all"
                 style={{ backgroundColor: colors.accent }}
                 asChild
               >
                 <Link to="/board-governance">
-                  Explore Board Governance <ArrowRight className="w-4 h-4 ml-1" />
+                  Explore Board Governance <ArrowRight className="w-4 h-4 ml-1.5" />
                 </Link>
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="font-bold bg-white"
+                className="font-bold bg-white rounded-xl px-7 py-3.5"
                 style={{ borderColor: colors.border, color: colors.headline }}
                 asChild
               >

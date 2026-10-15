@@ -123,14 +123,14 @@ export function SuccessStoriesSection() {
   return (
     <section
       id="success-stories"
-      className="py-16 md:py-24 px-6 lg:px-12"
+      className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100"
       style={{
         background: "linear-gradient(180deg, #FFFFFF 0%, #FAFCF9 15%, #F4F8F3 45%, #EEF6EB 75%, #EBF4E8 100%)",
       }}
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="mb-14 md:mb-20 text-center">
+        <div className="mb-10 md:mb-12 text-center">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-primary mb-3">
             SUCCESS STORIES
           </p>
@@ -140,7 +140,7 @@ export function SuccessStoriesSection() {
         </div>
 
         {/* Stories */}
-        <div className="space-y-20 md:space-y-28">
+        <div className="space-y-12 md:space-y-16">
           {stories.map((story, index) => {
             const isImageRight = index % 2 === 0;
 

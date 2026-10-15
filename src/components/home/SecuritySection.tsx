@@ -14,11 +14,11 @@ import iso27001Logo from "@/assets/logos/iso-27001-certified.svg";
 
 export const SecuritySection: React.FC = () => {
   return (
-    <section id="security" className="py-16 md:py-24 px-6 lg:px-12 bg-white border-t border-slate-100">
+    <section id="security" className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 bg-[#F9FBF8] border-t border-slate-100">
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-[#0c180a] text-balance mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-8 md:mb-10">
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-[#0c180a] text-balance mb-3">
             Your Data Is Private, Protected and Under Your Control.
           </h2>
           <p className="text-base sm:text-lg leading-relaxed text-slate-600 text-pretty">
