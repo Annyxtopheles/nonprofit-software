@@ -4,7 +4,7 @@ import previewIllustration from "@/assets/screenshots/control-tower-preview-illu
 
 export function ControlTowerPreviewCTA() {
   return (
-    <section className="py-16 md:py-24 px-6 lg:px-12 bg-background border-t border-border">
+    <section className="py-16 md:py-24 px-6 lg:px-12 bg-white border-t border-[#14A800]/20">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
           {/* Left Column - Content */}

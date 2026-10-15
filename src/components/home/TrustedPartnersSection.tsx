@@ -25,7 +25,7 @@ const partners = [
 
 export function TrustedPartnersSection({ colors }: { colors: Colors }) {
   return (
-    <section className="section-tint py-12 md:py-16 px-6 lg:px-12">
+    <section className="py-12 md:py-16 px-6 lg:px-12 bg-white">
       <div className="max-w-6xl mx-auto text-center">
         <p
           className="text-xs font-bold uppercase tracking-[0.18em] mb-3"

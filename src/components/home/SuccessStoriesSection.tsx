@@ -121,7 +121,13 @@ const stories: Story[] = [
 
 export function SuccessStoriesSection() {
   return (
-    <section id="success-stories" className="py-16 md:py-24 px-6 lg:px-12 bg-background border-t border-border/40">
+    <section
+      id="success-stories"
+      className="py-16 md:py-24 px-6 lg:px-12 border-t border-[#14A800]/20"
+      style={{
+        background: "linear-gradient(180deg, #FFFFFF 0%, #F9FCF8 12%, #F1F9EF 40%, #ECF7EA 70%, #E7F5E3 100%)",
+      }}
+    >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="mb-14 md:mb-20 text-center">

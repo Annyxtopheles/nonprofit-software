@@ -241,7 +241,12 @@ const ControlTower = () => {
     <SiteLayout>
       <div style={{ backgroundColor: colors.bg, color: colors.headline }}>
         {/* Hero */}
-        <section className="section-mesh py-16 md:py-24 px-6 lg:px-12">
+        <section
+          className="py-16 md:py-24 px-6 lg:px-12"
+          style={{
+            background: "linear-gradient(180deg, #EBF6E7 0%, #F5FAF3 50%, #FFFFFF 100%)",
+          }}
+        >
           <div className="max-w-5xl mx-auto text-center">
             <div
               className="inline-flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-full mb-6"
