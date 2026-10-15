@@ -31,77 +31,65 @@ export const WhatWeCanDoSection: React.FC = () => {
               </p>
             </div>
 
-            {/* Infographic: Dashboard Window + Charts + Person Pointing */}
+            {/* Infographic: Executive Leadership & Program KPI Dashboard Window */}
             <div
               aria-hidden="true"
-              className="relative w-[170px] sm:w-[210px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
+              className="relative w-[180px] sm:w-[220px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
             >
-              <svg viewBox="0 0 210 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full overflow-visible">
+              <svg viewBox="0 0 220 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full overflow-visible">
                 {/* Soft Base Shadow */}
-                <ellipse cx="105" cy="150" rx="80" ry="7" fill="#e7f5e3" />
+                <ellipse cx="110" cy="150" rx="95" ry="7" fill="#e7f5e3" />
 
                 {/* Dashboard Window Frame */}
                 <g className="transition-transform duration-500 ease-out group-hover:-translate-y-1 origin-center">
-                  <rect x="24" y="24" width="130" height="110" rx="10" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
+                  <rect x="18" y="20" width="184" height="120" rx="12" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
 
-                  {/* Top Header Bar with 3 Dots */}
-                  <rect x="24" y="24" width="130" height="18" rx="10" fill="#f4fbf1" />
-                  <rect x="24" y="34" width="130" height="8" fill="#f4fbf1" />
-                  <line x1="24" y1="42" x2="154" y2="42" stroke="#1c3422" strokeWidth="1.6" />
-                  <circle cx="34" cy="33" r="2" fill="#1c3422" />
-                  <circle cx="40" cy="33" r="2" fill="#1c3422" />
-                  <circle cx="46" cy="33" r="2" fill="#1c3422" />
+                  {/* Top Header Bar with 3 Window Dots & Title Line */}
+                  <rect x="18" y="20" width="184" height="20" rx="12" fill="#f4fbf1" />
+                  <rect x="18" y="30" width="184" height="10" fill="#f4fbf1" />
+                  <line x1="18" y1="40" x2="202" y2="40" stroke="#1c3422" strokeWidth="1.6" />
+                  <circle cx="30" cy="30" r="2.2" fill="#1c3422" />
+                  <circle cx="37" cy="30" r="2.2" fill="#1c3422" />
+                  <circle cx="44" cy="30" r="2.2" fill="#1c3422" />
+                  <line x1="60" y1="30" x2="110" y2="30" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" opacity="0.4" />
 
-                  {/* Shaded Area Under Line Chart */}
-                  <polygon points="38,82 58,62 82,72 108,48 132,56 132,82 38,82" fill="#e7f5e3" fillOpacity="0.8" />
-                  {/* Line Chart */}
-                  <path d="M 38 82 L 58 62 L 82 72 L 108 48 L 132 56" stroke="#4a8b5e" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" fill="none" />
-                  <circle cx="108" cy="48" r="3.5" fill="#108a00" stroke="#1c3422" strokeWidth="1.4" />
+                  {/* 3 Executive Metric KPI Summary Mini Cards */}
+                  {/* KPI Card 1: Donors */}
+                  <rect x="28" y="48" width="48" height="26" rx="6" fill="#f4fbf1" stroke="#1c3422" strokeWidth="1.4" />
+                  <line x1="34" y1="56" x2="56" y2="56" stroke="#1c3422" strokeWidth="1.5" strokeLinecap="round" opacity="0.6" />
+                  <text x="34" y="68" fill="#108a00" fontSize="9" fontWeight="800" fontFamily="sans-serif">+24%</text>
 
-                  {/* Mini 3-Bar Chart */}
-                  <line x1="38" y1="120" x2="78" y2="120" stroke="#1c3422" strokeWidth="1.4" strokeLinecap="round" />
-                  <rect x="42" y="96" width="7" height="24" rx="2" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.4" />
-                  <rect x="53" y="88" width="7" height="32" rx="2" fill="#108a00" stroke="#1c3422" strokeWidth="1.4" />
-                  <rect x="64" y="92" width="7" height="28" rx="2" fill="#52b86a" stroke="#1c3422" strokeWidth="1.4" />
+                  {/* KPI Card 2: Grants */}
+                  <rect x="86" y="48" width="48" height="26" rx="6" fill="#f4fbf1" stroke="#1c3422" strokeWidth="1.4" />
+                  <line x1="92" y1="56" x2="116" y2="56" stroke="#1c3422" strokeWidth="1.5" strokeLinecap="round" opacity="0.6" />
+                  <text x="92" y="68" fill="#1c3422" fontSize="9" fontWeight="800" fontFamily="sans-serif">92%</text>
 
-                  {/* Donut Chart */}
-                  <circle cx="105" cy="104" r="14" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.8" />
-                  <path d="M 105 104 L 105 90 A 14 14 0 0 1 119 104 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.4" />
-                  <circle cx="105" cy="104" r="6" fill="#ffffff" stroke="#1c3422" strokeWidth="1.4" />
+                  {/* KPI Card 3: Programs */}
+                  <rect x="144" y="48" width="48" height="26" rx="6" fill="#f4fbf1" stroke="#1c3422" strokeWidth="1.4" />
+                  <line x1="150" y1="56" x2="174" y2="56" stroke="#1c3422" strokeWidth="1.5" strokeLinecap="round" opacity="0.6" />
+                  <text x="150" y="68" fill="#2d6842" fontSize="9" fontWeight="800" fontFamily="sans-serif">Active</text>
 
-                  {/* Horizontal Metric Lines */}
-                  <line x1="124" y1="94" x2="144" y2="94" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="124" y1="102" x2="138" y2="102" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" opacity="0.6" />
-                  <line x1="124" y1="110" x2="142" y2="110" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" opacity="0.6" />
-                </g>
+                  {/* Left Main Chart: Program Growth Area & Trend Line */}
+                  <rect x="28" y="82" width="106" height="48" rx="6" fill="#fafdfa" stroke="#1c3422" strokeWidth="1.4" />
+                  <polygon points="34,122 52,106 72,112 94,94 116,98 128,90 128,122 34,122" fill="#e7f5e3" fillOpacity="0.8" />
+                  <path d="M 34 122 L 52 106 L 72 112 L 94 94 L 116 98 L 128 90" stroke="#367a4e" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                  <circle cx="94" cy="94" r="3" fill="#108a00" stroke="#1c3422" strokeWidth="1.4" />
+                  <circle cx="128" cy="90" r="3" fill="#108a00" stroke="#1c3422" strokeWidth="1.4" />
 
-                {/* Person Pointing at the Dashboard (Right) */}
-                <g className="transition-transform duration-500 ease-out group-hover:translate-x-1 origin-bottom">
-                  {/* Body / Torso */}
-                  <path d="M 142 152 C 142 122, 154 112, 172 112 C 190 112, 202 122, 202 152 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
-                  <path d="M 166 112 C 168 116, 176 116, 178 112" stroke="#1c3422" strokeWidth="1.8" fill="none" />
-
-                  {/* Pointing Arm & Hand */}
-                  <path d="M 152 122 L 130 94 L 126 97 L 146 128 Z" fill="#fde6d2" stroke="#1c3422" strokeWidth="2" strokeLinejoin="round" />
-                  {/* Extended Pointing Finger */}
-                  <path d="M 127 95 L 118 84 C 117 83, 119 81, 121 82 L 129 91 Z" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.8" strokeLinejoin="round" />
-
-                  {/* Head & Neck */}
-                  <rect x="166" y="94" width="10" height="10" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.6" />
-                  <ellipse cx="171" cy="85" rx="13" ry="14" fill="#fde6d2" stroke="#1c3422" strokeWidth="2.2" />
-
-                  {/* Dark Stylized Hair */}
-                  <path d="M 160 84 C 158 70, 170 66, 180 68 C 188 70, 188 80, 184 90 C 182 82, 174 80, 170 82 C 164 85, 160 87, 160 84 Z" fill="#1c3422" stroke="#1c3422" strokeWidth="1.2" />
-                  <circle cx="178" cy="86" r="3.2" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.4" />
+                  {/* Right Widget: Bar Chart / Allocation */}
+                  <rect x="144" y="82" width="48" height="48" rx="6" fill="#fafdfa" stroke="#1c3422" strokeWidth="1.4" />
+                  <line x1="152" y1="122" x2="184" y2="122" stroke="#1c3422" strokeWidth="1.4" strokeLinecap="round" />
+                  <rect x="152" y="104" width="7" height="18" rx="2" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.2" />
+                  <rect x="163" y="94" width="7" height="28" rx="2" fill="#108a00" stroke="#1c3422" strokeWidth="1.2" />
+                  <rect x="174" y="100" width="7" height="22" rx="2" fill="#52b86a" stroke="#1c3422" strokeWidth="1.2" />
                 </g>
 
                 {/* Action Rays */}
                 <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
-                  <line x1="16" y1="46" x2="8" y2="40" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="20" y1="58" x2="10" y2="58" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="16" y1="70" x2="8" y2="76" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="188" y1="36" x2="198" y2="30" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="190" y1="48" x2="200" y2="48" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="10" y1="46" x2="4" y2="40" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="12" y1="58" x2="4" y2="58" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="208" y1="36" x2="216" y2="30" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="210" y1="48" x2="218" y2="48" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                 </g>
               </svg>
             </div>
@@ -133,43 +121,46 @@ export const WhatWeCanDoSection: React.FC = () => {
                 <g className="transition-transform duration-500 ease-out group-hover:-translate-y-1 origin-center">
                   <rect x="24" y="32" width="102" height="104" rx="10" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
 
-                  {/* List Row 1 */}
-                  <circle cx="40" cy="52" r="8" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.6" />
-                  <circle cx="40" cy="49" r="3.5" fill="#fde6d2" />
-                  <path d="M 35 56 C 35 53, 45 53, 45 56" fill="#1c3422" />
-                  <line x1="54" y1="50" x2="98" y2="50" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="54" y1="56" x2="82" y2="56" stroke="#1c3422" strokeWidth="1.6" strokeLinecap="round" opacity="0.5" />
+                  {/* List Row 1: Donor Item */}
+                  <circle cx="42" cy="52" r="9" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.5" />
+                  <circle cx="42" cy="49" r="3.5" fill="#108a00" />
+                  <path d="M 36 57 C 36 53, 48 53, 48 57 Z" fill="#108a00" />
+                  <line x1="57" y1="50" x2="102" y2="50" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="57" y1="56" x2="86" y2="56" stroke="#1c3422" strokeWidth="1.6" strokeLinecap="round" opacity="0.45" />
 
-                  {/* List Row 2 */}
-                  <circle cx="40" cy="76" r="8" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.6" />
-                  <circle cx="40" cy="73" r="3.5" fill="#fde6d2" />
-                  <path d="M 35 80 C 35 77, 45 77, 45 80" fill="#1c3422" />
-                  <line x1="54" y1="74" x2="104" y2="74" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="54" y1="80" x2="86" y2="80" stroke="#1c3422" strokeWidth="1.6" strokeLinecap="round" opacity="0.5" />
+                  {/* List Row 2: Donor Item */}
+                  <circle cx="42" cy="76" r="9" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.5" />
+                  <circle cx="42" cy="73" r="3.5" fill="#2d6842" />
+                  <path d="M 36 81 C 36 77, 48 77, 48 81 Z" fill="#2d6842" />
+                  <line x1="57" y1="74" x2="108" y2="74" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="57" y1="80" x2="90" y2="80" stroke="#1c3422" strokeWidth="1.6" strokeLinecap="round" opacity="0.45" />
 
-                  {/* List Row 3 */}
-                  <circle cx="40" cy="100" r="8" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.6" />
-                  <circle cx="40" cy="97" r="3.5" fill="#fde6d2" />
-                  <path d="M 35 104 C 35 101, 45 101, 45 104" fill="#1c3422" />
-                  <line x1="54" y1="98" x2="94" y2="98" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="54" y1="104" x2="76" y2="104" stroke="#1c3422" strokeWidth="1.6" strokeLinecap="round" opacity="0.5" />
+                  {/* List Row 3: Donor Item */}
+                  <circle cx="42" cy="100" r="9" fill="#e7f5e3" stroke="#1c3422" strokeWidth="1.5" />
+                  <circle cx="42" cy="97" r="3.5" fill="#108a00" />
+                  <path d="M 36 105 C 36 101, 48 101, 48 105 Z" fill="#108a00" />
+                  <line x1="57" y1="98" x2="98" y2="98" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="57" y1="104" x2="80" y2="104" stroke="#1c3422" strokeWidth="1.6" strokeLinecap="round" opacity="0.45" />
 
-                  {/* Bottom subtle line */}
-                  <line x1="54" y1="120" x2="90" y2="120" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" opacity="0.4" />
+                  {/* Bottom subtle progress line */}
+                  <line x1="57" y1="120" x2="94" y2="120" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" opacity="0.3" />
                 </g>
 
-                {/* Featured Top-Right Relationship Avatar */}
-                <g className="transition-transform duration-500 ease-out group-hover:scale-110 origin-[124px_48px]">
-                  <circle cx="124" cy="48" r="22" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" />
-                  <circle cx="124" cy="48" r="17" fill="#ffffff" />
-                  <circle cx="124" cy="44" r="8.5" fill="#fde6d2" stroke="#1c3422" strokeWidth="1.4" />
-                  <path d="M 116 43 C 116 36, 132 36, 132 43 C 132 46, 116 46, 116 43 Z" fill="#1c3422" />
-                  <path d="M 112 62 C 112 55, 136 55, 136 62 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.4" />
+                {/* Refined Modern Featured Donor Avatar Badge (Top Right) */}
+                <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-[126px_50px]">
+                  <circle cx="126" cy="50" r="23" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
+                  <circle cx="126" cy="50" r="19" fill="#e7f5e3" />
+                  {/* Clean Vector Profile Silhouette */}
+                  <circle cx="126" cy="44" r="7" fill="#108a00" />
+                  <path d="M 113 62 C 113 54, 139 54, 139 62 Z" fill="#108a00" />
+                  {/* VIP / Retained Star Badge */}
+                  <circle cx="143" cy="34" r="7.5" fill="#ffd166" stroke="#1c3422" strokeWidth="1.4" />
+                  <path d="M 143 30.5 L 144.2 33.2 L 147 33.5 L 144.9 35.3 L 145.5 38 L 143 36.6 L 140.5 38 L 141.1 35.3 L 139 33.5 L 141.8 33.2 Z" fill="#1c3422" />
                 </g>
 
                 {/* Active Engagement Dot Badge */}
-                <circle cx="144" cy="82" r="11" fill="#367a4e" stroke="#1c3422" strokeWidth="2" />
-                <circle cx="144" cy="82" r="4.5" fill="#c8f0be" stroke="#ffffff" strokeWidth="1.5" />
+                <circle cx="144" cy="84" r="11" fill="#108a00" stroke="#1c3422" strokeWidth="2" />
+                <circle cx="144" cy="84" r="4.5" fill="#ffffff" />
 
                 {/* Action Rays */}
                 <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
@@ -215,27 +206,37 @@ export const WhatWeCanDoSection: React.FC = () => {
                   <polygon points="118,86 142,66 142,118 118,138" fill="#326c46" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
                   {/* Drop Slot on Top Lid */}
                   <line x1="72" y1="76" x2="110" y2="76" stroke="#1c3422" strokeWidth="3.2" strokeLinecap="round" />
+                  {/* Heart / Gift Emblem on Front */}
+                  <circle cx="79" cy="112" r="12" fill="#326c46" />
+                  <path d="M 79 117 C 79 117, 72 112, 72 108 C 72 105, 75 103, 77 105 C 79 107, 79 107, 79 107 C 79 107, 79 107, 81 105 C 83 103, 86 105, 86 108 C 86 112, 79 117, 79 117 Z" fill="#ffffff" />
                 </g>
 
-                {/* Hand and Coin Falling into the Box */}
+                {/* Floating Gold Contribution Coins Falling into Slot */}
                 <g className="transition-transform duration-500 ease-out group-hover:translate-y-1 origin-center">
-                  {/* Sleeve */}
-                  <polygon points="126,16 144,30 132,46 114,32" fill="#4a8b5e" stroke="#1c3422" strokeWidth="2" strokeLinejoin="round" />
-                  {/* Hand */}
-                  <path d="M 116 34 L 98 48 C 93 52, 97 58, 105 54 L 118 42 Z" fill="#fde6d2" stroke="#1c3422" strokeWidth="2" strokeLinejoin="round" />
-                  <path d="M 103 48 C 103 44, 98 42, 95 46" stroke="#1c3422" strokeWidth="2" fill="none" strokeLinecap="round" />
+                  {/* Secondary Left Small Coin */}
+                  <circle cx="68" cy="42" r="9" fill="#ffd166" stroke="#1c3422" strokeWidth="1.8" />
+                  <circle cx="68" cy="42" r="6.5" fill="#ffd166" stroke="#e0a526" strokeWidth="1" />
+                  <text x="68" y="45.5" textAnchor="middle" fill="#1c3422" fontSize="9" fontWeight="800" fontFamily="sans-serif">$</text>
 
-                  {/* Gold Coin with $ symbol */}
-                  <circle cx="86" cy="62" r="14" fill="#ffd166" stroke="#1c3422" strokeWidth="2.2" />
-                  <circle cx="86" cy="62" r="10.5" fill="#ffd166" stroke="#e0a526" strokeWidth="1.2" />
-                  <text x="86" y="67" textAnchor="middle" fill="#1c3422" fontSize="13" fontWeight="900" fontFamily="sans-serif">$</text>
+                  {/* Secondary Right Small Coin */}
+                  <circle cx="114" cy="36" r="10" fill="#ffd166" stroke="#1c3422" strokeWidth="1.8" />
+                  <circle cx="114" cy="36" r="7.5" fill="#ffd166" stroke="#e0a526" strokeWidth="1" />
+                  <text x="114" y="40" textAnchor="middle" fill="#1c3422" fontSize="10" fontWeight="800" fontFamily="sans-serif">$</text>
+
+                  {/* Main Primary Gold Coin with $ symbol */}
+                  <circle cx="91" cy="54" r="15" fill="#ffd166" stroke="#1c3422" strokeWidth="2.2" />
+                  <circle cx="91" cy="54" r="11.5" fill="#ffd166" stroke="#e0a526" strokeWidth="1.2" />
+                  <text x="91" y="60" textAnchor="middle" fill="#1c3422" fontSize="14" fontWeight="900" fontFamily="sans-serif">$</text>
+
+                  {/* Downward Motion Trail Lines */}
+                  <line x1="91" y1="26" x2="91" y2="34" stroke="#108a00" strokeWidth="2" strokeLinecap="round" strokeDasharray="2 3" />
                 </g>
 
-                {/* Action Rays around Coin */}
+                {/* Action Rays around Main Coin */}
                 <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
-                  <line x1="68" y1="46" x2="60" y2="40" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="64" y1="56" x2="54" y2="56" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="68" y1="66" x2="60" y2="72" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="68" y1="52" x2="60" y2="52" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="114" y1="52" x2="122" y2="52" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="102" y1="36" x2="108" y2="30" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                 </g>
               </svg>
             </div>
@@ -484,41 +485,53 @@ export const WhatWeCanDoSection: React.FC = () => {
 
                 {/* Board Meeting Window */}
                 <g className="transition-transform duration-500 ease-out group-hover:-translate-y-1 origin-center">
-                  <rect x="28" y="34" width="94" height="96" rx="9" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
-                  <rect x="28" y="34" width="94" height="16" rx="9" fill="#f4fbf1" />
-                  <rect x="28" y="42" width="94" height="8" fill="#f4fbf1" />
-                  <line x1="28" y1="50" x2="122" y2="50" stroke="#1c3422" strokeWidth="1.6" />
-                  <circle cx="36" cy="42" r="1.8" fill="#1c3422" />
-                  <circle cx="41" cy="42" r="1.8" fill="#1c3422" />
-                  <circle cx="46" cy="42" r="1.8" fill="#1c3422" />
+                  {/* Outer Window Frame matching width perfectly */}
+                  <rect x="24" y="32" width="102" height="98" rx="10" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
+                  {/* Top Window Bar */}
+                  <rect x="24" y="32" width="102" height="18" rx="10" fill="#f4fbf1" />
+                  <rect x="24" y="40" width="102" height="10" fill="#f4fbf1" />
+                  <line x1="24" y1="50" x2="126" y2="50" stroke="#1c3422" strokeWidth="1.6" />
+                  <circle cx="34" cy="41" r="2" fill="#1c3422" />
+                  <circle cx="40" cy="41" r="2" fill="#1c3422" />
+                  <circle cx="46" cy="41" r="2" fill="#1c3422" />
 
                   {/* Agenda Lines */}
-                  <line x1="38" y1="62" x2="80" y2="62" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="38" y1="72" x2="70" y2="72" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" opacity="0.6" />
+                  <line x1="36" y1="64" x2="84" y2="64" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="36" y1="74" x2="72" y2="74" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" opacity="0.5" />
 
-                  {/* Seated Board Member Silhouettes */}
+                  {/* Seated Board Member Silhouettes inside matched frame */}
                   <g>
-                    <line x1="34" y1="126" x2="116" y2="126" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+                    {/* Conference Table Boundary Line matching exactly inside window */}
+                    <line x1="24" y1="116" x2="126" y2="116" stroke="#1c3422" strokeWidth="1.8" />
                     {/* Left Member */}
-                    <circle cx="50" cy="102" r="7" fill="#4a8b5e" />
-                    <path d="M 40 126 C 40 114, 60 114, 60 126 Z" fill="#4a8b5e" />
+                    <circle cx="46" cy="98" r="6.5" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.4" />
+                    <path d="M 36 116 C 36 107, 56 107, 56 116 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.4" />
 
                     {/* Right Member */}
-                    <circle cx="98" cy="102" r="7" fill="#4a8b5e" />
-                    <path d="M 88 126 C 88 114, 108 114, 108 126 Z" fill="#4a8b5e" />
+                    <circle cx="104" cy="98" r="6.5" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.4" />
+                    <path d="M 94 116 C 94 107, 114 107, 114 116 Z" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.4" />
 
                     {/* Center Leader Member */}
-                    <circle cx="74" cy="96" r="8.5" fill="#2d6842" />
-                    <path d="M 61 126 C 61 108, 87 108, 87 126 Z" fill="#2d6842" />
+                    <circle cx="75" cy="92" r="8" fill="#108a00" stroke="#1c3422" strokeWidth="1.5" />
+                    <path d="M 62 116 C 62 103, 88 103, 88 116 Z" fill="#108a00" stroke="#1c3422" strokeWidth="1.5" />
                   </g>
                 </g>
 
-                {/* Floating Gavel Stamp (Top Right) */}
-                <g className="transition-transform duration-500 ease-out group-hover:scale-110 group-hover:rotate-6 origin-[122px_44px]">
-                  <circle cx="122" cy="44" r="21" fill="#4a8b5e" stroke="#1c3422" strokeWidth="2.2" />
-                  {/* Wooden Gavel Icon */}
-                  <rect x="110" y="34" width="16" height="8" rx="2.5" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" transform="rotate(-35 118 38)" />
-                  <line x1="118" y1="38" x2="132" y2="52" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" />
+                {/* Floating Gavel Authority Stamp (Top Right) */}
+                <g className="transition-transform duration-500 ease-out group-hover:scale-105 group-hover:rotate-6 origin-[124px_44px]">
+                  <circle cx="124" cy="44" r="22" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" />
+                  {/* Detailed Gavel Icon: Head, Rings & Handle */}
+                  <g transform="translate(124, 44) rotate(-32) translate(-124, -44)">
+                    {/* Gavel Mallet Head */}
+                    <rect x="115" y="32" width="18" height="10" rx="2.5" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
+                    {/* Golden decorative accent band on mallet */}
+                    <rect x="122" y="32" width="4" height="10" fill="#ffd166" />
+                    {/* Gavel Handle */}
+                    <line x1="124" y1="42" x2="124" y2="58" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" />
+                    <circle cx="124" cy="58" r="2" fill="#ffd166" />
+                  </g>
+                  {/* Sound Block / Base plate underneath */}
+                  <rect x="114" y="56" width="20" height="4" rx="2" fill="#ffffff" stroke="#1c3422" strokeWidth="1.2" />
                 </g>
 
                 {/* Action Rays */}
@@ -543,51 +556,76 @@ export const WhatWeCanDoSection: React.FC = () => {
               </p>
             </div>
 
-            {/* Infographic: Call Notes Notepad + Audio Mic + Interest Signal Bars */}
+            {/* Infographic: AI Donor Call Intelligence & Follow-up Analysis */}
             <div
               aria-hidden="true"
-              className="relative w-[170px] sm:w-[210px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
+              className="relative w-[180px] sm:w-[220px] h-[145px] sm:h-[160px] shrink-0 flex items-center justify-center select-none"
             >
-              <svg viewBox="0 0 210 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full overflow-visible">
+              <svg viewBox="0 0 220 160" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full overflow-visible">
                 {/* Soft Base Shadow */}
-                <ellipse cx="115" cy="148" rx="80" ry="7" fill="#e7f5e3" />
+                <ellipse cx="110" cy="150" rx="95" ry="7" fill="#e7f5e3" />
 
-                {/* Call Notes Document Sheet */}
+                {/* Call Notes Structured Dossier Sheet */}
                 <g className="transition-transform duration-500 ease-out group-hover:-translate-y-1 origin-center">
-                  <rect x="76" y="26" width="98" height="106" rx="10" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
+                  <rect x="52" y="22" width="136" height="116" rx="12" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
 
-                  {/* Speech / Transcript Lines */}
-                  <line x1="126" y1="42" x2="162" y2="42" stroke="#4a8b5e" strokeWidth="2.5" strokeLinecap="round" />
-                  <line x1="126" y1="52" x2="156" y2="52" stroke="#4a8b5e" strokeWidth="2.5" strokeLinecap="round" />
-                  <line x1="126" y1="62" x2="160" y2="62" stroke="#4a8b5e" strokeWidth="2.5" strokeLinecap="round" />
+                  {/* Header: Call Summary Tag & Duration */}
+                  <rect x="62" y="32" width="60" height="14" rx="4" fill="#e7f5e3" />
+                  <text x="92" y="42" textAnchor="middle" fill="#108a00" fontSize="8.5" fontWeight="800" fontFamily="sans-serif">CALL RECAP</text>
+                  <text x="174" y="42" textAnchor="end" fill="#64748b" fontSize="8" fontWeight="600" fontFamily="sans-serif">14:22</text>
+                  <line x1="62" y1="52" x2="176" y2="52" stroke="#1c3422" strokeWidth="1.2" opacity="0.3" />
 
-                  {/* Key Insights Notes Rows */}
-                  <line x1="92" y1="84" x2="162" y2="84" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="92" y1="94" x2="150" y2="94" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" opacity="0.6" />
+                  {/* Speech Audio Waveform Bars */}
+                  <g transform="translate(64, 60)">
+                    <rect x="0" y="8" width="3" height="8" rx="1.5" fill="#108a00" />
+                    <rect x="6" y="4" width="3" height="16" rx="1.5" fill="#108a00" />
+                    <rect x="12" y="1" width="3" height="22" rx="1.5" fill="#108a00" />
+                    <rect x="18" y="6" width="3" height="12" rx="1.5" fill="#108a00" />
+                    <rect x="24" y="2" width="3" height="20" rx="1.5" fill="#108a00" />
+                    <rect x="30" y="7" width="3" height="10" rx="1.5" fill="#108a00" />
+                    <rect x="36" y="3" width="3" height="18" rx="1.5" fill="#108a00" />
+                    <rect x="42" y="9" width="3" height="6" rx="1.5" fill="#108a00" />
+                  </g>
+
+                  {/* Donor Interest Signal Gauge (Right of waveform) */}
+                  <g transform="translate(122, 60)">
+                    <rect x="0" y="0" width="54" height="24" rx="5" fill="#f4fbf1" stroke="#1c3422" strokeWidth="1.2" />
+                    <text x="6" y="10" fill="#64748b" fontSize="7" fontWeight="600" fontFamily="sans-serif">INTEREST</text>
+                    {/* 4 Green Signal Level Bars */}
+                    <rect x="6" y="14" width="8" height="6" rx="1.5" fill="#108a00" />
+                    <rect x="17" y="14" width="8" height="6" rx="1.5" fill="#108a00" />
+                    <rect x="28" y="14" width="8" height="6" rx="1.5" fill="#108a00" />
+                    <rect x="39" y="14" width="8" height="6" rx="1.5" fill="#c8f0be" />
+                  </g>
+
+                  {/* AI Generated Follow-Up Action Item Box */}
+                  <rect x="62" y="92" width="114" height="34" rx="6" fill="#f8faf7" stroke="#1c3422" strokeWidth="1.3" />
+                  <circle cx="73" cy="104" r="4.5" fill="#108a00" />
+                  <path d="M 71 104 L 72.5 105.5 L 75.5 102.5" stroke="#ffffff" strokeWidth="1.2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                  <line x1="82" y1="104" x2="166" y2="104" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="82" y1="113" x2="148" y2="113" stroke="#1c3422" strokeWidth="1.6" strokeLinecap="round" opacity="0.5" />
                 </g>
 
-                {/* Audio Microphone Badge (Left) */}
-                <g className="transition-transform duration-500 ease-out group-hover:scale-110 origin-[104px_74px]">
-                  <circle cx="104" cy="74" r="23" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" />
-                  <circle cx="104" cy="74" r="18" fill="#ffffff" />
-                  {/* Studio Microphone Icon */}
-                  <rect x="100" y="62" width="8" height="15" rx="4" fill="#4a8b5e" stroke="#1c3422" strokeWidth="1.8" />
-                  <path d="M 96 69 C 96 76, 112 76, 112 69" fill="none" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" />
-                  <line x1="104" y1="76" x2="104" y2="84" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
-                  <line x1="99" y1="84" x2="109" y2="84" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                {/* Left Floating Call Phone Headset Badge */}
+                <g className="transition-transform duration-500 ease-out group-hover:scale-105 origin-[46px_80px]">
+                  <circle cx="46" cy="80" r="24" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" />
+                  <circle cx="46" cy="80" r="19" fill="#108a00" />
+                  {/* Phone Handset Vector */}
+                  <path
+                    d="M 40 73 C 39 74.5, 41 78, 44 81 C 47 84, 50.5 86, 52 85 L 54.5 82.5 C 55 82, 56 82, 56.5 82.5 L 59 85 C 59.5 85.5, 59.5 86.5, 59 87 L 57.5 88.5 C 56.5 89.5, 54.5 89.5, 51 86 C 47.5 82.5, 47.5 80.5, 48.5 79.5 L 50 78 C 50.5 77.5, 51.5 77.5, 52 78 L 44 70 Z"
+                    fill="#ffffff"
+                    stroke="#ffffff"
+                    strokeWidth="1.2"
+                    strokeLinejoin="round"
+                  />
+                  {/* Speech Ripple Rays */}
+                  <path d="M 59 72 C 61 74, 61 78, 59 80" stroke="#ffffff" strokeWidth="1.6" fill="none" strokeLinecap="round" />
                 </g>
 
-                {/* Donor Interest Signal Bars (Bottom Right) */}
-                <g className="transition-transform duration-500 ease-out group-hover:translate-y-[-2px] origin-bottom">
-                  <rect x="138" y="118" width="7" height="14" rx="2" fill="#88c99e" stroke="#1c3422" strokeWidth="1.4" />
-                  <rect x="148" y="108" width="7" height="24" rx="2" fill="#52a670" stroke="#1c3422" strokeWidth="1.4" />
-                  <rect x="158" y="96" width="7" height="36" rx="2" fill="#2d6842" stroke="#1c3422" strokeWidth="1.4" />
-                </g>
-
-                {/* Action Rays on Top */}
+                {/* Action Rays on Top Right */}
                 <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
-                  <line x1="78" y1="20" x2="72" y2="12" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-                  <line x1="88" y1="20" x2="90" y2="10" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="184" y1="20" x2="190" y2="12" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
+                  <line x1="194" y1="26" x2="202" y2="20" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
                 </g>
               </svg>
             </div>

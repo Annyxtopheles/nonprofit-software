@@ -11,9 +11,6 @@ export const HowItWorksCards: React.FC = () => {
       <div className="container mx-auto max-w-6xl px-4">
         {/* Section Header */}
         <div className="mb-12 md:mb-14 text-center max-w-3xl mx-auto">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#108a00] mb-3">
-            HOW IT ACTUALLY WORKS
-          </p>
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight text-[#0c180a] mb-3">
             How It Actually Works
           </h2>

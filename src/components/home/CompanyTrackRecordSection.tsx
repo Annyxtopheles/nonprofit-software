@@ -8,9 +8,6 @@ export const CompanyTrackRecordSection: React.FC = () => {
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#108a00] mb-3">
-            PROVEN ENTERPRISE FOUNDATION
-          </p>
           <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight text-[#0c180a] text-balance mb-4 leading-tight">
             22+ Years Behind the Technology.
           </h2>

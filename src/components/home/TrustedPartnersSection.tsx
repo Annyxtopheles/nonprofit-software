@@ -27,10 +27,7 @@ export function TrustedPartnersSection({ colors }: { colors: Colors }) {
   return (
     <section className="py-12 md:py-16 px-6 lg:px-12 bg-white">
       <div className="max-w-6xl mx-auto text-center">
-        <p
-          className="text-xs font-bold uppercase tracking-[0.18em] mb-3"
-          style={{ color: colors.body }}
-        >
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#108a00] mb-3">
           Trusted Partners
         </p>
         <h2

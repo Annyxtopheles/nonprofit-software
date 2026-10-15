@@ -105,7 +105,7 @@ export const IntegrationsSection: React.FC = () => {
         </div>
 
         {/* Supporting Copy */}
-        <div className="mt-12 sm:mt-14 max-w-2xl mx-auto rounded-2xl border border-slate-200/80 bg-[#fbfdfa] p-6 sm:p-7 text-center shadow-sm">
+        <div className="mt-12 sm:mt-14 max-w-2xl mx-auto text-center">
           <p className="text-base sm:text-lg leading-relaxed text-slate-700 font-normal mb-1.5">
             Your fundraising, finance, communications, meetings, and operational tools can remain part of the workflow.
           </p>
