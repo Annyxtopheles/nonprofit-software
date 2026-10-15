@@ -316,9 +316,17 @@ export const SoundFamiliarCards: React.FC = () => {
             </g>
 
             {/* Tilted Pen / Stylus */}
-            <g className="transition-transform duration-500 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-2 group-hover:rotate-12 origin-[82px_104px]">
-              <rect x="76" y="74" width="7" height="38" rx="2.5" fill="#108a00" stroke="#1c3422" strokeWidth="1.8" transform="rotate(26 79 93)" />
-              <polygon points="72,112 75,117 80,113" fill="#1c3422" />
+            <g className="transition-transform duration-500 ease-out group-hover:translate-x-1.5 group-hover:-translate-y-2 group-hover:rotate-12 origin-[80px_95px]">
+              <g transform="rotate(26 80 95)">
+                {/* Pen Clip */}
+                <rect x="75" y="68" width="1.8" height="12" rx="0.9" fill="#1c3422" />
+                {/* Pen Body */}
+                <rect x="76.5" y="65" width="7" height="34" rx="2" fill="#108a00" stroke="#1c3422" strokeWidth="1.8" />
+                {/* Pen Cone / Tip */}
+                <polygon points="76.5,99 83.5,99 80,108" fill="#c8f0be" stroke="#1c3422" strokeWidth="1.6" strokeLinejoin="round" />
+                {/* Pen Nib Point */}
+                <polygon points="79,105.5 81,105.5 80,108.5" fill="#1c3422" />
+              </g>
             </g>
 
             {/* Right: Ticking Clock */}
@@ -402,23 +410,19 @@ export const SoundFamiliarCards: React.FC = () => {
             {/* Sign 1: CRM says "$62,000" (Pointing Left, Green) */}
             <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:-rotate-2 origin-[88px_45px]">
               <path d="M 22 45 L 34 32 L 88 32 L 88 58 L 34 58 Z" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
-              <text x="56" y="49" fill="#ffffff" fontSize="10.5" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$62,000</text>
-              <path d="M 31 47 L 34 43 L 37 47" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+              <text x="56" y="49" fill="#ffffff" fontSize="11" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$62,000</text>
             </g>
 
             {/* Sign 2: QuickBooks says "$45,000" (Pointing Right, White) */}
             <g className="transition-transform duration-500 ease-out group-hover:translate-x-2 group-hover:rotate-2 origin-[96px_79px]">
               <path d="M 160 79 L 148 66 L 96 66 L 96 92 L 148 92 Z" fill="#ffffff" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
-              <text x="125" y="83" fill="#1c3422" fontSize="10.5" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$45,000</text>
-              <line x1="147" y1="79" x2="153" y2="79" stroke="#1c3422" strokeWidth="2" strokeLinecap="round" />
+              <text x="127" y="83" fill="#1c3422" fontSize="11" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$45,000</text>
             </g>
 
             {/* Sign 3: Spreadsheet says "$38,500" (Pointing Left, Mint) */}
             <g className="transition-transform duration-500 ease-out group-hover:-translate-x-2 group-hover:rotate-1 origin-[88px_113px]">
               <path d="M 26 113 L 38 100 L 88 100 L 88 126 L 38 126 Z" fill="#c8f0be" stroke="#1c3422" strokeWidth="2.2" strokeLinejoin="round" />
-              <text x="60" y="117" fill="#0c180a" fontSize="10.5" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$38,500</text>
-              {/* Neutral dark arrow down (No Red) */}
-              <path d="M 35 111 L 35 115 M 32 113 L 35 116 L 38 113" stroke="#1c3422" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+              <text x="58" y="117" fill="#0c180a" fontSize="11" fontWeight="900" textAnchor="middle" fontFamily="sans-serif">$38,500</text>
             </g>
 
             {/* Discrepancy Indicator Badge "≠" in Clear Sky (Green/Mint Theme, No Red) */}
@@ -431,7 +435,6 @@ export const SoundFamiliarCards: React.FC = () => {
             <g className="transition-transform duration-300 ease-out group-hover:scale-110 origin-center">
               <line x1="44" y1="24" x2="38" y2="18" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
               <line x1="52" y1="18" x2="50" y2="10" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
-              <line x1="168" y1="140" x2="176" y2="144" stroke="#1c3422" strokeWidth="2.2" strokeLinecap="round" />
             </g>
           </svg>
         </div>
