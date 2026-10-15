@@ -32,62 +32,78 @@ export const HowItComesTogetherSection: React.FC = () => {
               </p>
             </div>
 
-            {/* Bottom-Right Infographic: Multi-System Data Streams Converging into Central Hub */}
+            {/* Bottom-Right Infographic: Multi-System Integration Conduits Converging into Central Target Hub */}
             <div
               aria-hidden="true"
-              className="absolute right-0 bottom-0 w-[190px] h-[190px] pointer-events-none select-none opacity-50 group-hover:opacity-75 transition-opacity duration-300"
+              className="absolute right-0 bottom-0 w-[190px] h-[190px] pointer-events-none select-none opacity-55 group-hover:opacity-85 transition-opacity duration-300"
             >
               <svg viewBox="0 0 190 190" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full overflow-visible">
-                {/* Converging Data Conduits */}
-                <g className="transition-all duration-700">
-                  {/* Stream 1 (Bottom Left curve) */}
-                  <path
-                    d="M 25 160 C 65 160, 95 125, 145 60"
-                    stroke="#52d039"
-                    strokeWidth="2.2"
-                    strokeDasharray="4 4"
-                    className="transition-all duration-500 group-hover:stroke-white"
-                  />
-                  {/* Stream 2 (Steep curve from bottom) */}
-                  <path
-                    d="M 65 185 C 90 160, 115 110, 145 60"
-                    stroke="#52d039"
-                    strokeWidth="2"
-                    strokeOpacity="0.7"
-                  />
-                  {/* Stream 3 (Upper lateral curve) */}
-                  <path
-                    d="M 40 115 C 80 115, 110 85, 145 60"
-                    stroke="#52d039"
-                    strokeWidth="2.2"
-                  />
+                {/* 3 Source Integration Modules */}
+                <g className="transition-all duration-500">
+                  {/* Module 1: Documents & Drive (Upper Left) */}
+                  <rect x="24" y="82" width="46" height="24" rx="6" fill="#52d039" fillOpacity="0.22" stroke="#52d039" strokeWidth="1.6" />
+                  <circle cx="36" cy="94" r="4.5" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" />
+                  <line x1="46" y1="91" x2="62" y2="91" stroke="#52d039" strokeWidth="1.6" strokeLinecap="round" />
+                  <line x1="46" y1="97" x2="56" y2="97" stroke="#52d039" strokeWidth="1.4" strokeLinecap="round" opacity="0.6" />
+
+                  {/* Module 2: CRM & Member Database (Bottom Left) */}
+                  <rect x="18" y="128" width="52" height="26" rx="6" fill="#52d039" fillOpacity="0.22" stroke="#52d039" strokeWidth="1.6" />
+                  <circle cx="32" cy="141" r="4.5" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" />
+                  <line x1="42" y1="138" x2="62" y2="138" stroke="#52d039" strokeWidth="1.6" strokeLinecap="round" />
+                  <line x1="42" y1="144" x2="54" y2="144" stroke="#52d039" strokeWidth="1.4" strokeLinecap="round" opacity="0.6" />
+
+                  {/* Module 3: Financial & Workflow Data (Bottom Center) */}
+                  <rect x="78" y="150" width="50" height="24" rx="6" fill="#52d039" fillOpacity="0.22" stroke="#52d039" strokeWidth="1.6" />
+                  <circle cx="90" cy="162" r="4.5" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" />
+                  <line x1="100" y1="159" x2="120" y2="159" stroke="#52d039" strokeWidth="1.6" strokeLinecap="round" />
+                  <line x1="100" y1="165" x2="112" y2="165" stroke="#52d039" strokeWidth="1.4" strokeLinecap="round" opacity="0.6" />
                 </g>
 
-                {/* Satellite System Nodes */}
-                <g className="transition-transform duration-500 group-hover:translate-x-1">
-                  {/* Source Node 1 (CRM / Systems) */}
-                  <circle cx="25" cy="160" r="10" fill="#108a00" stroke="#52d039" strokeWidth="2" />
-                  <circle cx="25" cy="160" r="4" fill="#ffffff" />
+                {/* Curved Data Conduits Converging to Central Target Node */}
+                <g className="transition-all duration-500">
+                  {/* Conduit from Module 1 */}
+                  <path
+                    d="M 70 94 C 98 94, 115 68, 133 55"
+                    stroke="#52d039"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    fill="none"
+                  />
+                  {/* Data packet pulse 1 */}
+                  <circle cx="104" cy="80" r="3.5" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" className="transition-transform duration-300 group-hover:translate-x-2" />
 
-                  {/* Source Node 2 (Financial / Database) */}
-                  <circle cx="65" cy="185" r="8" fill="#108a00" stroke="#52d039" strokeWidth="1.8" />
-                  <circle cx="65" cy="185" r="3" fill="#ffffff" />
+                  {/* Conduit from Module 2 */}
+                  <path
+                    d="M 70 141 C 108 141, 122 92, 137 63"
+                    stroke="#52d039"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    fill="none"
+                  />
+                  {/* Data packet pulse 2 */}
+                  <circle cx="112" cy="112" r="3.5" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" className="transition-transform duration-300 group-hover:translate-y-[-4px]" />
 
-                  {/* Source Node 3 (Documents / Workflows) */}
-                  <circle cx="40" cy="115" r="9" fill="#108a00" stroke="#52d039" strokeWidth="1.8" />
-                  <circle cx="40" cy="115" r="3.5" fill="#ffffff" />
+                  {/* Conduit from Module 3 */}
+                  <path
+                    d="M 103 150 C 122 150, 135 102, 142 68"
+                    stroke="#52d039"
+                    strokeWidth="2.2"
+                    strokeLinecap="round"
+                    fill="none"
+                  />
+                  {/* Data packet pulse 3 */}
+                  <circle cx="130" cy="118" r="3.5" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" className="transition-transform duration-300 group-hover:translate-y-[-3px]" />
                 </g>
 
-                {/* Central Connected Target Reticle Hub */}
-                <g className="transition-transform duration-700 ease-out group-hover:scale-110 origin-[145px_60px]">
-                  {/* Concentric Pulse Halo */}
-                  <circle cx="145" cy="60" r="22" stroke="#52d039" strokeWidth="1.5" strokeDasharray="3 3" strokeOpacity="0.6" />
-                  <circle cx="145" cy="60" r="13" fill="#52d039" fillOpacity="0.25" stroke="#52d039" strokeWidth="2" />
-                  <circle cx="145" cy="60" r="4.5" fill="#ffffff" />
+                {/* Central Connected Target Reticle Hub (Matching Configure aesthetic) */}
+                <g className="transition-transform duration-700 ease-out group-hover:scale-110 origin-[145px_50px]">
+                  <circle cx="145" cy="50" r="20" stroke="#52d039" strokeWidth="1.5" strokeDasharray="3 3" />
+                  <circle cx="145" cy="50" r="12" fill="#52d039" fillOpacity="0.3" stroke="#52d039" strokeWidth="2" />
+                  <circle cx="145" cy="50" r="5" fill="#ffffff" />
 
-                  {/* Precision Reticle Crosshairs */}
-                  <line x1="145" y1="36" x2="145" y2="84" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
-                  <line x1="121" y1="60" x2="169" y2="60" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
+                  {/* Crosshairs */}
+                  <line x1="145" y1="26" x2="145" y2="74" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="121" y1="50" x2="169" y2="50" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
                 </g>
               </svg>
             </div>
@@ -159,85 +175,74 @@ export const HowItComesTogetherSection: React.FC = () => {
               </p>
             </div>
 
-            {/* Bottom-Right Infographic: Ascending Bar Chart, Trendline & Target Crosshair Node (Matching Figma) */}
+            {/* Bottom-Right Infographic: Priority Work Dossier & Interactive Action Execution */}
             <div
               aria-hidden="true"
               className="absolute right-0 bottom-0 w-[190px] h-[190px] pointer-events-none select-none opacity-55 group-hover:opacity-85 transition-opacity duration-300"
             >
               <svg viewBox="0 0 190 190" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full overflow-visible">
-                {/* 4 Ascending Vertical Rounded Bar Pillars */}
+                {/* Action Dossier Window (Leadership / Staff / Board Work Panel) */}
                 <g className="transition-all duration-500 ease-out">
-                  {/* Bar 1 (Shortest, Leftmost) */}
-                  <rect
-                    x="68"
-                    y="138"
-                    width="17"
-                    height="62"
-                    rx="8.5"
-                    fill="#52d039"
-                    fillOpacity="0.22"
-                    className="transition-all duration-500 group-hover:translate-y-[-2px]"
-                  />
+                  {/* Panel Container */}
+                  <rect x="28" y="74" width="104" height="98" rx="8" fill="#52d039" fillOpacity="0.18" stroke="#52d039" strokeWidth="1.6" />
 
-                  {/* Bar 2 */}
-                  <rect
-                    x="93"
-                    y="110"
-                    width="17"
-                    height="90"
-                    rx="8.5"
-                    fill="#52d039"
-                    fillOpacity="0.32"
-                    className="transition-all duration-500 group-hover:translate-y-[-4px]"
-                  />
+                  {/* Panel Header */}
+                  <rect x="28" y="74" width="104" height="18" rx="8" fill="#52d039" fillOpacity="0.32" />
+                  <rect x="28" y="84" width="104" height="8" fill="#52d039" fillOpacity="0.32" />
+                  <line x1="28" y1="92" x2="132" y2="92" stroke="#52d039" strokeWidth="1.2" />
+                  {/* Window Dots */}
+                  <circle cx="37" cy="83" r="2" fill="#ffffff" opacity="0.8" />
+                  <circle cx="43" cy="83" r="2" fill="#52d039" />
+                  <circle cx="49" cy="83" r="2" fill="#52d039" />
+                  {/* Priority Tag in Header */}
+                  <rect x="84" y="79" width="40" height="8" rx="3" fill="#ffffff" fillOpacity="0.22" />
 
-                  {/* Bar 3 */}
-                  <rect
-                    x="118"
-                    y="82"
-                    width="17"
-                    height="118"
-                    rx="8.5"
-                    fill="#52d039"
-                    fillOpacity="0.45"
-                    className="transition-all duration-500 group-hover:translate-y-[-6px]"
-                  />
+                  {/* Work Item 1 (Completed / Resolved Task) */}
+                  <circle cx="42" cy="106" r="6" fill="#52d039" stroke="#ffffff" strokeWidth="1.2" />
+                  <path d="M 39.5 106 L 41.5 108 L 45 104.5" stroke="#0a5200" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" fill="none" />
+                  <line x1="53" y1="106" x2="118" y2="106" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" opacity="0.9" />
 
-                  {/* Bar 4 (Tallest, Rightmost) */}
+                  {/* Work Item 2 (Active Work Needing Attention) */}
+                  <circle cx="42" cy="124" r="6" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" />
+                  <circle cx="42" cy="124" r="2.5" fill="#52d039" />
+                  <line x1="53" y1="124" x2="108" y2="124" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" />
+
+                  {/* Work Item 3 (Quick Action Button) */}
                   <rect
-                    x="143"
-                    y="56"
-                    width="17"
-                    height="144"
-                    rx="8.5"
+                    x="38"
+                    y="140"
+                    width="70"
+                    height="20"
+                    rx="5"
                     fill="#52d039"
-                    fillOpacity="0.58"
-                    className="transition-all duration-500 group-hover:translate-y-[-8px]"
+                    stroke="#ffffff"
+                    strokeWidth="1.4"
+                    className="transition-all duration-300 group-hover:fill-white"
+                  />
+                  <line x1="48" y1="150" x2="88" y2="150" stroke="#0a5200" strokeWidth="2.4" strokeLinecap="round" />
+                  <circle cx="96" cy="150" r="2.5" fill="#0a5200" />
+                </g>
+
+                {/* Interactive Pointer Cursor Clicking the Action Button */}
+                <g className="transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:translate-y-[-1px]">
+                  <path
+                    d="M 102 146 L 114 158 L 108 159 L 111 166 L 107 167 L 104 160 L 99 163 Z"
+                    fill="#ffffff"
+                    stroke="#0a5200"
+                    strokeWidth="1.4"
+                    strokeLinejoin="round"
                   />
                 </g>
 
-                {/* Angled Trendline Shooting Up to the Target Node */}
-                <line
-                  x1="38"
-                  y1="168"
-                  x2="151.5"
-                  y2="56"
-                  stroke="#52d039"
-                  strokeWidth="2.5"
-                  strokeLinecap="round"
-                  className="transition-all duration-500 group-hover:stroke-white"
-                />
+                {/* Target Focus Node with Crosshairs (Top Right, at 145, 50 - Matching Connect & Configure) */}
+                <g className="transition-transform duration-700 ease-out group-hover:scale-110 origin-[145px_50px]">
+                  <circle cx="145" cy="50" r="20" stroke="#52d039" strokeWidth="1.5" strokeDasharray="3 3" />
+                  <circle cx="145" cy="50" r="12" fill="#52d039" fillOpacity="0.3" stroke="#52d039" strokeWidth="2" />
+                  <circle cx="145" cy="50" r="5" fill="#ffffff" />
 
-                {/* Target Crosshair Node at the Apex of Bar 4 (Circled in Figma Screenshot) */}
-                <g className="transition-transform duration-700 ease-out group-hover:scale-115 origin-[151.5px_56px]">
-                  {/* Outer Target Circle */}
-                  <circle cx="151.5" cy="56" r="13" stroke="#52d039" strokeWidth="2" fill="#52d039" fillOpacity="0.25" />
-                  {/* Center Dot */}
-                  <circle cx="151.5" cy="56" r="4" fill="#ffffff" />
-
-                  {/* Radiating Precision Crosshairs */}
-                  <line x1="151.5" y1="32" x2="151.5" y2="80" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
-                  <line x1="127.5" y1="56" x2="175.5" y2="56" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
+                  {/* Crosshairs */}
+                  <line x1="145" y1="26" x2="145" y2="74" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="121" y1="50" x2="169" y2="50" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
                 </g>
               </svg>
             </div>
