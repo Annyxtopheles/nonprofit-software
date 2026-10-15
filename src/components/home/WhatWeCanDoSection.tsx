@@ -593,20 +593,33 @@ export const WhatWeCanDoSection: React.FC = () => {
                 {/* Floating Gavel Authority Stamp (Top Right) */}
                 <g className="transition-transform duration-500 ease-out group-hover:scale-105 group-hover:rotate-6 origin-[124px_44px]">
                   <circle cx="124" cy="44" r="22" fill="#108a00" stroke="#1c3422" strokeWidth="2.2" />
-                  {/* Sound Block underneath */}
-                  <ellipse cx="124" cy="56" rx="13" ry="4" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
-                  <ellipse cx="124" cy="56" rx="8" ry="2.2" fill="#ffd166" opacity="0.7" />
-                  {/* Executive Gavel striking block */}
-                  <g transform="rotate(-30 117 44)">
-                    <rect x="106" y="38" width="22" height="11" rx="2.5" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
-                    <rect x="115" y="38" width="4" height="11" fill="#ffd166" />
+                  {/* Sound Block Base */}
+                  <ellipse cx="124" cy="56" rx="14" ry="4.5" fill="#ffffff" stroke="#1c3422" strokeWidth="1.8" />
+                  <ellipse cx="124" cy="56" rx="9" ry="2.5" fill="#c8f0be" />
+
+                  {/* Fully Unified Executive Gavel (Head + Handle perpendicular in single transform) */}
+                  <g transform="translate(124, 43) rotate(-38)">
+                    {/* Shaft / Handle extending perpendicular from center */}
+                    <line x1="0" y1="-3" x2="0" y2="-20" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" />
+                    {/* Brass Accent Ring on Neck */}
+                    <circle cx="0" cy="-6" r="1.8" fill="#ffd166" />
+                    {/* Handle End Knob / Pommel */}
+                    <circle cx="0" cy="-20" r="2.4" fill="#ffd166" stroke="#1c3422" strokeWidth="0.8" />
+
+                    {/* Gavel Head Body */}
+                    <rect x="-11" y="-5" width="22" height="10" rx="2" fill="#ffffff" stroke="#1c3422" strokeWidth="1.6" />
+                    {/* Central Gold Band */}
+                    <rect x="-2" y="-5" width="4" height="10" fill="#ffd166" stroke="#1c3422" strokeWidth="0.6" />
+                    {/* Left Striking Face End Cap */}
+                    <rect x="-11.5" y="-6" width="2.5" height="12" rx="1" fill="#ffffff" stroke="#1c3422" strokeWidth="1.2" />
+                    {/* Right Rear End Cap */}
+                    <rect x="9" y="-6" width="2.5" height="12" rx="1" fill="#ffffff" stroke="#1c3422" strokeWidth="1.2" />
                   </g>
-                  {/* Gavel Handle */}
-                  <line x1="117" y1="44" x2="135" y2="28" stroke="#ffffff" strokeWidth="3.2" strokeLinecap="round" />
-                  <circle cx="136" cy="27" r="2.2" fill="#ffd166" stroke="#1c3422" strokeWidth="0.8" />
-                  {/* Impact Sparks */}
-                  <line x1="108" y1="51" x2="104" y2="48" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" />
-                  <line x1="111" y1="58" x2="106" y2="60" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" />
+
+                  {/* Impact Action Sparks from Block Strike */}
+                  <line x1="110" y1="50" x2="105" y2="48" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" />
+                  <line x1="112" y1="58" x2="107" y2="61" stroke="#ffffff" strokeWidth="1.8" strokeLinecap="round" />
+                  <line x1="120" y1="46" x2="120" y2="41" stroke="#ffffff" strokeWidth="1.6" strokeLinecap="round" />
                 </g>
 
                 {/* Action Rays */}
