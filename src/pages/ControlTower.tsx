@@ -4,6 +4,7 @@ import { SoundFamiliarCards } from "@/components/home/SoundFamiliarCards";
 import { SecuritySection } from "@/components/home/SecuritySection";
 import { HowItComesTogetherSection } from "@/components/home/HowItComesTogetherSection";
 import { CompanyTrackRecordSection } from "@/components/home/CompanyTrackRecordSection";
+import { WhatWeCanDoSection } from "@/components/home/WhatWeCanDoSection";
 import { TrustedPartnersSection } from "@/components/home/TrustedPartnersSection";
 import { SuccessStoriesSection } from "@/components/home/SuccessStoriesSection";
 import { ControlTowerPreviewCTA } from "@/components/home/ControlTowerPreviewCTA";
@@ -66,16 +67,7 @@ const tileCardStyle = {
 };
 
 
-const featureModules = [
-  { icon: LayoutDashboard, title: "Dashboard", desc: "Role-specific command centers for ED, Development, Finance, and Operations" },
-  { icon: Heart, title: "Donor Pipeline", desc: "Visual Kanban board tracking donor cultivation from identification to upgrade" },
-  { icon: Activity, title: "Data Health", desc: "CRM quality scoring with duplicate detection, merge workflows, and fix-it actions" },
-  { icon: FileText, title: "Grants Management", desc: "Lifecycle tracking with deadline alerts, fund utilization, and compliance summaries" },
-  { icon: Calendar, title: "Events", desc: "Post-event engagement intelligence with Thank + Tag workflows and follow-up automation" },
-  { icon: BarChart3, title: "Board Reports", desc: "Board-ready reports generated in one click with KPI summaries and financial snapshots" },
-  { icon: RefreshCw, title: "Reconciliation", desc: "Match transactions across Stripe, PayPal, and QuickBooks — every dollar accounted for" },
-  { icon: BookOpen, title: "Knowledge Base", desc: "Searchable articles, file uploads, and semantic search — your organization's second brain" },
-];
+
 
 const agentTeams = [
   {
@@ -326,43 +318,8 @@ const ControlTower = () => {
           </div>
         </section>
 
-        {/* Feature Modules — screenshot-style category grid */}
-        <section className="py-12 md:py-16 px-6 lg:px-12">
-          <div className="max-w-5xl mx-auto">
-            <div className="mb-10 text-center">
-              <h2
-                className="text-3xl md:text-4xl font-bold mb-3"
-                style={{ color: colors.headline }}
-              >
-                8 Modules. Use Only What You Need.
-              </h2>
-              <p className="text-lg max-w-2xl mx-auto" style={{ color: colors.body }}>
-                Every feature module can be toggled on or off. Start small, grow as your team needs evolve.
-              </p>
-            </div>
-            <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
-              {featureModules.map((mod) => (
-                <div
-                  key={mod.title}
-                  className="p-5 md:p-6 text-center min-h-[120px] transition-shadow duration-200 hover:shadow-[0_4px_16px_rgba(0,0,0,0.08)]"
-                  style={tileCardStyle}
-                >
-                  <mod.icon
-                    className="w-7 h-7 mb-3 mx-auto"
-                    style={{ color: colors.accent }}
-                    strokeWidth={1.5}
-                  />
-                  <h3 className="text-[15px] font-medium leading-snug" style={{ color: colors.headline }}>
-                    {mod.title}
-                  </h3>
-                  <p className="text-sm leading-relaxed mt-1.5" style={{ color: colors.body }}>
-                    {mod.desc}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        {/* What We Can Do */}
+        <WhatWeCanDoSection />
 
         {/* AI Agents */}
         <section className="section-glow py-12 md:py-16 px-6 lg:px-12">
