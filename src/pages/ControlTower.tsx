@@ -12,6 +12,7 @@ import { TestimonialsSection } from "@/components/home/TestimonialsSection";
 import { HowItWorksCards } from "@/components/home/HowItWorksCards";
 import { IntegrationsSection } from "@/components/home/IntegrationsSection";
 import { ControlTowerHubGraphic } from "@/components/home/ControlTowerHubGraphic";
+import { BringYourNonprofitSection } from "@/components/home/BringYourNonprofitSection";
 
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -425,47 +426,8 @@ const ControlTower = () => {
 
 
 
-        {/* CTA */}
-        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100 bg-white">
-          <div
-            className="max-w-4xl mx-auto text-center p-8 md:p-10 relative z-[1]"
-            style={tileCardStyle}
-          >
-            <Layers className="w-10 h-10 mx-auto mb-3" style={{ color: colors.accent }} strokeWidth={1.5} />
-            <h2
-              className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
-              style={{ color: colors.headline }}
-            >
-              Ready to See It in Action?
-            </h2>
-            <p className="text-base md:text-lg mb-6 max-w-xl mx-auto" style={{ color: colors.body }}>
-              Connect your systems. Surface your insights. Amplify your mission.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-3.5 justify-center">
-              <Button
-                size="lg"
-                className="font-bold text-white hover:opacity-90 rounded-xl px-7 py-3.5 shadow-sm transition-all"
-                style={{ backgroundColor: colors.accent }}
-                asChild
-              >
-                <a href="https://demo.nonprofitai.software/" target="_blank" rel="noopener noreferrer">
-                  Try Live Demo <ArrowRight className="w-4 h-4 ml-1.5" />
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="font-bold rounded-xl px-7 py-3.5 border"
-                style={{ borderColor: colors.border, color: colors.headline }}
-                asChild
-              >
-                <a href="https://collabai.software/contact" target="_blank" rel="noopener noreferrer">
-                  <Phone className="w-4 h-4 mr-1.5" /> Schedule a Call
-                </a>
-              </Button>
-            </div>
-          </div>
-        </section>
+        {/* Bring Your Nonprofit Into One Clear View CTA */}
+        <BringYourNonprofitSection />
 
         {/* Lite Version (Board Governance) Teaser Banner */}
         <NewsletterSignup source="home_section" />
