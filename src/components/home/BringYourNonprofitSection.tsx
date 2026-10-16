@@ -15,23 +15,23 @@ export const BringYourNonprofitSection: React.FC = () => {
           />
 
           <div className="relative z-10 max-w-2xl mx-auto">
-            {/* Title */}
-            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#0c180a] leading-tight text-balance mb-4">
+            {/* Title with generous, open line-height */}
+            <h2 className="text-3xl sm:text-4xl lg:text-[44px] font-bold tracking-tight text-[#0c180a] leading-snug sm:leading-[1.28] lg:leading-[1.3] text-balance mb-6">
               Bring Your Nonprofit Into One Clear View.
             </h2>
 
-            {/* Sub-line / Areas Covered */}
-            <p className="text-base sm:text-lg font-semibold text-[#108a00] tracking-tight mb-4">
+            {/* Sub-line / Areas Covered with clean breathing room */}
+            <p className="text-base sm:text-lg font-medium text-slate-800 leading-relaxed mb-6">
               Donors. Grants. Programs. Events. Volunteers. Board operations.
             </p>
 
-            {/* Description */}
-            <p className="text-base sm:text-lg leading-relaxed text-slate-600 mb-8 text-pretty">
+            {/* Description with open line height and spacious margin */}
+            <p className="text-base sm:text-lg leading-relaxed text-slate-600 mb-9 max-w-xl mx-auto">
               See how the Nonprofit AI Control Tower could bring the work together around the systems your organization already uses.
             </p>
 
             {/* CTA Button */}
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center mb-7">
               <Button
                 size="lg"
                 className="font-bold text-white bg-[#108a00] hover:bg-[#0e7700] rounded-xl px-8 py-4 text-base shadow-sm hover:shadow-md transition-all duration-200"
@@ -48,7 +48,7 @@ export const BringYourNonprofitSection: React.FC = () => {
             </div>
 
             {/* Trust Proof */}
-            <div className="flex items-center justify-center gap-2 text-xs sm:text-sm text-slate-500 font-medium">
+            <div className="flex items-center justify-center gap-2.5 text-xs sm:text-sm text-slate-500 font-medium">
               <img
                 src={sjLogo}
                 alt="SJ Innovation"

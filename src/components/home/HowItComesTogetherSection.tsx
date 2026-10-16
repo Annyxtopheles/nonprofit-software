@@ -38,72 +38,91 @@ export const HowItComesTogetherSection: React.FC = () => {
               className="absolute right-0 bottom-0 w-[190px] h-[190px] pointer-events-none select-none opacity-55 group-hover:opacity-85 transition-opacity duration-300"
             >
               <svg viewBox="0 0 190 190" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full overflow-visible">
+                <defs>
+                  <filter id="connect-pulse-glow" x="-200%" y="-200%" width="500%" height="500%">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="1.5" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                </defs>
+
                 {/* 3 Source Integration Modules */}
                 <g className="transition-all duration-500">
                   {/* Module 1: Documents & Drive (Upper Left) */}
-                  <rect x="24" y="82" width="46" height="24" rx="6" fill="#52d039" fillOpacity="0.22" stroke="#52d039" strokeWidth="1.6" />
-                  <circle cx="36" cy="94" r="4.5" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" />
-                  <line x1="46" y1="91" x2="62" y2="91" stroke="#52d039" strokeWidth="1.6" strokeLinecap="round" />
-                  <line x1="46" y1="97" x2="56" y2="97" stroke="#52d039" strokeWidth="1.4" strokeLinecap="round" opacity="0.6" />
+                  <rect x="24" y="82" width="46" height="24" rx="6" fill="#52d039" fillOpacity="0.18" stroke="#52d039" strokeWidth="1.0" />
+                  <circle cx="34" cy="94" r="2.2" fill="#ffffff" stroke="#52d039" strokeWidth="0.8" />
+                  <line x1="42" y1="91" x2="62" y2="91" stroke="#52d039" strokeWidth="1.0" strokeLinecap="round" />
+                  <line x1="42" y1="97" x2="54" y2="97" stroke="#52d039" strokeWidth="0.9" strokeLinecap="round" opacity="0.6" />
 
                   {/* Module 2: CRM & Member Database (Bottom Left) */}
-                  <rect x="18" y="128" width="52" height="26" rx="6" fill="#52d039" fillOpacity="0.22" stroke="#52d039" strokeWidth="1.6" />
-                  <circle cx="32" cy="141" r="4.5" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" />
-                  <line x1="42" y1="138" x2="62" y2="138" stroke="#52d039" strokeWidth="1.6" strokeLinecap="round" />
-                  <line x1="42" y1="144" x2="54" y2="144" stroke="#52d039" strokeWidth="1.4" strokeLinecap="round" opacity="0.6" />
+                  <rect x="18" y="128" width="52" height="26" rx="6" fill="#52d039" fillOpacity="0.18" stroke="#52d039" strokeWidth="1.0" />
+                  <circle cx="30" cy="141" r="2.2" fill="#ffffff" stroke="#52d039" strokeWidth="0.8" />
+                  <line x1="38" y1="138" x2="62" y2="138" stroke="#52d039" strokeWidth="1.0" strokeLinecap="round" />
+                  <line x1="38" y1="144" x2="52" y2="144" stroke="#52d039" strokeWidth="0.9" strokeLinecap="round" opacity="0.6" />
 
                   {/* Module 3: Financial & Workflow Data (Bottom Center) */}
-                  <rect x="78" y="150" width="50" height="24" rx="6" fill="#52d039" fillOpacity="0.22" stroke="#52d039" strokeWidth="1.6" />
-                  <circle cx="90" cy="162" r="4.5" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" />
-                  <line x1="100" y1="159" x2="120" y2="159" stroke="#52d039" strokeWidth="1.6" strokeLinecap="round" />
-                  <line x1="100" y1="165" x2="112" y2="165" stroke="#52d039" strokeWidth="1.4" strokeLinecap="round" opacity="0.6" />
+                  <rect x="78" y="150" width="50" height="24" rx="6" fill="#52d039" fillOpacity="0.18" stroke="#52d039" strokeWidth="1.0" />
+                  <circle cx="88" cy="162" r="2.2" fill="#ffffff" stroke="#52d039" strokeWidth="0.8" />
+                  <line x1="96" y1="159" x2="120" y2="159" stroke="#52d039" strokeWidth="1.0" strokeLinecap="round" />
+                  <line x1="96" y1="165" x2="110" y2="165" stroke="#52d039" strokeWidth="0.9" strokeLinecap="round" opacity="0.6" />
                 </g>
 
-                {/* Curved Data Conduits Converging to Central Target Node */}
+                {/* Curved Data Conduits Converging to Central Target Node - Sleek Line Weight */}
                 <g className="transition-all duration-500">
                   {/* Conduit from Module 1 */}
                   <path
                     d="M 70 94 C 98 94, 115 68, 133 55"
                     stroke="#52d039"
-                    strokeWidth="2.2"
+                    strokeWidth="1.2"
                     strokeLinecap="round"
                     fill="none"
                   />
-                  {/* Data packet pulse 1 */}
-                  <circle cx="104" cy="80" r="3.5" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" className="transition-transform duration-300 group-hover:translate-x-2" />
+                  {/* Data packet pulse 1: small glowing pinpoint */}
+                  <g className="transition-transform duration-300 group-hover:translate-x-2">
+                    <circle cx="104" cy="80" r="2.5" fill="#52d039" opacity="0.75" filter="url(#connect-pulse-glow)" />
+                    <circle cx="104" cy="80" r="1.2" fill="#ffffff" />
+                  </g>
 
                   {/* Conduit from Module 2 */}
                   <path
                     d="M 70 141 C 108 141, 122 92, 137 63"
                     stroke="#52d039"
-                    strokeWidth="2.2"
+                    strokeWidth="1.2"
                     strokeLinecap="round"
                     fill="none"
                   />
-                  {/* Data packet pulse 2 */}
-                  <circle cx="112" cy="112" r="3.5" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" className="transition-transform duration-300 group-hover:translate-y-[-4px]" />
+                  {/* Data packet pulse 2: small glowing pinpoint */}
+                  <g className="transition-transform duration-300 group-hover:translate-y-[-4px]">
+                    <circle cx="112" cy="112" r="2.5" fill="#52d039" opacity="0.75" filter="url(#connect-pulse-glow)" />
+                    <circle cx="112" cy="112" r="1.2" fill="#ffffff" />
+                  </g>
 
                   {/* Conduit from Module 3 */}
                   <path
                     d="M 103 150 C 122 150, 135 102, 142 68"
                     stroke="#52d039"
-                    strokeWidth="2.2"
+                    strokeWidth="1.2"
                     strokeLinecap="round"
                     fill="none"
                   />
-                  {/* Data packet pulse 3 */}
-                  <circle cx="130" cy="118" r="3.5" fill="#ffffff" stroke="#52d039" strokeWidth="1.5" className="transition-transform duration-300 group-hover:translate-y-[-3px]" />
+                  {/* Data packet pulse 3: small glowing pinpoint */}
+                  <g className="transition-transform duration-300 group-hover:translate-y-[-3px]">
+                    <circle cx="130" cy="118" r="2.5" fill="#52d039" opacity="0.75" filter="url(#connect-pulse-glow)" />
+                    <circle cx="130" cy="118" r="1.2" fill="#ffffff" />
+                  </g>
                 </g>
 
-                {/* Central Connected Target Reticle Hub (Matching Configure aesthetic) */}
+                {/* Central Connected Target Reticle Hub */}
                 <g className="transition-transform duration-700 ease-out group-hover:scale-110 origin-[145px_50px]">
-                  <circle cx="145" cy="50" r="20" stroke="#52d039" strokeWidth="1.5" strokeDasharray="3 3" />
-                  <circle cx="145" cy="50" r="12" fill="#52d039" fillOpacity="0.3" stroke="#52d039" strokeWidth="2" />
-                  <circle cx="145" cy="50" r="5" fill="#ffffff" />
+                  <circle cx="145" cy="50" r="18" stroke="#52d039" strokeWidth="1.0" strokeDasharray="3 3" />
+                  <circle cx="145" cy="50" r="10" fill="#52d039" fillOpacity="0.25" stroke="#52d039" strokeWidth="1.2" />
+                  <circle cx="145" cy="50" r="2.2" fill="#ffffff" />
 
                   {/* Crosshairs */}
-                  <line x1="145" y1="26" x2="145" y2="74" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
-                  <line x1="121" y1="50" x2="169" y2="50" stroke="#52d039" strokeWidth="2" strokeLinecap="round" />
+                  <line x1="145" y1="28" x2="145" y2="72" stroke="#52d039" strokeWidth="1.2" strokeLinecap="round" />
+                  <line x1="123" y1="50" x2="167" y2="50" stroke="#52d039" strokeWidth="1.2" strokeLinecap="round" />
                 </g>
               </svg>
             </div>
