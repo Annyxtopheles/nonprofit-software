@@ -28,7 +28,7 @@ interface Story {
 const stories: Story[] = [
   {
     org: "IAABO",
-    headline: "One Learning Platform for a 16,000+ Member Organization",
+    headline: "One Learning Platform for a 16,000+\u00A0Member\u00A0Organization",
     tags: ["LEARNING PLATFORM", "MEMBER ORGANIZATION"],
     challenge:
       "IAABO needed one place to train, test, and certify officials while giving local leaders visibility into progress.",
@@ -50,7 +50,7 @@ const stories: Story[] = [
   },
   {
     org: "Queens Chamber of Commerce",
-    headline: "AI Infrastructure for a Business Community",
+    headline: "AI Infrastructure for a Business\u00A0Community",
     tags: ["AI INFRASTRUCTURE", "COMMUNITY & CHAMBER"],
     challenge:
       "Staff, board members, and committees needed a better way to work across meetings, documents, outreach, and member activity.",
@@ -72,7 +72,7 @@ const stories: Story[] = [
   },
   {
     org: "The Optimists",
-    headline: "Modernizing an Aging Nonprofit Platform",
+    headline: "Modernizing an Aging Nonprofit\u00A0Platform",
     tags: ["MODERNIZATION", "DONATION PLATFORM"],
     challenge:
       "An outdated website and admin system were making everyday management harder.",
@@ -94,7 +94,7 @@ const stories: Story[] = [
   },
   {
     org: "YMCA Jamaica / NYC",
-    headline: "Bringing Nonprofit Operations Into One Control Tower",
+    headline: "Bringing Nonprofit Operations Into One\u00A0Control\u00A0Tower",
     tags: ["OPERATIONS CONTROL TOWER", "COMMUNITY LEADERSHIP"],
     whatWeDelivered: "Centralized key nonprofit operations, including:",
     deliverablesList: [
@@ -162,7 +162,7 @@ export function SuccessStoriesSection() {
                 <h3 className="text-2xl md:text-3xl font-semibold text-foreground tracking-tight mb-2">
                   {story.org}
                 </h3>
-                <h4 className="text-xl md:text-2xl font-semibold text-primary mb-6 leading-snug">
+                <h4 className="text-xl md:text-2xl font-semibold text-primary mb-6 leading-snug text-pretty">
                   {story.headline}
                 </h4>
 
@@ -183,20 +183,20 @@ export function SuccessStoriesSection() {
                     <span className="sm:col-span-4 font-semibold text-foreground text-sm">
                       What We Delivered
                     </span>
-                    <div className="sm:col-span-8">
+                    <div className="sm:col-span-8 text-left">
                       <p className="text-sm text-muted-foreground leading-relaxed mb-2.5">
                         {story.whatWeDelivered}
                       </p>
                       {story.deliverablesList && (
-                        <div className="flex flex-wrap gap-2 pt-1">
+                        <div className="flex flex-wrap items-center gap-x-6 gap-y-2.5 pt-1.5 text-left">
                           {story.deliverablesList.map((item) => (
-                            <span
+                            <div
                               key={item}
-                              className="inline-flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg bg-secondary text-primary border border-primary/20"
+                              className="inline-flex items-center gap-2 text-sm font-medium text-foreground whitespace-nowrap"
                             >
-                              <Check className="w-3.5 h-3.5 text-primary shrink-0" strokeWidth={2.5} />
-                              {item}
-                            </span>
+                              <Check className="w-4 h-4 text-primary shrink-0" strokeWidth={2.5} />
+                              <span>{item}</span>
+                            </div>
                           ))}
                         </div>
                       )}
