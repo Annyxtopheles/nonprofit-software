@@ -179,29 +179,36 @@ export function SuccessStoriesSection() {
                     </div>
                   )}
 
-                  <div className="py-3.5 grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 items-baseline">
-                    <span className="sm:col-span-4 font-semibold text-foreground text-sm">
-                      What We Delivered
-                    </span>
-                    <div className="sm:col-span-8 text-left">
-                      <p className="text-sm text-muted-foreground leading-relaxed mb-2.5">
+                  {story.deliverablesList ? (
+                    <div className="py-3.5 space-y-2 text-left">
+                      <span className="font-semibold text-foreground text-sm block">
+                        What We Delivered
+                      </span>
+                      <p className="text-sm text-muted-foreground leading-relaxed">
                         {story.whatWeDelivered}
                       </p>
-                      {story.deliverablesList && (
-                        <div className="flex flex-wrap items-center gap-x-6 gap-y-2.5 pt-1.5 text-left">
-                          {story.deliverablesList.map((item) => (
-                            <div
-                              key={item}
-                              className="inline-flex items-center gap-2 text-sm font-medium text-foreground whitespace-nowrap"
-                            >
-                              <Check className="w-4 h-4 text-primary shrink-0" strokeWidth={2.5} />
-                              <span>{item}</span>
-                            </div>
-                          ))}
-                        </div>
-                      )}
+                      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-4 gap-y-2.5 pt-1 text-left">
+                        {story.deliverablesList.map((item) => (
+                          <div
+                            key={item}
+                            className="inline-flex items-center gap-2 text-sm font-medium text-foreground"
+                          >
+                            <Check className="w-4 h-4 text-primary shrink-0" strokeWidth={2.5} />
+                            <span>{item}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
-                  </div>
+                  ) : (
+                    <div className="py-3.5 grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 items-baseline">
+                      <span className="sm:col-span-4 font-semibold text-foreground text-sm">
+                        What We Delivered
+                      </span>
+                      <p className="sm:col-span-8 text-sm text-muted-foreground leading-relaxed">
+                        {story.whatWeDelivered}
+                      </p>
+                    </div>
+                  )}
 
                   {story.proof && (
                     <div className="py-3.5 grid grid-cols-1 sm:grid-cols-12 gap-2 sm:gap-4 items-baseline">

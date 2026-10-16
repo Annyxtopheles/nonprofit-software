@@ -31,6 +31,20 @@ import meetingsImg from "@/assets/screenshots/meetings-view.png";
 import reportsImg from "@/assets/screenshots/reports-analytics.png";
 import dashboardImg from "@/assets/screenshots/dashboard-setup.png";
 
+import { OrbitImages } from "@/components/ui/OrbitImages";
+import sfdcLogo from "@/assets/logos/sfdc_nonprofits_logo_rgb_v1.webp";
+import blackbaudLogo from "@/assets/logos/blackbaud-re-nxt.png";
+import bloomerangLogo from "@/assets/logos/bloomerang-logo.webp";
+import donorPerfectLogo from "@/assets/logos/donorperfect-logo.png";
+import givebutterLogo from "@/assets/logos/givebutter-logo.png";
+import hubspotLogo from "@/assets/logos/hubspot-logo.png";
+import neonCrmLogo from "@/assets/logos/neon-crm-logo.png";
+import virtuousLogo from "@/assets/logos/virtuous-logo.png";
+import donorboxLogo from "@/assets/logos/donorbox-logo.svg";
+import quickbooksLogo from "@/assets/logos/quickbooks-logo.png";
+import stripeLogo from "@/assets/logos/stripe-logo.png";
+import mailchimpLogo from "@/assets/logos/mailchimp-logo.svg";
+
 const colors = {
   bg: "#FFFFFF",
   surface: "#F9F9F9",
@@ -128,6 +142,21 @@ const roles = [
 ];
 
 
+
+const crmOrbitLogos = [
+  { src: sfdcLogo, alt: "Salesforce for Nonprofits" },
+  { src: blackbaudLogo, alt: "Blackbaud Raiser's Edge" },
+  { src: bloomerangLogo, alt: "Bloomerang" },
+  { src: donorPerfectLogo, alt: "DonorPerfect" },
+  { src: givebutterLogo, alt: "Givebutter" },
+  { src: hubspotLogo, alt: "HubSpot" },
+  { src: neonCrmLogo, alt: "Neon CRM" },
+  { src: virtuousLogo, alt: "Virtuous CRM" },
+  { src: donorboxLogo, alt: "Donorbox" },
+  { src: quickbooksLogo, alt: "QuickBooks" },
+  { src: stripeLogo, alt: "Stripe" },
+  { src: mailchimpLogo, alt: "Mailchimp" },
+];
 
 const valueProps = [
   { icon: Zap, label: "Connect in Minutes", desc: "API-based, no CRM migration" },
@@ -240,10 +269,10 @@ const ControlTower = () => {
             <SoundFamiliarCards />
           </div>
         </section>
-        {/* Core Value Props */}
-        <section className="py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100 bg-[#F9FBF8]">
+        {/* It Doesn't Replace Your CRM / Orbit Integration Section */}
+        <section className="py-14 md:py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-100 bg-[#F9FBF8] overflow-hidden">
           <div className="max-w-6xl mx-auto">
-            <div className="mb-8 md:mb-10 text-center">
+            <div className="mb-6 md:mb-8 text-center">
               <h2
                 className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
                 style={{ color: colors.headline }}
@@ -254,9 +283,56 @@ const ControlTower = () => {
                 Connect your existing systems in minutes. See insights in real time. No migration. No duplicate data entry. Ever.
               </p>
             </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            {/* Orbit Images Visualization */}
+            <div className="relative py-4 md:py-6 flex items-center justify-center">
+              <OrbitImages
+                images={crmOrbitLogos}
+                shape="ellipse"
+                radiusX={440}
+                radiusY={140}
+                baseWidth={1050}
+                itemSize={72}
+                itemRadius={16}
+                duration={35}
+                showPath={true}
+                pathColor="rgba(16, 138, 0, 0.16)"
+                pathDash={4}
+                depth={0.45}
+                hoverScale={1.12}
+                draggable={true}
+                clickToFront={true}
+                centerContent={
+                  <div className="flex flex-col items-center justify-center p-4 sm:p-5 rounded-2xl bg-white/95 backdrop-blur-sm border border-[#108a00]/25 shadow-[0_12px_32px_rgba(16,138,0,0.12)] text-center max-w-[210px] pointer-events-auto transition-transform hover:scale-105 duration-300">
+                    <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-[#E7F5E3] flex items-center justify-center mb-2.5 shadow-sm border border-[#108a00]/15">
+                      <img
+                        src="/NonProfit AI Logo July 2026 Icon.svg"
+                        alt="Nonprofit AI Control Tower"
+                        className="w-10 h-10 sm:w-11 sm:h-11 object-contain"
+                      />
+                    </div>
+                    <span className="text-xs sm:text-sm font-bold text-[#001E00] tracking-tight">
+                      Nonprofit AI
+                    </span>
+                    <span className="text-[11px] font-semibold text-[#108a00] uppercase tracking-wider">
+                      Control Tower
+                    </span>
+                    <span className="text-[10px] text-[#5E6D55] mt-0.5 leading-tight">
+                      Unified Nonprofit Intelligence
+                    </span>
+                  </div>
+                }
+                className="w-full max-w-5xl"
+              />
+            </div>
+
+            {/* Core Value Props Cards */}
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
               {valueProps.map((item) => (
-                <div key={item.label} className="p-5 md:p-6 text-center">
+                <div
+                  key={item.label}
+                  className="p-5 md:p-6 text-center rounded-xl bg-white/70 border border-slate-200/60 shadow-sm transition-all hover:bg-white hover:shadow-md"
+                >
                   <div
                     className="w-14 h-14 rounded-full mx-auto mb-3 flex items-center justify-center"
                     style={{ backgroundColor: colors.accentLight }}
