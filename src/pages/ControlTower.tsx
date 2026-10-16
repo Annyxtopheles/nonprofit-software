@@ -432,69 +432,61 @@ const ControlTower = () => {
         {/* Lite Version (Board Governance) Teaser Banner */}
         <NewsletterSignup source="home_section" />
 
-        <section
-          className="w-full py-12 md:py-16 px-4 sm:px-6 lg:px-8 border-t border-slate-100"
-          style={{ backgroundColor: colors.accentLight }}
-        >
-          <div className="max-w-6xl mx-auto text-center">
-            <ShieldCheck
-              className="w-12 h-12 mx-auto mb-4"
-              style={{ color: colors.accent }}
-              strokeWidth={1.75}
+        <section className="w-full py-14 md:py-20 px-4 sm:px-6 lg:px-8 border-t border-slate-100 bg-[#fbfdfa]">
+          <div className="max-w-4xl mx-auto rounded-[32px] border border-slate-200/90 bg-white p-8 sm:p-12 text-center shadow-[0_4px_24px_rgba(28,52,34,0.03)] relative overflow-hidden">
+            {/* Subtle soft mint decorative glow */}
+            <div
+              aria-hidden="true"
+              className="absolute -top-24 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full bg-[#e7f5e3]/50 blur-3xl pointer-events-none"
             />
-            <span className="inline-block text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full border border-[#108a00]/30 bg-white text-[#108a00] mb-4">
-              Free Trial
-            </span>
-            <h2
-              className="text-3xl sm:text-4xl lg:text-[42px] font-bold tracking-tight leading-tight mb-3"
-              style={{ color: colors.headline }}
-            >
-              Board Meetings Shouldn&apos;t Be This Painful
-            </h2>
-            <p className="text-base md:text-lg max-w-2xl mx-auto mb-6" style={{ color: colors.body }}>
-              From messy agendas to lost documents — our Board Governance module fixes it all. 10 AI agents, 21 features, zero cost.
-            </p>
-            <div className="flex flex-wrap justify-center gap-2.5 mb-7">
-              {[
-                "10 AI Agents Working 24/7",
-                "21 Features for Board Management",
-                "Document Q&A & Meeting Automation",
-              ].map((pill) => (
-                <span
-                  key={pill}
-                  className="text-sm font-medium px-4 py-2 rounded-xl"
-                  style={{
-                    backgroundColor: colors.bg,
-                    color: colors.headline,
-                    boxShadow: "0 2px 8px rgba(0, 0, 0, 0.05)",
-                  }}
+            <div className="relative z-10">
+              <div className="w-14 h-14 rounded-2xl bg-[#e7f5e3] border border-[#108a00]/20 flex items-center justify-center mx-auto mb-4 text-[#108a00]">
+                <ShieldCheck className="w-7 h-7" strokeWidth={2} />
+              </div>
+              <span className="inline-block text-xs font-semibold tracking-wide px-3.5 py-1.5 rounded-full border border-[#108a00]/25 bg-[#e7f5e3]/60 text-[#108a00] mb-4">
+                Free Trial
+              </span>
+              <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold tracking-tight text-[#0c180a] leading-tight mb-3">
+                Board Meetings Shouldn&apos;t Be This Painful
+              </h2>
+              <p className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto mb-6 text-pretty">
+                From messy agendas to lost documents — our Board Governance module fixes it all. 10 AI agents, 21 features, zero cost.
+              </p>
+              <div className="flex flex-wrap justify-center gap-2.5 mb-8">
+                {[
+                  "10 AI Agents Working 24/7",
+                  "21 Features for Board Management",
+                  "Document Q&A & Meeting Automation",
+                ].map((pill) => (
+                  <span
+                    key={pill}
+                    className="text-sm font-medium px-4 py-2 rounded-full border border-slate-200/90 bg-[#fbfdfa] text-slate-700 shadow-xs"
+                  >
+                    {pill}
+                  </span>
+                ))}
+              </div>
+              <div className="flex flex-col sm:flex-row gap-3.5 justify-center items-center">
+                <Button
+                  size="lg"
+                  className="font-bold text-white bg-[#108a00] hover:bg-[#0e7700] rounded-xl px-7 py-3.5 shadow-sm transition-all"
+                  asChild
                 >
-                  {pill}
-                </span>
-              ))}
-            </div>
-            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-              <Button
-                size="lg"
-                className="font-bold text-white hover:opacity-90 rounded-xl px-7 py-3.5 shadow-sm transition-all"
-                style={{ backgroundColor: colors.accent }}
-                asChild
-              >
-                <Link to="/board-governance">
-                  Explore Board Governance <ArrowRight className="w-4 h-4 ml-1.5" />
-                </Link>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="font-bold bg-white rounded-xl px-7 py-3.5"
-                style={{ borderColor: colors.border, color: colors.headline }}
-                asChild
-              >
-                <a href="https://demo.nonprofitai.software/login" target="_blank" rel="noopener noreferrer">
-                  Try Demo
-                </a>
-              </Button>
+                  <Link to="/board-governance">
+                    Explore Board Governance <ArrowRight className="w-4 h-4 ml-1.5" />
+                  </Link>
+                </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="font-bold bg-white hover:bg-slate-50 border-slate-200 text-[#0c180a] rounded-xl px-7 py-3.5"
+                  asChild
+                >
+                  <a href="https://demo.nonprofitai.software/login" target="_blank" rel="noopener noreferrer">
+                    Try Demo
+                  </a>
+                </Button>
+              </div>
             </div>
           </div>
         </section>
