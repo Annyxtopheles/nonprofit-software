@@ -1,6 +1,6 @@
 import { FormEvent, useState } from "react";
 import { Link } from "react-router-dom";
-import { Loader2, Mail, Check } from "lucide-react";
+import { Loader2, Check } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -99,8 +99,8 @@ export function NewsletterSignup({ variant = "section", source }: NewsletterSign
   }
 
   const form = (
-    <form onSubmit={handleSubmit} className={compact ? "space-y-2" : "space-y-3"}>
-      <div className={compact ? "grid grid-cols-1 gap-2" : "grid grid-cols-1 sm:grid-cols-2 gap-3"}>
+    <form onSubmit={handleSubmit} className={compact ? "space-y-2.5" : "space-y-3.5"}>
+      <div className={compact ? "grid grid-cols-1 gap-2" : "grid grid-cols-1 sm:grid-cols-2 gap-3.5"}>
         <Input
           type="text"
           required
@@ -110,6 +110,7 @@ export function NewsletterSignup({ variant = "section", source }: NewsletterSign
           maxLength={100}
           autoComplete="given-name"
           aria-label="First name"
+          className="h-11 rounded-xl bg-slate-50/50 border-slate-200 focus:bg-white text-sm"
         />
         <Input
           type="text"
@@ -120,31 +121,23 @@ export function NewsletterSignup({ variant = "section", source }: NewsletterSign
           maxLength={100}
           autoComplete="family-name"
           aria-label="Last name"
+          className="h-11 rounded-xl bg-slate-50/50 border-slate-200 focus:bg-white text-sm"
         />
       </div>
 
-      <Input
-        type="email"
-        required
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="you@yournonprofit.org"
-        maxLength={255}
-        autoComplete="email"
-        aria-label="Email address"
-      />
-
-      {!compact && (
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          <Input
-            type="tel"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            placeholder="Phone (optional)"
-            maxLength={30}
-            autoComplete="tel"
-            aria-label="Phone number (optional)"
-          />
+      <div className={compact ? "space-y-2" : "grid grid-cols-1 sm:grid-cols-2 gap-3.5"}>
+        <Input
+          type="email"
+          required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Work email"
+          maxLength={255}
+          autoComplete="email"
+          aria-label="Work email"
+          className="h-11 rounded-xl bg-slate-50/50 border-slate-200 focus:bg-white text-sm"
+        />
+        {!compact ? (
           <Input
             type="text"
             value={company}
@@ -153,17 +146,22 @@ export function NewsletterSignup({ variant = "section", source }: NewsletterSign
             maxLength={150}
             autoComplete="organization"
             aria-label="Organization (optional)"
+            className="h-11 rounded-xl bg-slate-50/50 border-slate-200 focus:bg-white text-sm"
           />
-        </div>
-      )}
+        ) : null}
+      </div>
 
-      <Button type="submit" disabled={loading} className={compact ? "w-full" : "w-full sm:w-auto"}>
+      <Button
+        type="submit"
+        disabled={loading}
+        className="w-full h-11 sm:h-12 bg-[#108a00] hover:bg-[#0e7700] text-white font-semibold text-sm sm:text-base rounded-xl shadow-xs transition-all cursor-pointer mt-1"
+      >
         {loading ? (
           <>
             <Loader2 className="w-4 h-4 mr-2 animate-spin" /> Subscribing…
           </>
         ) : (
-          "Subscribe"
+          "Subscribe to Monthly Insights"
         )}
       </Button>
 
@@ -179,9 +177,9 @@ export function NewsletterSignup({ variant = "section", source }: NewsletterSign
         className="hidden"
       />
 
-      <p className={`text-muted-foreground ${compact ? "text-xs" : "text-sm"}`}>
-        No spam. Unsubscribe anytime. See our{" "}
-        <Link to="/privacy" className="text-primary hover:underline">
+      <p className={`text-center text-[#5E6D55] ${compact ? "text-xs" : "text-xs sm:text-[13px]"} pt-1`}>
+        No spam. 1 practical email per month. Unsubscribe anytime. See our{" "}
+        <Link to="/privacy" className="text-[#108a00] hover:underline font-medium">
           Privacy Policy
         </Link>
         .
@@ -190,15 +188,15 @@ export function NewsletterSignup({ variant = "section", source }: NewsletterSign
   );
 
   const success = (
-    <div className={`flex items-start gap-3 ${compact ? "text-sm" : ""}`}>
-      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-        <Check className="w-4 h-4 text-primary" />
+    <div className={`flex items-start gap-3 p-4 rounded-xl bg-[#e7f5e3]/60 border border-[#108a00]/20 ${compact ? "text-sm" : ""}`}>
+      <div className="w-8 h-8 rounded-full bg-[#108a00]/15 flex items-center justify-center shrink-0">
+        <Check className="w-4 h-4 text-[#108a00]" strokeWidth={2.5} />
       </div>
       <div>
-        <p className="font-semibold text-foreground">You&apos;re on the list.</p>
-        <p className="text-muted-foreground">
-          Check your inbox — you can unsubscribe from any email or on our{" "}
-          <Link to="/unsubscribe" className="text-primary hover:underline">
+        <p className="font-semibold text-[#001E00]">You&apos;re on the list.</p>
+        <p className="text-sm text-[#5E6D55] mt-0.5">
+          Check your inbox — you can unsubscribe anytime directly or via our{" "}
+          <Link to="/unsubscribe" className="text-[#108a00] hover:underline font-medium">
             unsubscribe page
           </Link>
           .
@@ -217,19 +215,20 @@ export function NewsletterSignup({ variant = "section", source }: NewsletterSign
   }
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 py-12 md:py-16 bg-[#e7f5e3]/30 border-t border-border">
-      <div className="max-w-3xl mx-auto text-center">
-        <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-          <Mail className="w-6 h-6 text-primary" />
+    <section className="px-4 sm:px-6 lg:px-8 py-16 md:py-20 bg-[#F9FBF8] border-t border-slate-100">
+      <div className="max-w-2xl mx-auto">
+        <div className="rounded-3xl border border-slate-200/90 bg-white p-7 sm:p-10 shadow-[0_4px_24px_rgba(28,52,34,0.04)]">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-[#001E00] leading-tight mb-2.5">
+              Nonprofit AI insights, once a month
+            </h2>
+            <p className="text-sm sm:text-base text-[#5E6D55] max-w-lg mx-auto leading-relaxed">
+              Practical ways nonprofits use AI to cut admin work, strengthen governance, and
+              grow donor relationships — no fluff, just actionable playbooks.
+            </p>
+          </div>
+          <div>{done ? success : form}</div>
         </div>
-        <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
-          Nonprofit AI insights, once a month
-        </h2>
-        <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-          Practical ways nonprofits are using AI to cut admin work, strengthen governance, and
-          grow donor relationships — plus product updates from Nonprofit Control Tower.
-        </p>
-        <div className="max-w-xl mx-auto text-left">{done ? success : form}</div>
       </div>
     </section>
   );

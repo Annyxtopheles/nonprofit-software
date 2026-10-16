@@ -516,12 +516,6 @@ const ControlTower = () => {
               className="absolute -top-24 left-1/2 -translate-x-1/2 w-80 h-80 rounded-full bg-[#e7f5e3]/50 blur-3xl pointer-events-none"
             />
             <div className="relative z-10">
-              <div className="w-14 h-14 rounded-2xl bg-[#e7f5e3] border border-[#108a00]/20 flex items-center justify-center mx-auto mb-4 text-[#108a00]">
-                <ShieldCheck className="w-7 h-7" strokeWidth={2} />
-              </div>
-              <span className="inline-block text-xs font-semibold tracking-wide px-3.5 py-1.5 rounded-full border border-[#108a00]/25 bg-[#e7f5e3]/60 text-[#108a00] mb-4">
-                Free Trial
-              </span>
               <h2 className="text-3xl sm:text-4xl lg:text-[40px] font-bold tracking-tight text-[#0c180a] leading-tight mb-3">
                 Board Meetings Shouldn&apos;t Be This Painful
               </h2>
